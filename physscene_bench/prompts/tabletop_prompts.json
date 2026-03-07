@@ -1,0 +1,37 @@
+[
+  {
+    "id": "T01",
+    "scene": "breakfast",
+    "surface_size": [0.8, 0.6],
+    "prompt": "Set up a breakfast table: a plate in center, a cup to the upper right, a bowl of cereal to the left, utensils (fork left, knife right of plate), and a napkin.",
+    "expected_objects": ["plate", "cup", "bowl", "fork", "knife", "napkin"]
+  },
+  {
+    "id": "T02", 
+    "scene": "study_desk",
+    "surface_size": [1.2, 0.6],
+    "prompt": "Arrange a study desk: laptop in center, a book to the left, a pen holder to the upper right, a phone to the right, and a desk lamp at the back left corner.",
+    "expected_objects": ["laptop", "book", "pen_holder", "phone", "lamp"]
+  },
+  {
+    "id": "T03",
+    "scene": "dining_for_two", 
+    "surface_size": [0.8, 0.8],
+    "prompt": "Set a dining table for two: two plates facing each other, each with fork and knife, two glasses, and a shared condiment set in the center.",
+    "expected_objects": ["plate", "plate", "fork", "fork", "knife", "knife", "glass", "glass", "condiment"]
+  },
+  {
+    "id": "T04",
+    "scene": "workshop",
+    "surface_size": [1.0, 0.6], 
+    "prompt": "Organize a workshop table: a toolbox on the left, screwdriver and wrench in the middle area, a small parts tray to the right, and safety goggles at the back.",
+    "expected_objects": ["toolbox", "screwdriver", "wrench", "parts_tray", "goggles"]
+  },
+  {
+    "id": "T05",
+    "scene": "tea_ceremony",
+    "surface_size": [0.6, 0.6],
+    "prompt": "Set up a tea ceremony: a teapot in center, 4 small cups arranged in a diamond pattern around it, a tea canister to the side.",
+    "expected_objects": ["teapot", "cup", "cup", "cup", "cup", "tea_canister"]
+  }
+]
