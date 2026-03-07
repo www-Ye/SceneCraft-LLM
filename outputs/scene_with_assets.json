@@ -7,86 +7,92 @@
     {
       "category": "sofa",
       "position": [
-        2.5,
-        3.5,
+        2.742910323321898,
+        2.9,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 6.497323137370207,
       "dimensions": {
-        "width": 2.0,
-        "depth": 0.9,
-        "height": 0.85
-      }
+        "width": 2.0209381557218298,
+        "depth": 0.9094221700748234,
+        "height": 0.8588987161817776
+      },
+      "scale_factor": 1.0104690778609149
     },
     {
       "category": "coffee_table",
       "position": [
-        2.5,
-        2.3,
+        2.9279730456067736,
+        1.3429043497864588,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 0.0,
       "dimensions": {
-        "width": 1.2,
-        "depth": 0.6,
-        "height": 0.45
-      }
+        "width": 1.198890442411679,
+        "depth": 0.5994452212058395,
+        "height": 0.44958391590437974
+      },
+      "scale_factor": 0.9990753686763993
     },
     {
       "category": "armchair",
       "position": [
-        0.8,
-        2.5,
+        0.55,
+        1.0435768476247533,
         0.0
       ],
-      "rotation": 90,
+      "rotation": 89.76914096858617,
       "dimensions": {
-        "width": 0.9,
-        "depth": 0.85,
-        "height": 0.85
-      }
+        "width": 0.900316223733002,
+        "depth": 0.8502986557478351,
+        "height": 0.8502986557478351
+      },
+      "scale_factor": 1.0003513597033356
     },
     {
       "category": "television_set",
       "position": [
-        2.5,
-        0.3,
+        3.026035081780227,
+        0.7,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 5.127495255553004,
       "dimensions": {
-        "width": 1.2,
-        "depth": 0.1,
-        "height": 0.7
-      }
+        "width": 1.2084326368225626,
+        "depth": 0.10070271973521357,
+        "height": 0.7049190381464949
+      },
+      "scale_factor": 1.0070271973521356
     },
     {
       "category": "table_lamp",
       "position": [
-        4.3,
-        3.5,
+        4.098776206057246,
+        3.468113477619667,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 0.0,
       "dimensions": {
-        "width": 0.3,
-        "depth": 0.3,
-        "height": 0.5
-      }
+        "width": 0.3003883098205759,
+        "depth": 0.3003883098205759,
+        "height": 0.5006471830342932
+      },
+      "scale_factor": 1.0012943660685865
     },
     {
       "category": "cabinet",
       "position": [
-        4.5,
+        4.499975404541861,
         0.5,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 0.0,
       "dimensions": {
-        "width": 0.8,
-        "depth": 0.45,
-        "height": 1.8
-      }
+        "width": 0.7999931201790345,
+        "depth": 0.4499961301007069,
+        "height": 1.7999845204028275
+      },
+      "scale_factor": 0.9999914002237931
     },
     {
       "category": "runner_(carpet)",
@@ -95,25 +101,26 @@
         2.0,
         0.0
       ],
-      "rotation": 0,
+      "rotation": 0.0,
       "dimensions": {
-        "width": 2.0,
-        "depth": 3.0,
-        "height": 0.01
-      }
+        "width": 1.9999999284533347,
+        "depth": 2.9999998926800022,
+        "height": 0.009999999642266675
+      },
+      "scale_factor": 0.9999999642266674
     }
   ],
   "metrics": {
-    "collision_rate": 0.09523809523809523,
+    "collision_rate": 0.14285714285714285,
     "oob_rate": 0.0,
-    "n_collisions": 2,
+    "n_collisions": 3,
     "n_oob": 0,
     "n_objects": 7,
-    "floor_coverage": 0.49275,
-    "walkable_ratio": 0.5305,
-    "occupied_ratio": 0.4695,
+    "floor_coverage": 0.4947005876567097,
+    "walkable_ratio": 0.5945,
+    "occupied_ratio": 0.4055,
     "room_area": 20.0,
-    "furniture_area": 9.855
+    "furniture_area": 9.894011753134194
   },
   "asset_source": "objaverse_lvis"
 }

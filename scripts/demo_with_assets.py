@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.assets.asset_manager import AssetManager
 from src.layout.scene_graph import SceneGraph
+from src.layout.layout_optimizer import optimize_layout
 from src.evaluation.metrics import SceneMetrics
 
 
@@ -68,6 +69,22 @@ def generate_living_room_with_assets():
         print(f"  Placed {cat}: {dims['width']:.1f}x{dims['depth']:.1f}x{dims['height']:.1f}m "
               f"at ({item['position'][0]:.1f}, {item['position'][1]:.1f})")
     
+    # Optimize layout with constraint solver
+    print("\n--- Layout Optimization ---")
+    scene_objects = optimize_layout(scene_objects, room_width, room_depth)
+    
+    # Rebuild scene graph with optimized positions
+    sg = SceneGraph(width=room_width, length=room_depth)
+    for i, obj in enumerate(scene_objects):
+        cat = obj['category']
+        sg.add_object(
+            object_id=f"{cat}_{i}",
+            category=cat,
+            position=(obj['position'][0], obj['position'][1]),
+            rotation=obj['rotation'],
+            size=obj['dimensions'],
+        )
+    
     # Evaluate layout
     print("\n--- Layout Evaluation ---")
     gt_categories = ['sofa', 'coffee_table', 'armchair', 'television_set', 
@@ -93,7 +110,8 @@ def generate_living_room_with_assets():
         name = f"{safe_cat}_{i}"
         
         # Export STL
-        export = mgr.export_for_mujoco(cat, item['index'])
+        asset_index = item.get('index', 0)
+        export = mgr.export_for_mujoco(cat, asset_index)
         if export:
             stl_exports[name] = export
             real_dims = export['dimensions']
