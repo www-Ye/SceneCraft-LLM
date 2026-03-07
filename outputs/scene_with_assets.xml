@@ -7,12 +7,12 @@
     <material name="floor_mat" texture="floor_tex" texrepeat="8 6"/>
     <texture type="2d" name="wall_tex" builtin="flat" rgb1="0.95 0.94 0.91" width="100" height="100"/>
     <material name="wall_mat" texture="wall_tex"/>
-    <mesh name="sofa_0_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/sofa_0.stl"/>
-    <mesh name="coffee_table_1_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/coffee_table_0.stl"/>
-    <mesh name="armchair_2_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/armchair_0.stl"/>
-    <mesh name="television_set_3_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/television_set_0.stl"/>
-    <mesh name="table_lamp_4_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/table_lamp_0.stl"/>
-    <mesh name="cabinet_5_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/cabinet_0.stl"/>
+    <mesh name="sofa_0_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/sofa_1.stl"/>
+    <mesh name="coffee_table_1_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/coffee_table_1.stl"/>
+    <mesh name="armchair_2_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/armchair_1.stl"/>
+    <mesh name="television_set_3_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/television_set_1.stl"/>
+    <mesh name="table_lamp_4_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/table_lamp_1.stl"/>
+    <mesh name="cabinet_5_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/cabinet_1.stl"/>
     <mesh name="runner_carpet_6_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/runner_carpet_0.stl"/>
   </asset>
   
@@ -31,31 +31,31 @@
     <light pos="1.0 1.0 2.5" dir="0.3 0.3 -1" diffuse="0.3 0.3 0.3" specular="0.1 0.1 0.1"/>
     
     <!-- Furniture -->
-    <body name="sofa_0" pos="2.500 3.450 0.425" quat="0.0000 0 0 1.0000">
+    <body name="sofa_0" pos="2.500 3.500 0.000" quat="0.0000 0 0 1.0000">
       <freejoint/>
       <geom type="mesh" mesh="sofa_0_mesh" rgba="0.25 0.35 0.55 1" mass="40"/>
     </body>
-    <body name="coffee_table_1" pos="2.500 2.200 0.600" quat="1.0000 0 0 0.0000">
+    <body name="coffee_table_1" pos="2.500 2.400 0.000" quat="1.0000 0 0 0.0000">
       <freejoint/>
       <geom type="mesh" mesh="coffee_table_1_mesh" rgba="0.55 0.35 0.20 1" mass="15"/>
     </body>
-    <body name="armchair_2" pos="0.700 2.600 0.425" quat="0.3827 0 0 0.9239">
+    <body name="armchair_2" pos="0.800 2.800 0.000" quat="-0.9239 0 0 0.3827">
       <freejoint/>
       <geom type="mesh" mesh="armchair_2_mesh" rgba="0.60 0.55 0.45 1" mass="25"/>
     </body>
-    <body name="television_set_3" pos="2.500 0.150 0.050" quat="1.0000 0 0 0.0000">
+    <body name="television_set_3" pos="2.500 0.100 0.000" quat="1.0000 0 0 0.0000">
       <freejoint/>
       <geom type="mesh" mesh="television_set_3_mesh" rgba="0.15 0.15 0.18 1" mass="8"/>
     </body>
-    <body name="table_lamp_4" pos="0.800 3.500 0.250" quat="1.0000 0 0 0.0000">
+    <body name="table_lamp_4" pos="4.200 3.600 0.000" quat="1.0000 0 0 0.0000">
       <freejoint/>
       <geom type="mesh" mesh="table_lamp_4_mesh" rgba="0.85 0.75 0.55 1" mass="3"/>
     </body>
-    <body name="cabinet_5" pos="4.500 0.300 0.225" quat="1.0000 0 0 0.0000">
+    <body name="cabinet_5" pos="0.500 0.300 0.000" quat="1.0000 0 0 0.0000">
       <freejoint/>
       <geom type="mesh" mesh="cabinet_5_mesh" rgba="0.45 0.30 0.18 1" mass="30"/>
     </body>
-    <body name="runner_carpet_6" pos="2.300 2.000 0.999" quat="1.0000 0 0 0.0000">
+    <body name="runner_carpet_6" pos="2.500 2.300 0.000" quat="1.0000 0 0 0.0000">
       <freejoint/>
       <geom type="mesh" mesh="runner_carpet_6_mesh" rgba="0.75 0.68 0.58 1" mass="5"/>
     </body>

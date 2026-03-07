@@ -63,52 +63,52 @@ def design_living_room():
     layout = [
         {
             'category': 'sofa',
-            'position': [2.5, 3.45, 0.0],  # Centered, against north wall
-            'rotation': 180,                 # Facing south (toward TV)
-            'index': 0,
+            'position': [2.5, 3.50, 0.0],   # Centered, flush against north wall
+            'rotation': 180,                  # Facing south (toward TV)
+            'index': 1,                       # Try asset variant 1
             'note': 'Main sofa against north wall, facing TV',
         },
         {
             'category': 'coffee_table',
-            'position': [2.5, 2.2, 0.0],    # Centered, 1.2m in front of sofa
+            'position': [2.5, 2.4, 0.0],    # 1.1m in front of sofa
             'rotation': 0,
-            'index': 0,
+            'index': 1,
             'note': 'Coffee table centered between sofa and TV',
         },
         {
             'category': 'armchair',
-            'position': [0.7, 2.6, 0.0],    # West side, slightly back
-            'rotation': 135,                  # Angled toward coffee table/TV area
-            'index': 0,
+            'position': [0.8, 2.8, 0.0],    # West side, closer to sofa for conversation
+            'rotation': 315,                  # Facing SE toward coffee table area  
+            'index': 1,
             'note': 'Armchair forming L-shape conversation area',
         },
         {
             'category': 'television_set',
-            'position': [2.5, 0.15, 0.0],   # Centered, against south wall
+            'position': [2.5, 0.10, 0.0],   # Centered, flush against south wall
             'rotation': 0,                    # Facing north (toward sofa)
-            'index': 0,
+            'index': 1,
             'note': 'TV centered on south wall, facing sofa',
         },
         {
             'category': 'table_lamp',
-            'position': [0.8, 3.5, 0.0],    # West end, beside sofa
+            'position': [4.2, 3.6, 0.0],    # East end of sofa (right side)
             'rotation': 0,
-            'index': 0,
-            'note': 'Floor lamp at west end of sofa',
+            'index': 1,
+            'note': 'Table lamp at east end of sofa',
         },
         {
             'category': 'cabinet',
-            'position': [4.5, 0.3, 0.0],    # Southeast corner
+            'position': [0.5, 0.3, 0.0],    # Southwest corner (away from TV)
             'rotation': 0,
-            'index': 0,
-            'note': 'Storage cabinet in southeast corner',
+            'index': 1,
+            'note': 'Storage cabinet in southwest corner',
         },
         {
             'category': 'runner_(carpet)',
-            'position': [2.3, 2.0, 0.0],    # Centered under seating area
+            'position': [2.5, 2.3, 0.0],    # Centered under seating area
             'rotation': 0,
             'index': 0,
-            'note': 'Area rug under coffee table and seating zone',
+            'note': 'Area rug centered under conversation zone',
         },
     ]
     
@@ -172,8 +172,10 @@ def design_living_room():
             
             mesh_xml_parts.append(f'    <mesh name="{name}_mesh" file="{stl_path}"/>')
             
-            # Position with proper Z offset (bottom of mesh at floor level)
-            z_pos = item['position'][2] + real_dims['height'] / 2
+            # The mesh has bottom at Z=0 and is centered at XY origin.
+            # MuJoCo body pos is the frame origin, mesh vertices are in body frame.
+            # So body Z=0 means mesh bottom at Z=0 (on the floor). Perfect.
+            z_pos = 0.0
             
             # Rotation quaternion (around Z axis)
             rot_rad = np.radians(item['rotation'])

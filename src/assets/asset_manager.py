@@ -216,16 +216,8 @@ class AssetManager:
                           max_faces: int = 100000) -> Optional[Dict]:
         """
         Export a mesh as STL for MuJoCo consumption.
-        Loads raw mesh, converts to single Trimesh, normalizes, simplifies, exports.
-        
-        Args:
-            category: Furniture category
-            index: Asset index
-            output_dir: Where to save STL files
-            max_faces: Maximum faces allowed (MuJoCo limit ~200000)
-            
-        Returns:
-            Dict with 'stl_path', 'dimensions', 'category'
+        Properly orients the mesh so Z-axis = up (height),
+        then scales to standard dimensions.
         """
         if output_dir is None:
             output_dir = os.path.join(self.asset_dir, '_mujoco_stl')
@@ -245,10 +237,8 @@ class AssetManager:
         stl_path = os.path.join(output_dir, stl_name)
         
         try:
-            # Load raw mesh fresh (don't use cache to avoid in-place transform issues)
             raw = trimesh.load(file_path, force='scene')
             
-            # Convert scene to single Trimesh
             if isinstance(raw, trimesh.Scene):
                 meshes = [g for g in raw.geometry.values() if isinstance(g, trimesh.Trimesh)]
                 if not meshes:
@@ -257,32 +247,85 @@ class AssetManager:
             else:
                 combined = raw.copy()
             
-            # Normalize: center, scale to standard dimensions, bottom at z=0
-            std_dims = self.get_standard_dimensions(category)
-            bounds = combined.bounding_box.bounds
-            current_size = bounds[1] - bounds[0]
-            current_center = (bounds[0] + bounds[1]) / 2
+            # Step 1: Center at origin
+            center = (combined.bounds[0] + combined.bounds[1]) / 2
+            combined.apply_translation(-center)
             
-            # Center at origin
-            combined.apply_translation(-current_center)
+            raw_size = combined.bounds[1] - combined.bounds[0]
             
-            # Map axes: sort by size to match target width/depth/height
-            target = np.array([std_dims['width'], std_dims['depth'], std_dims['height']])
-            target_order = np.argsort(target)
-            current_order = np.argsort(current_size)
-            current_size = np.maximum(current_size, 1e-6)
+            # Step 2: Identify which raw axis should become Z (height)
+            # For most furniture, height is the axis with the SECOND largest extent
+            # (widest is usually width, second is height, smallest is depth)
+            # But we need a smarter heuristic:
+            # - The "up" axis in the original model is typically Y (Blender/glTF convention)
+            #   or Z (some models)
+            # We'll use the heuristic: Y-axis is likely "up" in glTF models
+            # So we rotate Y→Z (i.e., rotate -90° around X)
             
-            scale = np.ones(3)
-            for t_idx, c_idx in zip(target_order, current_order):
-                scale[c_idx] = target[t_idx] / current_size[c_idx]
+            # Actually let's be more precise: check which axis best matches 
+            # the expected height ratio
+            std = self.get_standard_dimensions(category)
+            target_h = std['height']
+            target_w = std['width']
+            target_d = std['depth']
             
+            # Try all 3 possible "up" axes, pick the one that gives
+            # the most proportional match
+            best_score = float('inf')
+            best_rotation = np.eye(4)
+            best_assignment = None
+            
+            # 6 possible axis permutations (which raw axis → X, Y, Z)
+            import itertools
+            for perm in itertools.permutations([0, 1, 2]):
+                # perm[0] → X (width), perm[1] → Y (depth), perm[2] → Z (height)
+                rw = raw_size[perm[0]]
+                rd = raw_size[perm[1]]
+                rh = raw_size[perm[2]]
+                
+                # Score: how well do the ratios match?
+                # Normalize both to unit max
+                raw_ratios = np.array([rw, rd, rh]) / max(rw, rd, rh, 1e-6)
+                tgt_ratios = np.array([target_w, target_d, target_h]) / max(target_w, target_d, target_h, 1e-6)
+                
+                score = np.sum((raw_ratios - tgt_ratios) ** 2)
+                
+                if score < best_score:
+                    best_score = score
+                    best_assignment = perm
+            
+            # Build rotation matrix to remap axes
+            # best_assignment[i] = which raw axis maps to output axis i
+            rot = np.zeros((4, 4))
+            rot[3, 3] = 1
+            for out_axis, in_axis in enumerate(best_assignment):
+                rot[out_axis, in_axis] = 1.0
+            
+            # Check if this rotation flips orientation (det < 0), fix if so
+            det = np.linalg.det(rot[:3, :3])
+            if det < 0:
+                rot[0, :3] *= -1  # flip X to fix handedness
+            
+            combined.apply_transform(rot)
+            
+            # Step 3: Scale to target dimensions
+            new_size = combined.bounds[1] - combined.bounds[0]
+            new_size = np.maximum(new_size, 1e-6)
+            
+            scale = np.array([target_w / new_size[0], 
+                            target_d / new_size[1], 
+                            target_h / new_size[2]])
             combined.apply_scale(scale)
             
-            # Move bottom to z=0
-            new_bounds = combined.bounds
-            combined.apply_translation([0, 0, -new_bounds[0][2]])
+            # Step 4: Put bottom at Z=0, center at XY origin
+            final_bounds = combined.bounds
+            combined.apply_translation([
+                -(final_bounds[0][0] + final_bounds[1][0]) / 2,
+                -(final_bounds[0][1] + final_bounds[1][1]) / 2,
+                -final_bounds[0][2]
+            ])
             
-            # Simplify if too many faces
+            # Step 5: Simplify if needed
             if len(combined.faces) > max_faces:
                 combined = combined.simplify_quadric_decimation(face_count=max_faces)
             
@@ -292,7 +335,6 @@ class AssetManager:
             print(f"  Warning: STL export failed for {category}: {e}")
             return None
         
-        # Get final dimensions
         final_bounds = combined.bounds
         size = final_bounds[1] - final_bounds[0]
         

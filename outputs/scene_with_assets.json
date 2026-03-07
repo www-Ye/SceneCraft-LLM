@@ -9,7 +9,7 @@
       "category": "sofa",
       "position": [
         2.5,
-        3.45,
+        3.5,
         0.0
       ],
       "rotation": 180,
@@ -18,13 +18,13 @@
         "depth": 0.9,
         "height": 0.85
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "coffee_table",
       "position": [
         2.5,
-        2.2,
+        2.4,
         0.0
       ],
       "rotation": 0,
@@ -33,28 +33,28 @@
         "depth": 0.6,
         "height": 0.45
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "armchair",
       "position": [
-        0.7,
-        2.6,
+        0.8,
+        2.8,
         0.0
       ],
-      "rotation": 135,
+      "rotation": 315,
       "dimensions": {
         "width": 0.9,
         "depth": 0.85,
         "height": 0.85
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "television_set",
       "position": [
         2.5,
-        0.15,
+        0.1,
         0.0
       ],
       "rotation": 0,
@@ -63,13 +63,13 @@
         "depth": 0.1,
         "height": 0.7
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "table_lamp",
       "position": [
-        0.8,
-        3.5,
+        4.2,
+        3.6,
         0.0
       ],
       "rotation": 0,
@@ -78,12 +78,12 @@
         "depth": 0.3,
         "height": 0.5
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "cabinet",
       "position": [
-        4.5,
+        0.5,
         0.3,
         0.0
       ],
@@ -93,13 +93,13 @@
         "depth": 0.45,
         "height": 1.8
       },
-      "index": 0
+      "index": 1
     },
     {
       "category": "runner_(carpet)",
       "position": [
+        2.5,
         2.3,
-        2.0,
         0.0
       ],
       "rotation": 0,
