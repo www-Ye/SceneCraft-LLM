@@ -1,0 +1,193 @@
+<mujoco model="piper_grasp_scene">
+  <compiler angle="radian" meshdir="/root/.openclaw/workspace-lab/scene-gen/scene_factory/mujoco_menagerie/agilex_piper/assets" autolimits="true"/>
+  
+  <option integrator="implicitfast" cone="elliptic" impratio="10" timestep="0.002"
+          gravity="0 0 -9.81"/>
+  
+  <visual>
+    <global offwidth="1920" offheight="1440"/>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0.3 0.3 0.3"/>
+    <quality shadowsize="4096"/>
+  </visual>
+
+  <default>
+    <default class="piper">
+      <joint frictionloss="0.3" armature="0.005"/>
+      <position inheritrange="1" forcerange="-100 100"/>
+      <default class="finger">
+        <joint frictionloss="0" type="slide"/>
+        <position forcerange="-10 10"/>
+      </default>
+    </default>
+  </default>
+
+  <asset>
+    <!-- Piper mesh assets -->
+    <mesh name="base_link" file="base_link.stl"/>
+    <mesh name="link1" file="link1.stl"/>
+    <mesh name="link2" file="link2.stl"/>
+    <mesh name="link2_gray" file="link2_gray.stl"/>
+    <mesh name="link3" file="link3.stl"/>
+    <mesh name="link4" file="link4.stl"/>
+    <mesh name="link5" file="link5.stl"/>
+    <mesh name="link6" file="link6.stl"/>
+    <mesh name="link7" file="link7.stl"/>
+    <mesh name="link8" file="link8.stl"/>
+
+    <!-- Object meshes -->
+    <mesh name="apple_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/apple_1.stl" scale="0.99786 0.87500 0.89561"/>
+    <mesh name="plate_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/plate_1.stl" scale="1.24474 1.24474 1.00000"/>
+
+    <!-- Textures & materials -->
+    <texture name="wood_tex" type="2d" builtin="checker" rgb1="0.62 0.42 0.24" rgb2="0.58 0.38 0.20"
+             width="256" height="256"/>
+    <texture name="floor_tex" type="2d" builtin="checker" rgb1="0.88 0.86 0.84" rgb2="0.82 0.80 0.78"
+             width="512" height="512"/>
+
+    <material name="table_mat" texture="wood_tex" shininess="0.35" specular="0.2" reflectance="0.03"/>
+    <material name="floor_mat" texture="floor_tex" shininess="0.12"/>
+    <material name="apple_mat" rgba="0.82 0.12 0.10 1" shininess="0.55" specular="0.35"/>
+    <material name="plate_mat" rgba="0.97 0.96 0.94 1" shininess="0.5" specular="0.35"/>
+    
+    <!-- Piper materials -->
+    <material name="gray_mat" rgba="0.59 0.59 0.59 1"/>
+    <material name="light_gray_mat" rgba="0.98 0.98 0.98 1"/>
+    <material name="light_medium_gray_mat" rgba="0.85 0.85 0.85 1"/>
+    <material name="dark_gray_mat" rgba="0.086 0.086 0.086 1"/>
+    <material name="darker_gray_mat" rgba="0.14 0.14 0.14 1"/>
+    <material name="white_mat" rgba="1 1 1 1"/>
+    <material name="red_mat" rgba="0.82 0.15 0.15 1"/>
+    <material name="black_mat" rgba="0 0 0 1"/>
+    <material name="light_blue" rgba="0.79 0.82 0.93 1"/>
+    <material name="target_vis" rgba="1 0 0 0.3"/>
+  </asset>
+
+  <worldbody>
+    <light name="key" pos="0.3 -0.5 2.0" dir="-0.15 0.25 -1" diffuse="0.85 0.82 0.78" castshadow="true"/>
+    <light name="fill" pos="-0.5 0.3 1.5" dir="0.25 -0.15 -1" diffuse="0.40 0.40 0.42"/>
+    <light name="rim" pos="0 0.5 1.8" dir="0 -0.3 -1" diffuse="0.25 0.25 0.28"/>
+
+    <geom name="floor" type="plane" size="3 3 0.01" material="floor_mat"/>
+
+    <!-- Table -->
+    <body name="table" pos="0 0 0.75">
+      <geom name="tabletop" type="box" size="0.4 0.3 0.02" material="table_mat" mass="15"/>
+    </body>
+    <geom name="tl1" type="cylinder" size="0.022 0.375" pos="0.34 0.24 0.375" rgba="0.52 0.35 0.20 1"/>
+    <geom name="tl2" type="cylinder" size="0.022 0.375" pos="-0.34 0.24 0.375" rgba="0.52 0.35 0.20 1"/>
+    <geom name="tl3" type="cylinder" size="0.022 0.375" pos="0.34 -0.24 0.375" rgba="0.52 0.35 0.20 1"/>
+    <geom name="tl4" type="cylinder" size="0.022 0.375" pos="-0.34 -0.24 0.375" rgba="0.52 0.35 0.20 1"/>
+
+    <!-- Plate (static) -->
+    <body name="plate" pos="0.1 0.0 0.772">
+      <geom name="plate_geom" type="mesh" mesh="plate_mesh" material="plate_mat"
+            mass="0.3" friction="0.7 0.005 0.001"/>
+    </body>
+
+    <!-- Apple (freejoint, graspable) -->
+    <body name="apple" pos="-0.1 0.0 0.807">
+      <freejoint name="apple_fj"/>
+      <geom name="apple_geom" type="mesh" mesh="apple_mesh" material="apple_mat"
+            mass="0.15" friction="0.8 0.005 0.001"
+            solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <!-- Piper arm on pedestal -->
+    <body name="pedestal" pos="0 -0.35 0">
+      <geom name="ped_base" type="cylinder" size="0.08 0.02" rgba="0.2 0.2 0.2 1"/>
+      <geom name="ped_col" type="cylinder" size="0.05 0.36" pos="0 0 0.36" rgba="0.25 0.25 0.28 1"/>
+      <geom name="ped_top" type="cylinder" size="0.08 0.015" pos="0 0 0.72" rgba="0.2 0.2 0.2 1"/>
+
+      <!-- Rotated 90° around Z so arm reaches into +Y (onto table) -->
+      <body name="base_link" pos="0 0 0.735" quat="0.707107 0 0 0.707107" childclass="piper" gravcomp="1">
+        <light name="spotlight" mode="targetbodycom" target="link8_body" pos="0 0 1"/>
+        <inertial mass="0.738" pos="0 0 0.0485" diaginertia="0.001 0.001 0.0005"/>
+        <geom type="mesh" mesh="base_link" material="darker_gray_mat"/>
+
+        <body name="link1_body" pos="0 0 0.123" quat="0.707105 0 0 -0.707108" gravcomp="1">
+          <joint name="joint1" axis="0 0 1" range="-2.618 2.618"/>
+          <inertial mass="0.408" pos="0 0 0" diaginertia="0.0003 0.0003 0.0002"/>
+          <geom type="mesh" mesh="link1" material="light_gray_mat"/>
+
+          <body name="link2_body" quat="0.499998 0.5 -0.500002 -0.5" gravcomp="1">
+            <joint name="joint2" axis="0 0 1" range="0 3.14"/>
+            <inertial mass="1.474" pos="0.13 0.02 0" diaginertia="0.01 0.01 0.001"/>
+            <geom type="mesh" mesh="link2" material="white_mat"/>
+            <geom type="mesh" mesh="link2_gray" material="light_medium_gray_mat"/>
+
+            <body name="link3_body" pos="0.28358 0.028726 0" quat="0.998726 0 0 0.0504536" gravcomp="1">
+              <joint name="joint3" pos="0 0 0" axis="0 0 1" range="-2.697 0"/>
+              <inertial mass="0.630" pos="-0.12 0.035 0" diaginertia="0.005 0.005 0.0005"/>
+              <geom type="mesh" mesh="link3" material="white_mat"/>
+
+              <body name="link4_body" pos="-0.24221 0.068514 0" quat="0.544767 -0.544769 -0.450809 0.450808" gravcomp="1">
+                <joint name="joint4" axis="0 0 1" range="-1.832 1.832"/>
+                <inertial mass="0.202" pos="0 0 0.075" diaginertia="0.001 0.001 0.0002"/>
+                <geom type="mesh" mesh="link4" material="white_mat"/>
+
+                <body name="link5_body" pos="0 0 0.15" gravcomp="1">
+                  <joint name="joint5" axis="0 0 1" range="-1.22 1.22"/>
+                  <inertial mass="0.081" pos="0 0 0.01" diaginertia="0.0002 0.0002 0.00005"/>
+                  <geom type="mesh" mesh="link5" material="white_mat"/>
+
+                  <body name="link6_body" pos="0 0 0" quat="0.707107 0.707107 0 0" gravcomp="1">
+                    <joint name="joint6" axis="0 0 1" range="-3.14 3.14"/>
+                    <inertial mass="0.165" pos="0 0 0" diaginertia="0.0001 0.0001 0.00005"/>
+                    <geom type="mesh" mesh="link6" material="white_mat"/>
+
+                    <body name="link7_body" pos="0 0.044 0" quat="0 -0.707107 0 0.707107" gravcomp="1">
+                      <inertial mass="0.069" pos="0 0 0.026" diaginertia="0.00005 0.00005 0.00002"/>
+                      <geom type="mesh" mesh="link7" material="dark_gray_mat"/>
+
+                      <!-- Left finger -->
+                      <body name="link8_body" pos="-0.0135 0 0.06435" gravcomp="1">
+                        <joint name="joint7" axis="0 0 -1" range="0 0.035"/>
+                        <inertial mass="0.024" pos="0 0 0.012" diaginertia="0.00001 0.00001 0.000005"/>
+                        <geom type="mesh" mesh="link8" material="dark_gray_mat"/>
+                        <geom name="finger_left_col" type="box" size="0.006 0.009 0.0145"
+                              pos="-0.0025 0 0.022" rgba="0 0 0 0" friction="1.5 0.01 0.001"/>
+                      </body>
+
+                      <!-- Right finger -->
+                      <body name="link9_body" pos="0.0135 0 0.06435" quat="0 0 0 1" gravcomp="1">
+                        <joint name="joint8" axis="0 0 1" range="-0.035 0"/>
+                        <inertial mass="0.024" pos="0 0 0.012" diaginertia="0.00001 0.00001 0.000005"/>
+                        <geom type="mesh" mesh="link8" material="dark_gray_mat"/>
+                        <geom name="finger_right_col" type="box" size="0.006 0.009 0.0145"
+                              pos="0.0025 0 0.022" rgba="0 0 0 0" friction="1.5 0.01 0.001"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+
+    <!-- Mocap target for end-effector tracking -->
+    <body name="mocap_target" mocap="true" pos="0 -0.35 1.05">
+      <geom type="sphere" size="0.012" material="target_vis" contype="0" conaffinity="0"/>
+    </body>
+  </worldbody>
+
+  <equality>
+    <joint joint1="joint8" joint2="joint7" polycoef="0 -1 0 0 0"/>
+    <weld body1="mocap_target" body2="link7_body" solref="0.01 1" solimp="0.95 0.99 0.001"/>
+  </equality>
+
+  <contact>
+    <exclude body1="base_link" body2="link1_body"/>
+  </contact>
+
+  <actuator>
+    <position name="act1" joint="joint1" class="piper" kp="80" kv="5"/>
+    <position name="act2" joint="joint2" class="piper" kp="80" kv="5"/>
+    <position name="act3" joint="joint3" class="piper" kp="80" kv="5"/>
+    <position name="act4" joint="joint4" class="piper" kp="40" kv="5"/>
+    <position name="act5" joint="joint5" class="piper" kp="10" kv="1.5"/>
+    <position name="act6" joint="joint6" class="piper" kp="10" kv="1.5"/>
+    <position name="grip" joint="joint7" class="finger" kp="40" kv="5"/>
+  </actuator>
+</mujoco>

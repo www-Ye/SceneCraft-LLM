@@ -1,0 +1,159 @@
+<mujoco model="hq_tabletop">
+  <compiler angle="degree"/>
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic"/>
+
+  <visual>
+    <global offwidth="1920" offheight="1440"/>
+    <headlight diffuse="0.45 0.44 0.42" ambient="0.30 0.30 0.30" specular="0.35 0.35 0.35"/>
+    <quality shadowsize="8192"/>
+    <map znear="0.01" zfar="50"/>
+  </visual>
+
+  <asset>
+    <mesh name="m0_plate" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/plate_1.stl" scale="1.47105 1.47105 1.00000"/>
+    <mesh name="m1_bowl" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/bowl_0.stl" scale="1.08420 1.08420 1.00000"/>
+    <mesh name="m2_mug" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/mug_0.stl" scale="1.12812 1.12296 1.00000"/>
+    <mesh name="m3_cup" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/cup_0.stl" scale="0.87500 1.04748 0.85095"/>
+    <mesh name="m4_apple" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/apple_1.stl" scale="0.99786 0.87500 0.89561"/>
+    <mesh name="m5_apple" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/apple_1.stl" scale="0.92659 0.81250 0.83163"/>
+    <mesh name="m6_can" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/can_1.stl" scale="1.00000 1.00000 1.35204"/>
+    <mesh name="m7_box" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/box_0.stl" scale="1.20000 0.80000 1.80000"/>
+    <mesh name="m8_pen" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/pen_0.stl" scale="1.00000 0.99093 1.41385"/>
+    <mesh name="m9_remote_control" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/remote_control_1.stl" scale="1.22876 0.94444 1.07348"/>
+    <mesh name="m10_plate" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/plate_1.stl" scale="0.96184 0.96184 0.75000"/>
+    <mesh name="m11_pencil" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/pencil_0.stl" scale="0.80000 0.96911 0.80000"/>
+
+    <!-- Procedural textures -->
+    <texture name="wood_tex" type="2d" builtin="gradient" rgb1="0.58 0.40 0.22" rgb2="0.50 0.34 0.18"
+             width="512" height="512" mark="random" markrgb="0.52 0.36 0.20" random="0.03"/>
+    <texture name="floor_tex" type="2d" builtin="checker" rgb1="0.92 0.90 0.87" rgb2="0.86 0.84 0.81"
+             width="512" height="512"/>
+    <texture name="wall_tex" type="2d" builtin="flat" rgb1="0.95 0.93 0.90" width="64" height="64"/>
+    <texture name="cloth_tex" type="2d" builtin="gradient" rgb1="0.96 0.94 0.92" rgb2="0.93 0.90 0.87"
+             width="128" height="128"/>
+
+    <material name="table_mat" texture="wood_tex" shininess="0.30" specular="0.15" reflectance="0.02" texrepeat="3 2"/>
+    <material name="floor_mat" texture="floor_tex" shininess="0.08" texrepeat="8 8"/>
+    <material name="wall_mat" texture="wall_tex" shininess="0.02"/>
+    <material name="cloth_mat" texture="cloth_tex" shininess="0.05" specular="0.02"/>
+    <material name="leg_mat" rgba="0.48 0.32 0.18 1" shininess="0.25" specular="0.12"/>
+
+    <material name="mat0_plate" rgba="0.97 0.96 0.93 1" shininess="0.5" specular="0.35" reflectance="0.0"/>
+    <material name="mat1_bowl" rgba="0.95 0.93 0.90 1" shininess="0.45" specular="0.3" reflectance="0.0"/>
+    <material name="mat2_mug" rgba="0.85 0.83 0.80 1" shininess="0.4" specular="0.25" reflectance="0.0"/>
+    <material name="mat3_cup" rgba="0.93 0.91 0.88 1" shininess="0.5" specular="0.35" reflectance="0.0"/>
+    <material name="mat4_apple" rgba="0.80 0.15 0.10 1" shininess="0.55" specular="0.3" reflectance="0.0"/>
+    <material name="mat5_apple" rgba="0.25 0.65 0.15 1" shininess="0.5" specular="0.28" reflectance="0.0"/>
+    <material name="mat6_can" rgba="0.90 0.55 0.10 1" shininess="0.65" specular="0.5" reflectance="0.0"/>
+    <material name="mat7_box" rgba="0.85 0.70 0.20 1" shininess="0.1" specular="0.05" reflectance="0.0"/>
+    <material name="mat8_pen" rgba="0.10 0.10 0.12 1" shininess="0.5" specular="0.3" reflectance="0.0"/>
+    <material name="mat9_remote_control" rgba="0.15 0.15 0.18 1" shininess="0.35" specular="0.2" reflectance="0.0"/>
+    <material name="mat10_plate" rgba="0.96 0.95 0.92 1" shininess="0.48" specular="0.32" reflectance="0.0"/>
+    <material name="mat11_pencil" rgba="0.82 0.72 0.12 1" shininess="0.15" specular="0.08" reflectance="0.0"/>
+  </asset>
+
+  <worldbody>
+    <!-- Warm key light from upper-left front -->
+    <light name="key" pos="0.4 -0.6 1.8" dir="-0.2 0.3 -0.8" diffuse="0.80 0.76 0.70"
+           specular="0.5 0.5 0.5" castshadow="true" cutoff="60"/>
+    <!-- Cool fill from right -->
+    <light name="fill" pos="-0.5 0.2 1.5" dir="0.3 -0.1 -0.9" diffuse="0.30 0.32 0.36"/>
+    <!-- Rim / back light -->
+    <light name="rim" pos="0 0.6 1.6" dir="0 -0.3 -0.9" diffuse="0.20 0.20 0.22"/>
+    <!-- Ambient bounce from below -->
+    <light name="bounce" pos="0 0 0.1" dir="0 0 1" diffuse="0.06 0.06 0.06" specular="0 0 0"/>
+
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="3 3 0.01" material="floor_mat"/>
+
+    <!-- Back wall -->
+    <geom name="wall" type="box" size="2 0.01 1.2" pos="0 1.0 0.6" material="wall_mat"/>
+
+    <!-- Table -->
+    <body name="table" pos="0 0 0.75">
+      <geom name="tabletop" type="box" size="0.5 0.35 0.02" material="table_mat" mass="20"/>
+    </body>
+    <!-- Table legs -->
+    <geom type="box" size="0.025 0.025 0.375" pos="0.44 0.29 0.375" material="leg_mat"/>
+    <geom type="box" size="0.025 0.025 0.375" pos="-0.44 0.29 0.375" material="leg_mat"/>
+    <geom type="box" size="0.025 0.025 0.375" pos="0.44 -0.29 0.375" material="leg_mat"/>
+    <geom type="box" size="0.025 0.025 0.375" pos="-0.44 -0.29 0.375" material="leg_mat"/>
+
+    <!-- Optional: tablecloth area (subtle) -->
+    <geom name="cloth" type="box" size="0.30 0.22 0.001" pos="0 0.05 0.772" material="cloth_mat"/>
+
+    <!-- Scene objects -->
+
+    <body name="obj0_plate" pos="0.0000 0.0600 0.7720" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj0"/>
+      <geom type="mesh" mesh="m0_plate" material="mat0_plate" mass="1.6224"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj1_bowl" pos="-0.2000 0.1500 0.7720" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj1"/>
+      <geom type="mesh" mesh="m1_bowl" material="mat1_bowl" mass="2.1600"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj2_mug" pos="0.2200 0.1600 0.7720" quat="0.99144 0 0 -0.13053">
+      <freejoint name="fj2"/>
+      <geom type="mesh" mesh="m2_mug" material="mat2_mug" mass="0.7680"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj3_cup" pos="0.3200 0.0800 0.7720" quat="0.99905 0 0 0.04362">
+      <freejoint name="fj3"/>
+      <geom type="mesh" mesh="m3_cup" material="mat3_cup" mass="0.4704"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj4_apple" pos="0.0300 0.0800 0.7920" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj4"/>
+      <geom type="mesh" mesh="m4_apple" material="mat4_apple" mass="0.4116"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj5_apple" pos="-0.0600 0.0400 0.7920" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj5"/>
+      <geom type="mesh" mesh="m5_apple" material="mat5_apple" mass="0.3296"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj6_can" pos="0.3500 -0.0500 0.7720" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj6"/>
+      <geom type="mesh" mesh="m6_can" material="mat6_can" mass="0.5184"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj7_box" pos="-0.3200 0.2000 0.7720" quat="0.99756 0 0 0.06976">
+      <freejoint name="fj7"/>
+      <geom type="mesh" mesh="m7_box" material="mat7_box" mass="2.0736"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj8_pen" pos="0.1800 -0.0800 0.7720" quat="0.99452 0 0 0.10453">
+      <freejoint name="fj8"/>
+      <geom type="mesh" mesh="m8_pen" material="mat8_pen" mass="0.0168"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj9_remote_control" pos="-0.3500 -0.0800 0.7720" quat="0.99905 0 0 -0.04362">
+      <freejoint name="fj9"/>
+      <geom type="mesh" mesh="m9_remote_control" material="mat9_remote_control" mass="0.2040"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj10_plate" pos="-0.2000 -0.0500 0.7720" quat="1.00000 0 0 0.00000">
+      <freejoint name="fj10"/>
+      <geom type="mesh" mesh="m10_plate" material="mat10_plate" mass="0.5202"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+
+    <body name="obj11_pencil" pos="0.1600 -0.1200 0.7720" quat="0.99756 0 0 0.06976">
+      <freejoint name="fj11"/>
+      <geom type="mesh" mesh="m11_pencil" material="mat11_pencil" mass="0.0131"
+            friction="0.7 0.005 0.001" solimp="0.95 0.95 0.01" solref="0.02 1"/>
+    </body>
+  </worldbody>
+</mujoco>
