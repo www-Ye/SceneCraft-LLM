@@ -1,0 +1,108 @@
+{
+  "prompt_id": "P02",
+  "model": "z-ai/glm-4.5-air:free",
+  "success": true,
+  "layout": {
+    "objects": [
+      {
+        "category": "bed",
+        "position": [
+          1.5,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 2.0,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "nightstand",
+        "position": [
+          0.5,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.4,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "nightstand",
+        "position": [
+          2.5,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.4,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "wardrobe",
+        "position": [
+          3.5,
+          3.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.0,
+          "depth": 0.6,
+          "height": 2.0
+        }
+      }
+    ]
+  },
+  "evaluation": {
+    "overall_score": 0.6374166666666667,
+    "layer_scores": {
+      "semantic_fidelity": 0.7833333333333334,
+      "physical_plausibility": 0.6666666666666666,
+      "functional_affordance": 0.4525
+    },
+    "detailed_scores": {
+      "semantic": {
+        "category_match_precision": 1.0,
+        "category_match_recall": 0.6666666666666666,
+        "category_match_f1": 0.8,
+        "count_accuracy": 0.6666666666666667
+      },
+      "physical": {
+        "collision_score": 1.0,
+        "boundary_score": 1.0,
+        "stability_score": 0.0
+      },
+      "functional": {
+        "facing_score": 0.0,
+        "proximity_score": 1.0,
+        "walkability_score": 0.81,
+        "wall_alignment_score": 0.0
+      }
+    }
+  },
+  "metadata": {
+    "room_type": "bedroom",
+    "room_size": [
+      4.0,
+      4.0
+    ],
+    "expected_objects": [
+      "bed",
+      "nightstand",
+      "nightstand",
+      "wardrobe",
+      "dresser",
+      "rug"
+    ],
+    "functional_checks": [
+      "bed_accessible_both_sides",
+      "wardrobe_door_clearance",
+      "walkable_path_exists"
+    ]
+  }
+}

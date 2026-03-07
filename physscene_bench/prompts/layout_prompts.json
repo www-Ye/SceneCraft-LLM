@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P01",
+    "room_type": "living_room",
+    "room_size": [5.0, 4.0],
+    "prompt": "Design a modern living room (5m x 4m). Include a sofa against one wall facing a TV on the opposite wall, a coffee table between them, an armchair to the side forming an L-shaped seating area, a floor lamp near the sofa, a storage cabinet, and a rug in the center.",
+    "expected_objects": ["sofa", "television", "coffee_table", "armchair", "lamp", "cabinet", "rug"],
+    "functional_checks": ["sofa_faces_tv", "coffee_table_reachable_from_sofa", "walkable_path_exists"]
+  },
+  {
+    "id": "P02",
+    "room_type": "bedroom",
+    "room_size": [4.0, 4.0],
+    "prompt": "Design a bedroom (4m x 4m). Place a double bed against one wall with nightstands on both sides, a wardrobe against another wall, a dresser with a mirror, and a small rug beside the bed.",
+    "expected_objects": ["bed", "nightstand", "nightstand", "wardrobe", "dresser", "rug"],
+    "functional_checks": ["bed_accessible_both_sides", "wardrobe_door_clearance", "walkable_path_exists"]
+  },
+  {
+    "id": "P03",
+    "room_type": "kitchen_dining",
+    "room_size": [4.5, 3.5],
+    "prompt": "Design a kitchen dining area (4.5m x 3.5m). Place a dining table in the center with 4 chairs around it, a storage cabinet against one wall, and a small lamp on the table.",
+    "expected_objects": ["dining_table", "chair", "chair", "chair", "chair", "cabinet", "lamp"],
+    "functional_checks": ["chairs_face_table", "chairs_pullout_clearance", "walkable_path_exists"]
+  },
+  {
+    "id": "P04",
+    "room_type": "home_office",
+    "room_size": [3.5, 3.0],
+    "prompt": "Design a home office (3.5m x 3.0m). Include a desk against one wall with an office chair, a bookshelf/cabinet on another wall, a desk lamp, and a small rug under the desk area.",
+    "expected_objects": ["desk", "chair", "cabinet", "lamp", "rug"],
+    "functional_checks": ["chair_faces_desk", "chair_rollback_space", "bookshelf_accessible"]
+  },
+  {
+    "id": "P05",
+    "room_type": "classroom",
+    "room_size": [7.0, 5.0],
+    "prompt": "Design a small classroom (7m x 5m). Place 6 student desks in 2 rows of 3, each with a chair. Put a teacher's desk at the front facing the students, and a cabinet in the corner for storage.",
+    "expected_objects": ["desk", "desk", "desk", "desk", "desk", "desk", "chair", "chair", "chair", "chair", "chair", "chair", "desk", "cabinet"],
+    "functional_checks": ["students_face_teacher", "aisle_between_rows", "walkable_path_exists"]
+  },
+  {
+    "id": "P06",
+    "room_type": "conference_room",
+    "room_size": [6.0, 4.0],
+    "prompt": "Design a conference room (6m x 4m). Place a long conference table in the center with 6 chairs around it (2 on each long side, 1 on each short side). Add a TV/screen on one wall and a cabinet for supplies.",
+    "expected_objects": ["table", "chair", "chair", "chair", "chair", "chair", "chair", "television", "cabinet"],
+    "functional_checks": ["all_chairs_face_table", "tv_visible_from_all_seats", "walkable_path_exists"]
+  },
+  {
+    "id": "P07",
+    "room_type": "studio_apartment",
+    "room_size": [5.0, 5.0],
+    "prompt": "Design a studio apartment (5m x 5m) that combines sleeping, living, and work zones. Include a bed in one corner, a sofa and coffee table in the living area, a desk with chair for work, a TV, and a wardrobe for storage.",
+    "expected_objects": ["bed", "sofa", "coffee_table", "desk", "chair", "television", "wardrobe"],
+    "functional_checks": ["zones_separated", "bed_against_wall", "desk_has_chair_space", "walkable_path_exists"]
+  },
+  {
+    "id": "P08",
+    "room_type": "reading_room",
+    "room_size": [4.5, 4.0],
+    "prompt": "Design a cozy reading room (4.5m x 4.0m). Place two armchairs facing each other with a coffee table between them, floor lamps beside each armchair, and bookshelves along two walls. Add a rug under the seating area.",
+    "expected_objects": ["armchair", "armchair", "coffee_table", "lamp", "lamp", "cabinet", "cabinet", "rug"],
+    "functional_checks": ["armchairs_face_each_other", "lamps_near_armchairs", "bookshelves_accessible"]
+  },
+  {
+    "id": "P09",
+    "room_type": "kids_room",
+    "room_size": [4.0, 3.5],
+    "prompt": "Design a kid's bedroom (4m x 3.5m). Include a single bed against one wall, a small desk with chair for homework, a toy storage cabinet, a bedside lamp, and a colorful rug in the play area.",
+    "expected_objects": ["bed", "desk", "chair", "cabinet", "lamp", "rug"],
+    "functional_checks": ["desk_has_light", "play_area_clear", "bed_accessible", "walkable_path_exists"]
+  },
+  {
+    "id": "P10",
+    "room_type": "lounge",
+    "room_size": [6.0, 5.0],
+    "prompt": "Design a spacious lounge area (6m x 5m). Create two conversation groups: each with a sofa and coffee table. Add two armchairs that can participate in either group, a TV visible from the main seating area, a floor lamp, and a large rug tying the space together.",
+    "expected_objects": ["sofa", "sofa", "coffee_table", "coffee_table", "armchair", "armchair", "television", "lamp", "rug"],
+    "functional_checks": ["two_conversation_groups", "tv_visible_from_sofas", "armchairs_accessible", "walkable_path_exists"]
+  }
+]

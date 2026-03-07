@@ -1,0 +1,949 @@
+{
+  "metadata": {
+    "total_prompts": 3,
+    "total_models": 3,
+    "total_runs": 9,
+    "success_rate": 1.0
+  },
+  "results": [
+    {
+      "prompt_id": "P01",
+      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "sofa",
+            "position": [
+              2.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 2.0,
+              "depth": 0.9,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "coffee_table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.6,
+              "height": 0.4
+            }
+          },
+          {
+            "category": "television",
+            "position": [
+              2.0,
+              3.5
+            ],
+            "rotation": 180,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.2,
+              "height": 0.7
+            }
+          },
+          {
+            "category": "armchair",
+            "position": [
+              3.5,
+              1.5
+            ],
+            "rotation": 270,
+            "dimensions": {
+              "width": 0.8,
+              "depth": 0.8,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "lamp",
+            "position": [
+              4.0,
+              0.5
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.3,
+              "depth": 0.3,
+              "height": 1.5
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.7231095238095238,
+        "layer_scores": {
+          "semantic_fidelity": 0.8154761904761905,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.706
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.7142857142857143,
+            "category_match_f1": 0.8333333333333333,
+            "count_accuracy": 0.7142857142857143
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 1.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.824,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "living_room",
+        "room_size": [
+          5.0,
+          4.0
+        ],
+        "expected_objects": [
+          "sofa",
+          "television",
+          "coffee_table",
+          "armchair",
+          "lamp",
+          "cabinet",
+          "rug"
+        ],
+        "functional_checks": [
+          "sofa_faces_tv",
+          "coffee_table_reachable_from_sofa",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P01",
+      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "sofa",
+            "position": [
+              2.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 2.0,
+              "depth": 0.9,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "coffee_table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.6,
+              "height": 0.4
+            }
+          },
+          {
+            "category": "television",
+            "position": [
+              2.0,
+              3.5
+            ],
+            "rotation": 180,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.2,
+              "height": 0.7
+            }
+          },
+          {
+            "category": "armchair",
+            "position": [
+              3.5,
+              1.5
+            ],
+            "rotation": 270,
+            "dimensions": {
+              "width": 0.8,
+              "depth": 0.8,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "lamp",
+            "position": [
+              4.0,
+              0.5
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.3,
+              "depth": 0.3,
+              "height": 1.5
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.7231095238095238,
+        "layer_scores": {
+          "semantic_fidelity": 0.8154761904761905,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.706
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.7142857142857143,
+            "category_match_f1": 0.8333333333333333,
+            "count_accuracy": 0.7142857142857143
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 1.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.824,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "living_room",
+        "room_size": [
+          5.0,
+          4.0
+        ],
+        "expected_objects": [
+          "sofa",
+          "television",
+          "coffee_table",
+          "armchair",
+          "lamp",
+          "cabinet",
+          "rug"
+        ],
+        "functional_checks": [
+          "sofa_faces_tv",
+          "coffee_table_reachable_from_sofa",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P01",
+      "model": "google/gemma-3-27b-it:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "sofa",
+            "position": [
+              2.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 2.0,
+              "depth": 0.9,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "coffee_table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.6,
+              "height": 0.4
+            }
+          },
+          {
+            "category": "television",
+            "position": [
+              2.0,
+              3.5
+            ],
+            "rotation": 180,
+            "dimensions": {
+              "width": 1.2,
+              "depth": 0.2,
+              "height": 0.7
+            }
+          },
+          {
+            "category": "armchair",
+            "position": [
+              3.5,
+              1.5
+            ],
+            "rotation": 270,
+            "dimensions": {
+              "width": 0.8,
+              "depth": 0.8,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "lamp",
+            "position": [
+              4.0,
+              0.5
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.3,
+              "depth": 0.3,
+              "height": 1.5
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.7231095238095238,
+        "layer_scores": {
+          "semantic_fidelity": 0.8154761904761905,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.706
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.7142857142857143,
+            "category_match_f1": 0.8333333333333333,
+            "count_accuracy": 0.7142857142857143
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 1.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.824,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "living_room",
+        "room_size": [
+          5.0,
+          4.0
+        ],
+        "expected_objects": [
+          "sofa",
+          "television",
+          "coffee_table",
+          "armchair",
+          "lamp",
+          "cabinet",
+          "rug"
+        ],
+        "functional_checks": [
+          "sofa_faces_tv",
+          "coffee_table_reachable_from_sofa",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "bed",
+            "position": [
+              1.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 2.0,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              0.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              2.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "wardrobe",
+            "position": [
+              3.5,
+              3.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.0,
+              "depth": 0.6,
+              "height": 2.0
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.6374166666666667,
+        "layer_scores": {
+          "semantic_fidelity": 0.7833333333333334,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.4525
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.6666666666666666,
+            "category_match_f1": 0.8,
+            "count_accuracy": 0.6666666666666667
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.81,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "bedroom",
+        "room_size": [
+          4.0,
+          4.0
+        ],
+        "expected_objects": [
+          "bed",
+          "nightstand",
+          "nightstand",
+          "wardrobe",
+          "dresser",
+          "rug"
+        ],
+        "functional_checks": [
+          "bed_accessible_both_sides",
+          "wardrobe_door_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "bed",
+            "position": [
+              1.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 2.0,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              0.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              2.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "wardrobe",
+            "position": [
+              3.5,
+              3.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.0,
+              "depth": 0.6,
+              "height": 2.0
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.6374166666666667,
+        "layer_scores": {
+          "semantic_fidelity": 0.7833333333333334,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.4525
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.6666666666666666,
+            "category_match_f1": 0.8,
+            "count_accuracy": 0.6666666666666667
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.81,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "bedroom",
+        "room_size": [
+          4.0,
+          4.0
+        ],
+        "expected_objects": [
+          "bed",
+          "nightstand",
+          "nightstand",
+          "wardrobe",
+          "dresser",
+          "rug"
+        ],
+        "functional_checks": [
+          "bed_accessible_both_sides",
+          "wardrobe_door_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "google/gemma-3-27b-it:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "bed",
+            "position": [
+              1.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 2.0,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              0.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "nightstand",
+            "position": [
+              2.5,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.5,
+              "depth": 0.4,
+              "height": 0.6
+            }
+          },
+          {
+            "category": "wardrobe",
+            "position": [
+              3.5,
+              3.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.0,
+              "depth": 0.6,
+              "height": 2.0
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.6374166666666667,
+        "layer_scores": {
+          "semantic_fidelity": 0.7833333333333334,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.4525
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 0.6666666666666666,
+            "category_match_f1": 0.8,
+            "count_accuracy": 0.6666666666666667
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.81,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "bedroom",
+        "room_size": [
+          4.0,
+          4.0
+        ],
+        "expected_objects": [
+          "bed",
+          "nightstand",
+          "nightstand",
+          "wardrobe",
+          "dresser",
+          "rug"
+        ],
+        "functional_checks": [
+          "bed_accessible_both_sides",
+          "wardrobe_door_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "chair",
+            "position": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.6,
+              "depth": 0.6,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 0.8,
+              "height": 0.75
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.4222011904761904,
+        "layer_scores": {
+          "semantic_fidelity": 0.2876984126984127,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.23075
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.5,
+            "category_match_recall": 0.14285714285714285,
+            "category_match_f1": 0.22222222222222224,
+            "count_accuracy": 0.2857142857142857
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.923,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "kitchen_dining",
+        "room_size": [
+          4.5,
+          3.5
+        ],
+        "expected_objects": [
+          "dining_table",
+          "chair",
+          "chair",
+          "chair",
+          "chair",
+          "cabinet",
+          "lamp"
+        ],
+        "functional_checks": [
+          "chairs_face_table",
+          "chairs_pullout_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "chair",
+            "position": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.6,
+              "depth": 0.6,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 0.8,
+              "height": 0.75
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.4222011904761904,
+        "layer_scores": {
+          "semantic_fidelity": 0.2876984126984127,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.23075
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.5,
+            "category_match_recall": 0.14285714285714285,
+            "category_match_f1": 0.22222222222222224,
+            "count_accuracy": 0.2857142857142857
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.923,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "kitchen_dining",
+        "room_size": [
+          4.5,
+          3.5
+        ],
+        "expected_objects": [
+          "dining_table",
+          "chair",
+          "chair",
+          "chair",
+          "chair",
+          "cabinet",
+          "lamp"
+        ],
+        "functional_checks": [
+          "chairs_face_table",
+          "chairs_pullout_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "google/gemma-3-27b-it:free",
+      "success": true,
+      "layout": {
+        "objects": [
+          {
+            "category": "chair",
+            "position": [
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 0.6,
+              "depth": 0.6,
+              "height": 0.85
+            }
+          },
+          {
+            "category": "table",
+            "position": [
+              2.0,
+              2.0
+            ],
+            "rotation": 0,
+            "dimensions": {
+              "width": 1.5,
+              "depth": 0.8,
+              "height": 0.75
+            }
+          }
+        ]
+      },
+      "evaluation": {
+        "overall_score": 0.4222011904761904,
+        "layer_scores": {
+          "semantic_fidelity": 0.2876984126984127,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.23075
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.5,
+            "category_match_recall": 0.14285714285714285,
+            "category_match_f1": 0.22222222222222224,
+            "count_accuracy": 0.2857142857142857
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.923,
+            "wall_alignment_score": 0.0
+          }
+        }
+      },
+      "metadata": {
+        "room_type": "kitchen_dining",
+        "room_size": [
+          4.5,
+          3.5
+        ],
+        "expected_objects": [
+          "dining_table",
+          "chair",
+          "chair",
+          "chair",
+          "chair",
+          "cabinet",
+          "lamp"
+        ],
+        "functional_checks": [
+          "chairs_face_table",
+          "chairs_pullout_clearance",
+          "walkable_path_exists"
+        ]
+      }
+    }
+  ]
+}

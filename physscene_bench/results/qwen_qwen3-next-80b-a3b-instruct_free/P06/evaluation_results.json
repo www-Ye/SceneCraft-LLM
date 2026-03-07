@@ -1,0 +1,85 @@
+{
+  "prompt_id": "P06",
+  "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+  "success": true,
+  "layout": {
+    "objects": [
+      {
+        "category": "chair",
+        "position": [
+          1.0,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.6,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "table",
+        "position": [
+          2.0,
+          2.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 0.8,
+          "height": 0.75
+        }
+      }
+    ]
+  },
+  "evaluation": {
+    "overall_score": 0.4714977272727272,
+    "layer_scores": {
+      "semantic_fidelity": 0.452020202020202,
+      "physical_plausibility": 0.6666666666666666,
+      "functional_affordance": 0.23075
+    },
+    "detailed_scores": {
+      "semantic": {
+        "category_match_precision": 1.0,
+        "category_match_recall": 0.2222222222222222,
+        "category_match_f1": 0.3636363636363636,
+        "count_accuracy": 0.2222222222222222
+      },
+      "physical": {
+        "collision_score": 1.0,
+        "boundary_score": 1.0,
+        "stability_score": 0.0
+      },
+      "functional": {
+        "facing_score": 0.0,
+        "proximity_score": 0.0,
+        "walkability_score": 0.923,
+        "wall_alignment_score": 0.0
+      }
+    }
+  },
+  "metadata": {
+    "room_type": "conference_room",
+    "room_size": [
+      6.0,
+      4.0
+    ],
+    "expected_objects": [
+      "table",
+      "chair",
+      "chair",
+      "chair",
+      "chair",
+      "chair",
+      "chair",
+      "television",
+      "cabinet"
+    ],
+    "functional_checks": [
+      "all_chairs_face_table",
+      "tv_visible_from_all_seats",
+      "walkable_path_exists"
+    ]
+  }
+}

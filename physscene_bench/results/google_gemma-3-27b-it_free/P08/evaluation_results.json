@@ -1,0 +1,84 @@
+{
+  "prompt_id": "P08",
+  "model": "google/gemma-3-27b-it:free",
+  "success": true,
+  "layout": {
+    "objects": [
+      {
+        "category": "chair",
+        "position": [
+          1.0,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.6,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "table",
+        "position": [
+          2.0,
+          2.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 0.8,
+          "height": 0.75
+        }
+      }
+    ]
+  },
+  "evaluation": {
+    "overall_score": 0.35464166666666663,
+    "layer_scores": {
+      "semantic_fidelity": 0.0625,
+      "physical_plausibility": 0.6666666666666666,
+      "functional_affordance": 0.23075
+    },
+    "detailed_scores": {
+      "semantic": {
+        "category_match_precision": 0.0,
+        "category_match_recall": 0.0,
+        "category_match_f1": 0,
+        "count_accuracy": 0.25
+      },
+      "physical": {
+        "collision_score": 1.0,
+        "boundary_score": 1.0,
+        "stability_score": 0.0
+      },
+      "functional": {
+        "facing_score": 0.0,
+        "proximity_score": 0.0,
+        "walkability_score": 0.923,
+        "wall_alignment_score": 0.0
+      }
+    }
+  },
+  "metadata": {
+    "room_type": "reading_room",
+    "room_size": [
+      4.5,
+      4.0
+    ],
+    "expected_objects": [
+      "armchair",
+      "armchair",
+      "coffee_table",
+      "lamp",
+      "lamp",
+      "cabinet",
+      "cabinet",
+      "rug"
+    ],
+    "functional_checks": [
+      "armchairs_face_each_other",
+      "lamps_near_armchairs",
+      "bookshelves_accessible"
+    ]
+  }
+}
