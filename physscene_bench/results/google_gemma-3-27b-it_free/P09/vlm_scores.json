@@ -1,0 +1,7 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P09",
+  "source": "mock_fallback",
+  "vlm_status": "no_json_in: {\"completeness\":10,\"spatial\":7,\"no_collisions\":10,\"walkability\":7,\"functional\":5,\"wall_use\":7,\"overall\":7,\"reasoning\":\"All expected objects are present with no extras (completeness 10). The bed is cor",
+  "vlm_scores": null
+}

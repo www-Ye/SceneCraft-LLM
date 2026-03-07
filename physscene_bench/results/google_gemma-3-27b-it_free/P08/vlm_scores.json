@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P08",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 2,
+    "wall_use": 4,
+    "overall": 3,
+    "reasoning": "1. Completeness: All expected objects (2 armchairs, 1 coffee table, 2 lamps, 2 cabinets, 1 rug) are present with no extras. 2. Spatial Reasonableness: Armchairs face the same direction (not each other), coffee table is not between them, and lamps are not beside armchairs. 3. No Collisions: No overlapping objects detected. 4. Walkability: Sufficient open paths exist, though the seating arrangement is suboptimal. 5. Functional Layout: Armchairs do not face each other, coffee table is misplaced, and lamps are not positioned beside armchairs. 6. Wall Utilization: One cabinet is against the right wall, but the other is not against the left wall; armchairs are not wall-adjacent (acceptable for facing each other). 7. Overall Quality: Significant functional and spatial issues reduce usability and aesthetic appeal."
+  }
+}

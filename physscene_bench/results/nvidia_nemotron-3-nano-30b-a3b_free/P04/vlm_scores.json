@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P04",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 10,
+    "functional": 10,
+    "wall_use": 10,
+    "overall": 10,
+    "reasoning": "All expected objects (desk, chair, cabinet, lamp, rug) are present with no extras. Furniture is placed sensibly: desk against left wall, chair facing desk, cabinet against right wall, lamp on desk area, and rug under desk. No object overlaps. Walkways are clear with ample space for movement. Layout supports functional use (e.g., chair faces desk, lamp on desk). Large items (desk, cabinet) utilize walls appropriately. Overall, the layout is well-optimized for a home office."
+  }
+}

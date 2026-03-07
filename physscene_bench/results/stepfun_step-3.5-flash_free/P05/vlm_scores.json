@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P05",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 5,
+    "wall_use": 7,
+    "overall": 6,
+    "reasoning": "1. Object Completeness: All 7 desks (6 student + 1 teacher), 6 chairs, and 1 cabinet are present with no extras. 2. Spatial Reasonableness: Student desks are not arranged in 2 rows of 3 (scattered across rows), and the teacher\u2019s desk faces away from students (red arrow points toward back wall). 3. No Collisions: No overlapping objects in the floor plan. 4. Walkability: Room size (7m\u00d75m) allows for movement, but desk arrangement creates narrow paths. 5. Functional Layout: Student desks not in proper rows; teacher\u2019s desk faces wrong direction; chair orientations may not align with desks. 6. Wall Utilization: Teacher\u2019s desk and cabinet are in corners; some student desks against walls (left/right), but not all. 7. Overall Quality: Major issues with spatial arrangement and functionality reduce overall quality."
+  }
+}

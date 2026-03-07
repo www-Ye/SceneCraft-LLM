@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P05",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 6,
+    "functional": 2,
+    "wall_use": 5,
+    "overall": 4,
+    "reasoning": "1. Object Completeness: All 7 desks (6 student + 1 teacher), 6 chairs, and 1 cabinet are present with no extras. 2. Spatial Reasonableness: Teacher's desk faces away from students (arrow points up), chairs face away from teacher, and cabinet is not in a corner. 3. No Collisions: No overlapping objects. 4. Walkability: Student desks are not arranged in 2 rows of 3 (4 desks in bottom row), creating narrow paths. 5. Functional Layout: Chairs and teacher's desk face the wrong direction (away from each other), making furniture unusable as intended. 6. Wall Utilization: Cabinet is not in a corner; only teacher's desk is against a wall. 7. Overall Quality: Critical issues with spatial orientation and functionality lower the quality significantly."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P08",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 3,
+    "wall_use": 6,
+    "overall": 5,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Armchairs face upward but not each other (coffee table is to the right of the second armchair), and lamps are placed above armchairs rather than beside them (spatial 5). No object overlaps (no collisions 10). Walkable paths exist but are somewhat cramped (walkability 7). Armchairs don\u2019t face the coffee table, and lamps aren\u2019t positioned for practical use (functional 3). Cabinets are on two walls, but armchairs/coffee table/lamps aren\u2019t wall-aligned (wall_use 6). Overall, the seating arrangement undermines functionality (overall 5)."
+  }
+}

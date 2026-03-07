@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P09",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 7,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 6,
+    "wall_use": 5,
+    "overall": 6,
+    "reasoning": "All expected objects are present (bed, desk, chair, cabinet, lamp, rug) with no extras (completeness 10). Bed is against the left wall (spatially reasonable), but the bedside lamp is misplaced near the rug instead of next to the bed (spatial 7). No objects overlap (no collisions 10). Open space allows movement (walkability 8), though paths may be narrow. The bedside lamp\u2019s absence from the bed reduces functionality (functional 6). Only the bed is wall-utilized; cabinet is not against a wall (wall_use 5). Overall, key functional and spatial issues lower quality (overall 6)."
+  }
+}

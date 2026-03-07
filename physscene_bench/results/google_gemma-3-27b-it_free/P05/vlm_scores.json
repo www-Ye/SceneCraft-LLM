@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P05",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 9,
+    "wall_use": 7,
+    "overall": 7,
+    "reasoning": "Object Completeness: All expected objects (7 desks, 6 chairs, 1 cabinet) are present with no extras. Spatial Reasonableness: Student desks are not arranged in 2 rows of 3 (back row has 4 desks); cabinet is not placed in a corner. No Collisions: No overlapping objects. Walkability: Sufficient space between desks and along walls for movement. Functional Layout: Chairs face the teacher's desk, and student desks have corresponding chairs. Wall Utilization: Teacher's desk and back-row student desks are against walls, but cabinet is not in a corner. Overall Quality: Good functionality and no collisions, but spatial errors reduce quality."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P06",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 9,
+    "functional": 2,
+    "wall_use": 6,
+    "overall": 4,
+    "reasoning": "1. Completeness: All expected objects (table, 6 chairs, TV, cabinet) are present with no extras. 2. Spatial Reasonableness: Table is not centered (should be in middle), chairs face away from table (arrows point upward, not toward table), and TV does not face seating. 3. No Collisions: No overlapping objects detected. 4. Walkability: Ample open space with clear paths; chairs are spaced to allow movement. 5. Functional Layout: Chairs face away from the table (arrows incorrect), and TV does not face seating, making furniture unusable as intended. 6. Wall Utilization: TV and cabinet are on walls, but table is not against a wall (should be centered). 7. Overall Quality: Despite correct object count and no collisions, major flaws in spatial placement, functionality, and chair orientation result in a low-quality layout."
+  }
+}

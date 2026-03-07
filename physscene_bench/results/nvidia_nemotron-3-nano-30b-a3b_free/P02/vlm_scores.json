@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P02",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 3,
+    "wall_use": 6,
+    "overall": 5,
+    "reasoning": "1. Completeness: All expected objects (bed, 2 nightstands, wardrobe, dresser, rug) are present with no extras. 2. Spatial Reasonableness: Bed is against the left wall (good), but nightstands are not adjacent to the bed (critical for functionality), and dresser/nightstands are not optimally placed. 3. No Collisions: No overlapping objects detected. 4. Walkability: Sufficient open space for movement, though some areas are narrow. 5. Functional Layout: Nightstands are not positioned next to the bed, making them unusable as intended. 6. Wall Utilization: Bed and wardrobe are correctly placed against walls, but dresser/nightstands are not. 7. Overall Quality: Functional issues (nightstands) significantly reduce usability, despite other strengths."
+  }
+}

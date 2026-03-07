@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P08",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 3,
+    "wall_use": 4,
+    "overall": 5,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Spatially, armchairs don\u2019t face each other with the coffee table between them, and cabinets aren\u2019t properly placed along walls (spatial 4). No object overlaps (no collisions 10). Walkability is moderate with some open space but blocked paths near the coffee table (walkability 7). Functionality fails as armchairs don\u2019t face each other, lamps aren\u2019t optimally positioned, and cabinets aren\u2019t wall-aligned (functional 3). Wall utilization is poor (cabinets not against walls, armchairs only partially aligned; wall_use 4). Overall layout is incomplete in functionality and spatial logic (overall 5)."
+  }
+}

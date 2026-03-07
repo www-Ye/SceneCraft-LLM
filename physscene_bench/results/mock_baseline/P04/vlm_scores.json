@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P04",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 10,
+    "functional": 10,
+    "wall_use": 10,
+    "overall": 10,
+    "reasoning": "All expected objects (desk, chair, cabinet, lamp, rug) are present with no extras. Furniture is placed sensibly: desk against left wall, chair facing desk, cabinet against right wall, lamp near desk, and rug under work area. No overlaps between objects. Ample open space for movement. All items function as intended (e.g., chair faces desk, lamp positioned for task lighting). Large furniture (desk, cabinet) properly utilize walls. Overall layout is optimal for a home office."
+  }
+}

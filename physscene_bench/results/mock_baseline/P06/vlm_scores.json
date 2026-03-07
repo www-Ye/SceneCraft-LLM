@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P06",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 6,
+    "functional": 2,
+    "wall_use": 7,
+    "overall": 4,
+    "reasoning": "1. Object Completeness: All expected objects (1 table, 6 chairs, 1 TV, 1 cabinet) are present with no extras. 2. Spatial Reasonableness: Table is not centered (placed against left wall) and too short (2.5m vs room's 6m length), chairs face away from table (arrows point upward, away from table), and TV placement lacks alignment with seating. 3. No Collisions: No overlapping objects detected. 4. Walkability: Space is usable but narrow due to table placement; paths around the table are constrained. 5. Functional Layout: Chairs do not face the table (arrows point away), making seating unusable for meetings. 6. Wall Utilization: TV and cabinet are properly placed against walls, but table is incorrectly against a wall (should be center). 7. Overall Quality: Critical flaws in table placement and chair orientation significantly reduce usability."
+  }
+}

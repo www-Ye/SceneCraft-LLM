@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P04",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 9,
+    "functional": 10,
+    "wall_use": 9,
+    "overall": 9,
+    "reasoning": "All expected objects (desk, chair, cabinet, lamp, rug) are present with no extras. Furniture is placed sensibly (desk/chair facing, lamp near desk, cabinet against wall). No overlaps between objects. Sufficient open space for movement. Layout supports intended use (e.g., chair faces desk, lamp provides task lighting). Desk and cabinet utilize walls well; chair placement is standard for office setups. Minor deduction for walkability due to tight spacing near the cabinet, but overall highly functional and well-organized."
+  }
+}

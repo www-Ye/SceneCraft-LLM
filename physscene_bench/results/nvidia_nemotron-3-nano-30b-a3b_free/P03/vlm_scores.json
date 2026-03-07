@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P03",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 10,
+    "functional": 10,
+    "wall_use": 10,
+    "overall": 10,
+    "reasoning": "All expected objects are present with no extras. Furniture is placed logically: dining table centered, chairs facing it, storage cabinet against the wall, and lamp on the table. No overlaps occur, walkways are ample, and all items function as intended. Wall utilization is optimal for the cabinet, and the layout is cohesive and practical."
+  }
+}

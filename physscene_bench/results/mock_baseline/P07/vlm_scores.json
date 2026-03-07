@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P07",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 7,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 6,
+    "wall_use": 5,
+    "overall": 7,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Bed is in a corner (spatially reasonable), but TV does not face the sofa, and desk placement lacks optimal work-zone logic (spatial 7). No object overlaps (no collisions 10). Walkability is adequate with narrow paths but no major obstructions (walkability 7). Functional issues include TV not facing seating and bed lacking a nightstand (functional 6). Only bed and wardrobe utilize walls (wall use 5). Overall layout is functional but has notable spatial/functional gaps (overall 7)."
+  }
+}

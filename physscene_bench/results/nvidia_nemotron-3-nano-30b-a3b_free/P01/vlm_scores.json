@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P01",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 3,
+    "wall_use": 6,
+    "overall": 5,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Spatially, the sofa does not face the TV (arrows point in mismatched directions), the coffee table is not between them, and the lamp is far from the sofa (spatial 4). No objects overlap (no collisions 10). Walkability is adequate but slightly cramped in areas (walkability 7). Functionality fails as the sofa doesn't face the TV, the coffee table isn't between seating, and the lamp isn't near the sofa (functional 3). Wall utilization is moderate: sofa and rug are against walls, but key items like TV and cabinet are not (wall_use 6). Overall quality is low due to critical spatial/functionality flaws (overall 5)."
+  }
+}

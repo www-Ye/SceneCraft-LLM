@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P10",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 2,
+    "wall_use": 8,
+    "overall": 4,
+    "reasoning": "1. Completeness: All expected objects (2 sofas, 2 coffee tables, 2 armchairs, TV, lamp, rug) are present with no extras. 2. Spatial Reasonableness: TV is not visible from main seating (sofas), and conversation groups lack proper alignment (sofas not facing coffee tables). 3. No Collisions: No overlapping objects detected. 4. Walkability: Most paths are clear, but narrow gaps (e.g., between sofas) reduce usability. 5. Functional Layout: Seating does not face TV or coffee tables; armchairs are not positioned for conversation groups. 6. Wall Utilization: Large items (sofas, TV, rug) are wall-aligned, though smaller items (e.g., lamp) are not. 7. Overall Quality: Significant functional issues (e.g., seating orientation) outweigh strengths, resulting in a suboptimal layout."
+  }
+}

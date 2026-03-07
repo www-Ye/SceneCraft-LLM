@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P08",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 2,
+    "wall_use": 3,
+    "overall": 4,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Armchairs face away from each other with coffee table not between them; lamps are not beside armchairs; cabinets are not properly aligned with walls; rug is misplaced (spatial 4). No object overlaps (no collisions 10). Sufficient open space exists for movement (walkability 7). Furniture is not used as intended (e.g., armchairs don\u2019t face coffee table, lamps not beside seating, rug not under seating area) (functional 2). Only one cabinet is against a wall; other large items are not wall-aligned (wall_use 3). Overall layout fails key functional and spatial requirements, resulting in low quality (overall 4)."
+  }
+}

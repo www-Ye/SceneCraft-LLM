@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P07",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 9,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 9,
+    "wall_use": 8,
+    "overall": 8,
+    "reasoning": "All expected objects are present with no extras. Bed is in a corner, wardrobe against the wall, desk/chair together, sofa/coffee table adjacent, and TV faces seating. No object overlaps. Walkability is slightly limited near the bed-sofa area but still feasible. Furniture placement aligns with intended use (e.g., chair next to desk, TV facing sofa). Most large items (bed, wardrobe, desk) utilize walls, though sofa is not wall-adjacent. Overall, a well-organized studio layout with minor walkability constraints."
+  }
+}

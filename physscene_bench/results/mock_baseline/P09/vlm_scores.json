@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P09",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 8,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 6,
+    "wall_use": 8,
+    "overall": 7,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Bed and cabinet are properly against walls; desk/chair placement is reasonable for homework (spatial 8). No object overlaps (no collisions 10). Walkability is acceptable but narrow near the bed-desk transition (walkability 7). The lamp is misplaced\u2014should be bedside but is in the play area (functional 6). Bed and cabinet utilize walls well (wall_use 8). Overall layout is functional but has a critical lamp placement issue, lowering quality (overall 7)."
+  }
+}

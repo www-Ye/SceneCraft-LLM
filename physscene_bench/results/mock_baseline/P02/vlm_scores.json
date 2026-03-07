@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P02",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 5,
+    "walkability": 6,
+    "functional": 3,
+    "wall_use": 6,
+    "overall": 4,
+    "reasoning": "All expected objects are present with no extras (completeness=10). Nightstands are not placed next to the bed (spatial reasonableness=5). Dresser and rug overlap (no collisions=5). Walkability is partially hindered by overlapping furniture and narrow gaps (walkability=6). Nightstands are not adjacent to the bed, reducing functionality (functional=3). Bed/wardrobe utilize walls well, but dresser/rug do not (wall_use=6). Overall layout has multiple flaws (overall=4)."
+  }
+}

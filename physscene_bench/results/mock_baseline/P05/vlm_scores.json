@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P05",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 2,
+    "wall_use": 7,
+    "overall": 4,
+    "reasoning": "1. Completeness: All 7 desks (6 student + 1 teacher), 6 chairs, and 1 cabinet are present with no extras. 2. Spatial Reasonableness: Student desks are not arranged in 2 rows of 3 (4 desks in first row, 2 in second), and the teacher\u2019s desk placement is correct but rows are misaligned. 3. No Collisions: No overlapping objects. 4. Walkability: Aisles exist but are uneven due to incorrect desk arrangement. 5. Functional Layout: Chairs face away from the teacher (arrows point toward back wall), making desks unusable for instruction. 6. Wall Utilization: Teacher\u2019s desk and cabinet are against walls, but student desks are not optimally placed. 7. Overall Quality: Critical functional issues (chairs facing wrong direction) and spatial errors reduce usability."
+  }
+}

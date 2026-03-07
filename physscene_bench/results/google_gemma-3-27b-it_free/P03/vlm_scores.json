@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P03",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 6,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 7,
+    "wall_use": 8,
+    "overall": 7,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The lamp is placed away from the dining table (spatial reasonableness issue), and the dining table is not centered (spatial issue). No object overlaps (no collisions 10). Walkability is adequate but could be improved (walkability 8). Chairs face the table, but the lamp\u2019s placement violates functional expectations (functional 7). The cabinet is properly against the wall (wall utilization 8). Overall, the layout is functional but has key spatial/functional flaws (overall 7)."
+  }
+}

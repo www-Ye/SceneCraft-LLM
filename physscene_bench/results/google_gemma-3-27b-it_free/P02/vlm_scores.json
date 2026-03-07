@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P02",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 5,
+    "wall_use": 3,
+    "overall": 5,
+    "reasoning": "1. Completeness: All expected objects (bed, two nightstands, wardrobe, dresser, rug) are present with no extras. 2. Spatial Reasonableness: Bed is against a wall (good), but wardrobe/dresser are not against walls, and nightstands are not both next to the bed. 3. No Collisions: No overlapping objects detected. 4. Walkability: Narrow space between bed and nightstand 1 (0.4m) is tight but walkable; overall space is sufficient. 5. Functional Layout: Only one nightstand is close to the bed; the other is too far. 6. Wall Utilization: Only the bed is against a wall; wardrobe/dresser are not. 7. Overall Quality: Moderate due to wall placement issues and nightstand positioning, but no collisions and full object completeness."
+  }
+}

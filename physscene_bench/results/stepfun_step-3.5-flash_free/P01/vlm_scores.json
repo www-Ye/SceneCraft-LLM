@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P01",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 6,
+    "functional": 3,
+    "wall_use": 2,
+    "overall": 3,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Spatially, the sofa and TV face the same direction (not each other), the coffee table isn't between them, and the lamp isn't near the sofa (spatial 4). No objects overlap (no collisions 10). Walkability is moderate due to narrow gaps between furniture (walkability 6). Functionally, the sofa doesn't face the TV, and the lamp isn't positioned near the sofa (functional 3). Only the sofa is against a wall; other large items are in the room's center (wall use 2). Overall, poor spatial and functional choices reduce quality (overall 3)."
+  }
+}

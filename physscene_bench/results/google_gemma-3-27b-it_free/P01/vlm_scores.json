@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P01",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 2,
+    "walkability": 3,
+    "functional": 4,
+    "wall_use": 5,
+    "overall": 4,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Spatial issues: sofa and TV do not face each other, coffee table is not between them, and lamp is not near sofa (spatial 5). Collisions occur between sofa/armchair and armchair/rug (no collisions 2). Overlaps and narrow paths reduce walkability (walkability 3). Functional issues include sofa not facing TV, coffee table placement, and lamp location (functional 4). Only sofa is against a wall (wall use 5). Overall quality is low due to multiple critical flaws (overall 4)."
+  }
+}

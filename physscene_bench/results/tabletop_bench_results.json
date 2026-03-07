@@ -1,0 +1,477 @@
+{
+  "T01": {
+    "scene": "breakfast",
+    "layout": [
+      {
+        "name": "plate",
+        "position": [
+          -0.2666666666666667,
+          -0.2,
+          0.01
+        ],
+        "dimensions": [
+          0.25,
+          0.25,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "plate",
+        "position": [
+          0.0,
+          -0.2,
+          0.01
+        ],
+        "dimensions": [
+          0.25,
+          0.25,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "cup",
+        "position": [
+          0.2666666666666666,
+          -0.2,
+          0.05
+        ],
+        "dimensions": [
+          0.08,
+          0.08,
+          0.1
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "bowl",
+        "position": [
+          -0.2666666666666667,
+          0.0,
+          0.04
+        ],
+        "dimensions": [
+          0.15,
+          0.15,
+          0.08
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "fork",
+        "position": [
+          0.0,
+          0.0,
+          0.005
+        ],
+        "dimensions": [
+          0.02,
+          0.18,
+          0.01
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "knife",
+        "position": [
+          0.2666666666666666,
+          0.0,
+          0.01
+        ],
+        "dimensions": [
+          0.02,
+          0.2,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "napkin",
+        "position": [
+          -0.2666666666666667,
+          0.19999999999999996,
+          0.0025
+        ],
+        "dimensions": [
+          0.15,
+          0.15,
+          0.005
+        ],
+        "rotation": 0.0
+      }
+    ],
+    "evaluation": {
+      "collision_score": 0.9523809523809523,
+      "boundary_score": 0.7142857142857143,
+      "gripper_clearance": 0.42857142857142855,
+      "functional_grouping": 0.17933322929673534,
+      "coverage_efficiency": 1.0,
+      "overall_score": 0.6626142701087959
+    },
+    "simulation": {
+      "stability_score": 0.14285714285714285,
+      "movements": {
+        "obj_plate_0": 0.3334830991045429,
+        "obj_plate_1": 0.20156989396879196,
+        "obj_cup_2": 0.33704650596070573,
+        "obj_bowl_3": 0.26963401547487253,
+        "obj_fork_4": 0.004845521791023258,
+        "obj_knife_5": 0.2668500845305044,
+        "obj_napkin_6": 0.3333419174739964
+      },
+      "simulation_success": true
+    },
+    "render_path": "/root/.openclaw/workspace-lab/scene-gen/physscene_bench/scripts/../results/tabletop/T01/layout_2d.png"
+  },
+  "T02": {
+    "scene": "study_desk",
+    "layout": [
+      {
+        "name": "laptop",
+        "position": [
+          -0.3,
+          -0.2,
+          0.01
+        ],
+        "dimensions": [
+          0.35,
+          0.25,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "book",
+        "position": [
+          0.29999999999999993,
+          -0.2,
+          0.015
+        ],
+        "dimensions": [
+          0.2,
+          0.15,
+          0.03
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "pen_holder",
+        "position": [
+          -0.3,
+          0.0,
+          0.06
+        ],
+        "dimensions": [
+          0.08,
+          0.08,
+          0.12
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "phone",
+        "position": [
+          0.29999999999999993,
+          0.0,
+          0.004
+        ],
+        "dimensions": [
+          0.07,
+          0.15,
+          0.008
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "lamp",
+        "position": [
+          -0.3,
+          0.19999999999999996,
+          0.175
+        ],
+        "dimensions": [
+          0.15,
+          0.15,
+          0.35
+        ],
+        "rotation": 0.0
+      }
+    ],
+    "evaluation": {
+      "collision_score": 1.0,
+      "boundary_score": 0.8,
+      "gripper_clearance": 0.2,
+      "functional_grouping": 0.0,
+      "coverage_efficiency": 0.7263888888888889,
+      "overall_score": 0.5826388888888889
+    },
+    "simulation": {
+      "stability_score": 0.0,
+      "movements": {
+        "obj_laptop_0": 0.3606919140063407,
+        "obj_book_1": 0.36086254855363425,
+        "obj_pen_holder_2": 0.30592005648666554,
+        "obj_phone_3": 0.30002524821732723,
+        "obj_lamp_4": 0.40073344908324643
+      },
+      "simulation_success": true
+    },
+    "render_path": "/root/.openclaw/workspace-lab/scene-gen/physscene_bench/scripts/../results/tabletop/T02/layout_2d.png"
+  },
+  "T03": {
+    "scene": "dining_for_two",
+    "layout": [
+      {
+        "name": "plate",
+        "position": [
+          -0.2,
+          -0.2666666666666667,
+          0.01
+        ],
+        "dimensions": [
+          0.25,
+          0.25,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "fork",
+        "position": [
+          0.20000000000000007,
+          -0.2666666666666667,
+          0.005
+        ],
+        "dimensions": [
+          0.02,
+          0.18,
+          0.01
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "knife",
+        "position": [
+          -0.2,
+          0.0,
+          0.01
+        ],
+        "dimensions": [
+          0.02,
+          0.2,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "glass",
+        "position": [
+          0.20000000000000007,
+          0.0,
+          0.06
+        ],
+        "dimensions": [
+          0.07,
+          0.07,
+          0.12
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "condiment",
+        "position": [
+          -0.2,
+          0.2666666666666666,
+          0.075
+        ],
+        "dimensions": [
+          0.1,
+          0.1,
+          0.15
+        ],
+        "rotation": 0.0
+      }
+    ],
+    "evaluation": {
+      "collision_score": 1.0,
+      "boundary_score": 1.0,
+      "gripper_clearance": 1.0,
+      "functional_grouping": 0.08765527211911317,
+      "coverage_efficiency": 0.44270833333333337,
+      "overall_score": 0.8074191241512003
+    },
+    "simulation": {
+      "stability_score": 0.0,
+      "movements": {
+        "obj_plate_0": 0.33348008578315047,
+        "obj_fork_1": 0.33336923248575234,
+        "obj_knife_2": 0.2002444918164449,
+        "obj_glass_3": 0.2087751923979587,
+        "obj_condiment_4": 0.3416430292122309
+      },
+      "simulation_success": true
+    },
+    "render_path": "/root/.openclaw/workspace-lab/scene-gen/physscene_bench/scripts/../results/tabletop/T03/layout_2d.png"
+  },
+  "T04": {
+    "scene": "workshop",
+    "layout": [
+      {
+        "name": "toolbox",
+        "position": [
+          -0.25,
+          -0.2,
+          0.075
+        ],
+        "dimensions": [
+          0.3,
+          0.15,
+          0.15
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "screwdriver",
+        "position": [
+          0.25,
+          -0.2,
+          0.015
+        ],
+        "dimensions": [
+          0.03,
+          0.2,
+          0.03
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "wrench",
+        "position": [
+          -0.25,
+          0.0,
+          0.01
+        ],
+        "dimensions": [
+          0.04,
+          0.18,
+          0.02
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "parts_tray",
+        "position": [
+          0.25,
+          0.0,
+          0.02
+        ],
+        "dimensions": [
+          0.2,
+          0.12,
+          0.04
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "goggles",
+        "position": [
+          -0.25,
+          0.19999999999999996,
+          0.03
+        ],
+        "dimensions": [
+          0.15,
+          0.08,
+          0.06
+        ],
+        "rotation": 0.0
+      }
+    ],
+    "evaluation": {
+      "collision_score": 1.0,
+      "boundary_score": 0.8,
+      "gripper_clearance": 0.2,
+      "functional_grouping": 0.0,
+      "coverage_efficiency": 0.5233333333333333,
+      "overall_score": 0.5623333333333334
+    },
+    "simulation": {
+      "stability_score": 0.0,
+      "movements": {
+        "obj_toolbox_0": 0.32879910020892417,
+        "obj_screwdriver_1": 0.32050237356403516,
+        "obj_wrench_2": 0.2501956364584048,
+        "obj_parts_tray_3": 0.2507901541018346,
+        "obj_goggles_4": 0.32154866861179443
+      },
+      "simulation_success": true
+    },
+    "render_path": "/root/.openclaw/workspace-lab/scene-gen/physscene_bench/scripts/../results/tabletop/T04/layout_2d.png"
+  },
+  "T05": {
+    "scene": "tea_ceremony",
+    "layout": [
+      {
+        "name": "cup",
+        "position": [
+          -0.15,
+          -0.15,
+          0.05
+        ],
+        "dimensions": [
+          0.08,
+          0.08,
+          0.1
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "teapot",
+        "position": [
+          0.14999999999999997,
+          -0.15,
+          0.075
+        ],
+        "dimensions": [
+          0.15,
+          0.12,
+          0.15
+        ],
+        "rotation": 0.0
+      },
+      {
+        "name": "tea_canister",
+        "position": [
+          -0.15,
+          0.14999999999999997,
+          0.06
+        ],
+        "dimensions": [
+          0.08,
+          0.08,
+          0.12
+        ],
+        "rotation": 0.0
+      }
+    ],
+    "evaluation": {
+      "collision_score": 1.0,
+      "boundary_score": 1.0,
+      "gripper_clearance": 1.0,
+      "functional_grouping": 0.5000000000000004,
+      "coverage_efficiency": 0.2851851851851852,
+      "overall_score": 0.8535185185185186
+    },
+    "simulation": {
+      "stability_score": 0.0,
+      "movements": {
+        "obj_cup_0": 0.21792025162707793,
+        "obj_teapot_1": 0.2249641044660195,
+        "obj_tea_canister_2": 0.22042477392708068
+      },
+      "simulation_success": true
+    },
+    "render_path": "/root/.openclaw/workspace-lab/scene-gen/physscene_bench/scripts/../results/tabletop/T05/layout_2d.png"
+  }
+}

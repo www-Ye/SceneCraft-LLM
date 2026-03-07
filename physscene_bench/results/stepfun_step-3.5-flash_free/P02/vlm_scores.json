@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P02",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 0,
+    "walkability": 4,
+    "functional": 5,
+    "wall_use": 2,
+    "overall": 3,
+    "reasoning": "1. Completeness: All expected objects (bed, 2 nightstands, wardrobe, dresser, rug) are present with no extras. 2. Spatial Reasonableness: Bed is against walls (good), nightstands are beside bed (good), but wardrobe/dresser lack wall placement and rug is not beside bed (poor). 3. No Collisions: Dresser and rug overlap significantly (critical issue). 4. Walkability: Narrow paths (e.g., 0.5m between bed and nightstands) and rug blocking space reduce usability. 5. Functional Layout: Nightstands beside bed works, but rug placement and wall placement for wardrobe/dresser fail. 6. Wall Utilization: Only bed is against walls; wardrobe/dresser are interior. 7. Overall Quality: Multiple critical failures (collisions, poor spatial placement) result in low usability."
+  }
+}

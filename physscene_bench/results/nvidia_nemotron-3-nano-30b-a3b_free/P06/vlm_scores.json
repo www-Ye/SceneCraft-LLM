@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P06",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 3,
+    "functional": 1,
+    "wall_use": 5,
+    "overall": 2,
+    "reasoning": "1. Completeness: All expected objects (table, 6 chairs, TV, cabinet) are present with no extras. 2. Spatial Reasonableness: Table is too short (should span 6m length), chairs not placed on long walls as required, and TV faces away from seating. 3. No Collisions: No overlapping objects detected. 4. Walkability: Tight spacing between chairs and table, with blocked paths due to incorrect chair placement. 5. Functional Layout: Chairs face away from the table (arrows point upward), and TV faces away from seating (arrow points upward), rendering furniture unusable as intended. 6. Wall Utilization: TV and cabinet are on walls, but table is center (correct for conference table), while chairs are not on walls (violating placement rules). 7. Overall Quality: Severe functional and spatial issues (e.g., wrong chair/TV directions, undersized table) dominate the layout."
+  }
+}

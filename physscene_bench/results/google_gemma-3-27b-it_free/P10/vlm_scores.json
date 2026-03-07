@@ -1,0 +1,16 @@
+{
+  "model": "google_gemma-3-27b-it_free",
+  "prompt_id": "P10",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 6,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 3,
+    "wall_use": 7,
+    "overall": 6,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Spatially, the TV faces away from seating, armchairs don\u2019t face coffee tables, and lamp placement lacks context (spatial 6). No object overlaps (no collisions 10). Walkability is adequate with clear paths (walkability 8). Functionality fails: sofas don\u2019t face TV, armchairs don\u2019t face tables (functional 3). Sofas/TV use walls well, but coffee tables/armchairs don\u2019t (wall_use 7). Overall quality is moderate due to functional/space issues (overall 6)."
+  }
+}

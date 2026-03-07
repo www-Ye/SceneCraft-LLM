@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P10",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 4,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 4,
+    "wall_use": 7,
+    "overall": 6,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The TV faces away from seating (arrow direction), lamp placement is suboptimal, and armchairs lack clear group alignment (spatial 4). No object overlaps (no collisions 10). Walk paths exist but could be more intuitive (walkability 8). TV is not visible from main seating, and armchairs don't clearly serve both groups (functional 4). Sofas/TV are wall-aligned (wall use 7), but rug placement doesn't tie seating areas. Overall quality is hindered by TV orientation and functional gaps (overall 6)."
+  }
+}

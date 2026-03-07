@@ -1,0 +1,16 @@
+{
+  "model": "nvidia_nemotron-3-nano-30b-a3b_free",
+  "prompt_id": "P09",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 6,
+    "no_collisions": 0,
+    "walkability": 2,
+    "functional": 2,
+    "wall_use": 8,
+    "overall": 3,
+    "reasoning": "All expected objects are present with no extras (completeness: 10). Bed, desk, and storage cabinet are wall-aligned, but chair overlaps desk (spatial: 6). Severe collision between chair and desk (no_collisions: 0). Overlapping furniture and large rug block pathways (walkability: 2). Chair cannot function due to collision with desk (functional: 2). Most large items utilize walls well (wall_use: 8). Overall quality is low due to critical collisions and usability issues (overall: 3)."
+  }
+}

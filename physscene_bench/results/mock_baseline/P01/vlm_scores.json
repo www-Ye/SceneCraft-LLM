@@ -1,0 +1,16 @@
+{
+  "model": "mock_baseline",
+  "prompt_id": "P01",
+  "source": "mock",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 4,
+    "wall_use": 3,
+    "overall": 5,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The sofa is against a wall, but the TV is not on the opposite wall, and the sofa does not face the TV (spatial 5). No objects overlap (no collisions 10). There is sufficient open space for movement (walkability 8). The sofa does not face the TV, the coffee table is not between seating, and the lamp is not near the sofa (functional 4). Only the sofa is against a wall; other large items are not wall-aligned (wall use 3). Overall, the layout has good completeness and no collisions but significant spatial/function issues (overall 5)."
+  }
+}

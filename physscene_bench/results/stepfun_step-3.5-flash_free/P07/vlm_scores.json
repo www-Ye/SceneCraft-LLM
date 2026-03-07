@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P07",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 7,
+    "no_collisions": 5,
+    "walkability": 6,
+    "functional": 6,
+    "wall_use": 5,
+    "overall": 6,
+    "reasoning": "All expected objects are present (completeness 10). Bed and wardrobe are correctly placed against walls, but TV does not face the sofa (spatial reasonableness 7). Bed and desk overlap, causing collisions (no collisions 5). Narrow paths and overlapping furniture reduce walkability (6). TV does not face seating, and some furniture lacks proper orientation (functional 6). Only bed/wardrobe utilize walls (wall use 5). Overall layout has functional gaps and spatial issues."
+  }
+}

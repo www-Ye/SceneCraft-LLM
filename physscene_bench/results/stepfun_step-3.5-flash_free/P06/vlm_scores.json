@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P06",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 5,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 3,
+    "wall_use": 5,
+    "overall": 4,
+    "reasoning": "1. Completeness: All expected objects (1 table, 6 chairs, 1 TV, 1 cabinet) are present with no extras. 2. Spatial Reasonableness: The table is not centered (placed too far left), and the TV is not positioned to face the seating area. 3. No Collisions: No overlapping or clipping between objects. 4. Walkability: Sufficient open space exists for movement, though the layout is asymmetric. 5. Functional Layout: Chairs do not face the table (arrows point away from the table), and the TV does not face the seating area. 6. Wall Utilization: Only the table is properly placed against a wall; TV and cabinet are not aligned with walls. 7. Overall Quality: Significant issues with spatial placement and functionality reduce the layout's usability."
+  }
+}

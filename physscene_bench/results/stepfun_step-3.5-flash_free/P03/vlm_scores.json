@@ -1,0 +1,16 @@
+{
+  "model": "stepfun_step-3.5-flash_free",
+  "prompt_id": "P03",
+  "source": "mock_fallback",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 7,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 7,
+    "wall_use": 8,
+    "overall": 7,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The lamp is not placed on the dining table (spatial reasonableness issue). No objects overlap (no collisions 10). Walkability is adequate but not optimal due to furniture placement (walkability 8). Chairs face the table, but the lamp is misplaced (functional 7). The cabinet is properly against the wall, while the dining table is centrally placed (wall utilization 8). Overall quality is impacted by the lamp\u2019s incorrect placement and spatial issues (overall 7)."
+  }
+}
