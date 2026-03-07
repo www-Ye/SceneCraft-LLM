@@ -24,3 +24,6 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+data/assets/
+*.stl
+MUJOCO_LOG.TXT

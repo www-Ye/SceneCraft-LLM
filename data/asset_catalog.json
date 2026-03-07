@@ -1,0 +1,430 @@
+{
+  "sofa": [
+    {
+      "uid": "1a6a02daf9a84b108e437f75fdcab2f7",
+      "file": "sofa/1a6a02daf9a84b108e437f75fdcab2f7.glb",
+      "bbox": {
+        "width": 54.7,
+        "depth": 21.218,
+        "height": 69.987
+      }
+    },
+    {
+      "uid": "ef3832963ab24d129ec88fd4cac4818f",
+      "file": "sofa/ef3832963ab24d129ec88fd4cac4818f.glb",
+      "bbox": {
+        "width": 2.0,
+        "depth": 0.711,
+        "height": 0.905
+      }
+    },
+    {
+      "uid": "a0d66f10a850469c9cb04c3cecc62a05",
+      "file": "sofa/a0d66f10a850469c9cb04c3cecc62a05.glb",
+      "bbox": {
+        "width": 93.928,
+        "depth": 35.163,
+        "height": 34.308
+      }
+    }
+  ],
+  "armchair": [
+    {
+      "uid": "0e06763d63f44733b99c06ae18dcb13d",
+      "file": "armchair/0e06763d63f44733b99c06ae18dcb13d.glb",
+      "bbox": {
+        "width": 1.364,
+        "depth": 1.921,
+        "height": 1.271
+      }
+    },
+    {
+      "uid": "e562d2d82bc1428c98e3e6d37879f9d8",
+      "file": "armchair/e562d2d82bc1428c98e3e6d37879f9d8.glb",
+      "bbox": {
+        "width": 2.362,
+        "depth": 3.319,
+        "height": 2.177
+      }
+    },
+    {
+      "uid": "6ebab275b9574faeb8dfcc7d523a973e",
+      "file": "armchair/6ebab275b9574faeb8dfcc7d523a973e.glb",
+      "bbox": {
+        "width": 0.998,
+        "depth": 1.128,
+        "height": 1.145
+      }
+    }
+  ],
+  "coffee_table": [
+    {
+      "uid": "5ad0f035a45a424291b5efa0a2a235f9",
+      "file": "coffee_table/5ad0f035a45a424291b5efa0a2a235f9.glb",
+      "bbox": {
+        "width": 1.513,
+        "depth": 1.021,
+        "height": 2.708
+      }
+    },
+    {
+      "uid": "02302fca239e4d7a9d26ce5cc46225e5",
+      "file": "coffee_table/02302fca239e4d7a9d26ce5cc46225e5.glb",
+      "bbox": {
+        "width": 29.401,
+        "depth": 21.155,
+        "height": 69.955
+      }
+    },
+    {
+      "uid": "d53bd92890934d249d4ea2e099ae0461",
+      "file": "coffee_table/d53bd92890934d249d4ea2e099ae0461.glb",
+      "bbox": {
+        "width": 1.151,
+        "depth": 0.502,
+        "height": 1.151
+      }
+    }
+  ],
+  "dining_table": [
+    {
+      "uid": "41fa8e131cdd42b1bf371a620e312f22",
+      "file": "dining_table/41fa8e131cdd42b1bf371a620e312f22.glb",
+      "bbox": {
+        "width": 1.134,
+        "depth": 1.195,
+        "height": 1.279
+      }
+    },
+    {
+      "uid": "21e22be42472440da404c6c713cd8e27",
+      "file": "dining_table/21e22be42472440da404c6c713cd8e27.glb",
+      "bbox": {
+        "width": 6.733,
+        "depth": 3.194,
+        "height": 6.151
+      }
+    },
+    {
+      "uid": "0c7550a6ae1d400985ce7703c3864e12",
+      "file": "dining_table/0c7550a6ae1d400985ce7703c3864e12.glb",
+      "bbox": {
+        "width": 1.623,
+        "depth": 0.867,
+        "height": 2.124
+      }
+    }
+  ],
+  "desk": [
+    {
+      "uid": "b69ad0b5456249318982aec3e0aeeb6f",
+      "file": "desk/b69ad0b5456249318982aec3e0aeeb6f.glb",
+      "bbox": {
+        "width": 12.062,
+        "depth": 5.639,
+        "height": 9.581
+      }
+    },
+    {
+      "uid": "8fda709c6b2646a49f884d130c0c86da",
+      "file": "desk/8fda709c6b2646a49f884d130c0c86da.glb",
+      "bbox": {
+        "width": 159.997,
+        "depth": 76.0,
+        "height": 84.997
+      }
+    },
+    {
+      "uid": "9824a5e58892410c956cfaf9f2b07c29",
+      "file": "desk/9824a5e58892410c956cfaf9f2b07c29.glb",
+      "bbox": {
+        "width": 90.623,
+        "depth": 41.098,
+        "height": 41.392
+      }
+    }
+  ],
+  "chair": [
+    {
+      "uid": "304253851afd493d958fc8e256c189df",
+      "file": "chair/304253851afd493d958fc8e256c189df.glb",
+      "bbox": {
+        "width": 35.108,
+        "depth": 40.198,
+        "height": 35.869
+      }
+    },
+    {
+      "uid": "8a4a3a90bc104f11b82cedd9b4e5ab6b",
+      "file": "chair/8a4a3a90bc104f11b82cedd9b4e5ab6b.glb",
+      "bbox": {
+        "width": 1.111,
+        "depth": 1.525,
+        "height": 1.196
+      }
+    },
+    {
+      "uid": "fab9443d48e24fbfa309187df78d58e6",
+      "file": "chair/fab9443d48e24fbfa309187df78d58e6.glb",
+      "bbox": {
+        "width": 0.982,
+        "depth": 1.614,
+        "height": 0.924
+      }
+    }
+  ],
+  "bed": [
+    {
+      "uid": "dc3024aa5e234f4299641f072558b9a8",
+      "file": "bed/dc3024aa5e234f4299641f072558b9a8.glb",
+      "bbox": {
+        "width": 199.302,
+        "depth": 114.989,
+        "height": 325.45
+      }
+    },
+    {
+      "uid": "ef4fef24c990461986a96f5462c5248d",
+      "file": "bed/ef4fef24c990461986a96f5462c5248d.glb",
+      "bbox": {
+        "width": 2.0,
+        "depth": 0.861,
+        "height": 1.293
+      }
+    },
+    {
+      "uid": "b547d81073b64d3e97200fd3ae9a74af",
+      "file": "bed/b547d81073b64d3e97200fd3ae9a74af.glb",
+      "bbox": {
+        "width": 100.0,
+        "depth": 91.855,
+        "height": 210.695
+      }
+    }
+  ],
+  "dresser": [
+    {
+      "uid": "1615977dcb1540c58db19c27059a60d8",
+      "file": "dresser/1615977dcb1540c58db19c27059a60d8.glb",
+      "bbox": {
+        "width": 115.761,
+        "depth": 90.054,
+        "height": 55.353
+      }
+    },
+    {
+      "uid": "eb16370e0b33439abfbb66ce8d4d0867",
+      "file": "dresser/eb16370e0b33439abfbb66ce8d4d0867.glb",
+      "bbox": {
+        "width": 104.601,
+        "depth": 82.9,
+        "height": 49.2
+      }
+    },
+    {
+      "uid": "d7907af6fe0e486499d5e0290b426d51",
+      "file": "dresser/d7907af6fe0e486499d5e0290b426d51.glb",
+      "bbox": {
+        "width": 113.0,
+        "depth": 101.5,
+        "height": 47.0
+      }
+    }
+  ],
+  "cabinet": [
+    {
+      "uid": "b1a6eed00f1246d9b8f8f08003c59362",
+      "file": "cabinet/b1a6eed00f1246d9b8f8f08003c59362.glb",
+      "bbox": {
+        "width": 0.865,
+        "depth": 1.754,
+        "height": 0.388
+      }
+    },
+    {
+      "uid": "b7e25d2b684747c08e90b8cf446bdb43",
+      "file": "cabinet/b7e25d2b684747c08e90b8cf446bdb43.glb",
+      "bbox": {
+        "width": 0.381,
+        "depth": 1.788,
+        "height": 0.962
+      }
+    },
+    {
+      "uid": "1bf163160fa34a2bac8c9c6218675478",
+      "file": "cabinet/1bf163160fa34a2bac8c9c6218675478.glb",
+      "bbox": {
+        "width": 2.536,
+        "depth": 1.101,
+        "height": 0.815
+      }
+    }
+  ],
+  "wardrobe": [
+    {
+      "uid": "fc042d9a11b44df0af7ff4acff9a8ff7",
+      "file": "wardrobe/fc042d9a11b44df0af7ff4acff9a8ff7.glb",
+      "bbox": {
+        "width": 3.642,
+        "depth": 3.427,
+        "height": 0.84
+      }
+    },
+    {
+      "uid": "9520ac8ad3e1424f85cbed8af58fe722",
+      "file": "wardrobe/9520ac8ad3e1424f85cbed8af58fe722.glb",
+      "bbox": {
+        "width": 3085.311,
+        "depth": 2755.0,
+        "height": 2332.0
+      }
+    }
+  ],
+  "table_lamp": [
+    {
+      "uid": "0c33fde02258414895253effb04404c2",
+      "file": "table_lamp/0c33fde02258414895253effb04404c2.glb",
+      "bbox": {
+        "width": 13.307,
+        "depth": 26.454,
+        "height": 13.307
+      }
+    },
+    {
+      "uid": "2fd7954d31dc47d7a48f9e0cb8faeeba",
+      "file": "table_lamp/2fd7954d31dc47d7a48f9e0cb8faeeba.glb",
+      "bbox": {
+        "width": 214.133,
+        "depth": 444.839,
+        "height": 214.132
+      }
+    },
+    {
+      "uid": "b29f5d8bd3af4b33b352e1abe1d060af",
+      "file": "table_lamp/b29f5d8bd3af4b33b352e1abe1d060af.glb",
+      "bbox": {
+        "width": 3.42,
+        "depth": 7.186,
+        "height": 3.42
+      }
+    }
+  ],
+  "lamp": [
+    {
+      "uid": "f93be18847144f1fbd87930d2070cb71",
+      "file": "lamp/f93be18847144f1fbd87930d2070cb71.glb",
+      "bbox": {
+        "width": 47.374,
+        "depth": 46.419,
+        "height": 15.18
+      }
+    },
+    {
+      "uid": "77774d22076940aa8484e053bb14947a",
+      "file": "lamp/77774d22076940aa8484e053bb14947a.glb",
+      "bbox": {
+        "width": 0.604,
+        "depth": 2.289,
+        "height": 0.604
+      }
+    },
+    {
+      "uid": "317dac94ec404bdbaa6d41a85e04f51c",
+      "file": "lamp/317dac94ec404bdbaa6d41a85e04f51c.glb",
+      "bbox": {
+        "width": 200.0,
+        "depth": 717.24,
+        "height": 200.0
+      }
+    }
+  ],
+  "television_set": [
+    {
+      "uid": "1918d469225147a89c6d337610a08aa9",
+      "file": "television_set/1918d469225147a89c6d337610a08aa9.glb",
+      "bbox": {
+        "width": 0.761,
+        "depth": 1.199,
+        "height": 0.988
+      }
+    },
+    {
+      "uid": "d9e6543850844578a93e4b87cef50486",
+      "file": "television_set/d9e6543850844578a93e4b87cef50486.glb",
+      "bbox": {
+        "width": 3.117,
+        "depth": 3.117,
+        "height": 2.064
+      }
+    },
+    {
+      "uid": "94d6405522de4c2895912c0a45332056",
+      "file": "television_set/94d6405522de4c2895912c0a45332056.glb",
+      "bbox": {
+        "width": 24.0,
+        "depth": 25.0,
+        "height": 15.0
+      }
+    }
+  ],
+  "stool": [
+    {
+      "uid": "8ab0baf0f68f42788285e4f952c454ba",
+      "file": "stool/8ab0baf0f68f42788285e4f952c454ba.glb",
+      "bbox": {
+        "width": 3.905,
+        "depth": 6.615,
+        "height": 4.368
+      }
+    },
+    {
+      "uid": "6ecadc6b8e6b4004b2036414119506a4",
+      "file": "stool/6ecadc6b8e6b4004b2036414119506a4.glb",
+      "bbox": {
+        "width": 1.047,
+        "depth": 2.157,
+        "height": 1.226
+      }
+    }
+  ],
+  "bench": [
+    {
+      "uid": "91e9a8aea88f42e6b8fd6505dec761c4",
+      "file": "bench/91e9a8aea88f42e6b8fd6505dec761c4.glb",
+      "bbox": {
+        "width": 62.391,
+        "depth": 86.79,
+        "height": 187.041
+      }
+    },
+    {
+      "uid": "9ef388cd9cb947f48957a497e8b8184a",
+      "file": "bench/9ef388cd9cb947f48957a497e8b8184a.glb",
+      "bbox": {
+        "width": 345.449,
+        "depth": 350.677,
+        "height": 650.932
+      }
+    }
+  ],
+  "runner_(carpet)": [
+    {
+      "uid": "8f2575b2318d43dda58c95690f25c90a",
+      "file": "runner_(carpet)/8f2575b2318d43dda58c95690f25c90a.glb",
+      "bbox": {
+        "width": 12.14,
+        "depth": 0.236,
+        "height": 11.184
+      }
+    },
+    {
+      "uid": "4760b84608134ca99b1695c95d4a10a7",
+      "file": "runner_(carpet)/4760b84608134ca99b1695c95d4a10a7.glb",
+      "bbox": {
+        "width": 256.0,
+        "depth": 0.0,
+        "height": 256.0
+      }
+    }
+  ]
+}

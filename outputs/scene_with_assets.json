@@ -1,0 +1,119 @@
+{
+  "room": {
+    "width": 5.0,
+    "depth": 4.0
+  },
+  "objects": [
+    {
+      "category": "sofa",
+      "position": [
+        2.5,
+        3.5,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 2.0,
+        "depth": 0.9,
+        "height": 0.85
+      }
+    },
+    {
+      "category": "coffee_table",
+      "position": [
+        2.5,
+        2.3,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.6,
+        "height": 0.45
+      }
+    },
+    {
+      "category": "armchair",
+      "position": [
+        0.8,
+        2.5,
+        0.0
+      ],
+      "rotation": 90,
+      "dimensions": {
+        "width": 0.9,
+        "depth": 0.85,
+        "height": 0.85
+      }
+    },
+    {
+      "category": "television_set",
+      "position": [
+        2.5,
+        0.3,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.1,
+        "height": 0.7
+      }
+    },
+    {
+      "category": "table_lamp",
+      "position": [
+        4.3,
+        3.5,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.5
+      }
+    },
+    {
+      "category": "cabinet",
+      "position": [
+        4.5,
+        0.5,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.45,
+        "height": 1.8
+      }
+    },
+    {
+      "category": "runner_(carpet)",
+      "position": [
+        2.5,
+        2.0,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 2.0,
+        "depth": 3.0,
+        "height": 0.01
+      }
+    }
+  ],
+  "metrics": {
+    "collision_rate": 0.09523809523809523,
+    "oob_rate": 0.0,
+    "n_collisions": 2,
+    "n_oob": 0,
+    "n_objects": 7,
+    "floor_coverage": 0.49275,
+    "walkable_ratio": 0.5305,
+    "occupied_ratio": 0.4695,
+    "room_area": 20.0,
+    "furniture_area": 9.855
+  },
+  "asset_source": "objaverse_lvis"
+}
