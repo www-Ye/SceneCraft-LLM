@@ -1,0 +1,63 @@
+{
+  "score": 6,
+  "feedback": "Fork and bowl are too close (0.03m), knife and napkin too close (0.05m), glass placement not optimal. Revised layout ensures sufficient spacing for robot access.",
+  "action": "revise",
+  "objects": [
+    {
+      "category": "plate",
+      "position": [
+        0.0,
+        0.05
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "mug",
+      "position": [
+        0.18,
+        0.12
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "bowl",
+      "position": [
+        -0.25,
+        0.05
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "fork",
+      "position": [
+        -0.15,
+        0.05
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "knife",
+      "position": [
+        0.15,
+        0.05
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "glass",
+      "position": [
+        0.2,
+        0.15
+      ],
+      "rotation": 0
+    },
+    {
+      "category": "napkin",
+      "position": [
+        0.25,
+        0.05
+      ],
+      "rotation": 0
+    }
+  ]
+}
