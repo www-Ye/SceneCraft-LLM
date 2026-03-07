@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P08",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 9,
+    "functional": 10,
+    "wall_use": 9,
+    "overall": 9,
+    "reasoning": "All expected objects (2 armchairs, 2 lamps, 1 coffee table, 2 bookshelves, 1 rug) are present with no extras. Armchairs face each other with coffee table between them, lamps beside armchairs, and bookshelves along walls\u2014spatially sensible. No object overlaps. Walkability is good with clear paths around seating. Functional layout supports reading (lamps by chairs, coffee table between). Bookshelves utilize walls well; armchairs intentionally placed in center for facing. Minor deduction for armchairs not against walls (but intentional for layout). Overall quality is strong."
+  }
+}

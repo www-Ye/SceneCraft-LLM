@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P07",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 6,
+    "spatial": 6,
+    "no_collisions": 5,
+    "walkability": 5,
+    "functional": 5,
+    "wall_use": 6,
+    "overall": 5,
+    "reasoning": "1. Completeness: Missing 'television' (only 'tv_stand' present); 6/7 expected objects. 2. Spatial: Bed in corner (good), but TV stand placement lacks clear seating alignment; desk/chair face appropriately. 3. No Collisions: Coffee table overlaps sofa (collision). 4. Walkability: Tight spacing and collisions reduce usable paths. 5. Functional: Coffee table can\u2019t be used due to overlap; TV absent. 6. Wall Utilization: Bed/wardrobe against walls; sofa/desk not. 7. Overall: Significant gaps (missing TV) and collisions undermine functionality."
+  }
+}

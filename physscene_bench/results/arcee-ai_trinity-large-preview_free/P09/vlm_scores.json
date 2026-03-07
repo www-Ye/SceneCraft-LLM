@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P09",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 7,
+    "no_collisions": 10,
+    "walkability": 8,
+    "functional": 7,
+    "wall_use": 6,
+    "overall": 7,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The bed is not placed against a wall (spatial reasonableness 7), while desk/cabinet are wall-aligned. No object overlaps (no collisions 10). Walkability is adequate with clear paths (8), but bed placement slightly restricts movement. Functional layout suffers as the bed lacks wall support (functional 7), though desk-chair alignment and lamp placement work. Wall utilization is low due to the bed\u2019s central placement (6). Overall quality is moderate (7) due to critical bed placement issues."
+  }
+}

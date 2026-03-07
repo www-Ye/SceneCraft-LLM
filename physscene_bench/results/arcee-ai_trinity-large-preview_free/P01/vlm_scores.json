@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P01",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 6,
+    "spatial": 7,
+    "no_collisions": 5,
+    "walkability": 4,
+    "functional": 5,
+    "wall_use": 6,
+    "overall": 5,
+    "reasoning": "Missing coffee_table (completeness 6). TV faces sofa (spatial 7), but TV stand not against wall. Floor lamp overlaps sofa (no collisions 5). Limited walkable space due to dense layout (walkability 4). Coffee_table missing and lamp placement hinder functionality (functional 5). Sofa, storage cabinet, and armchair against walls (wall_use 6). Overall layout has critical gaps and collisions (overall 5)."
+  }
+}

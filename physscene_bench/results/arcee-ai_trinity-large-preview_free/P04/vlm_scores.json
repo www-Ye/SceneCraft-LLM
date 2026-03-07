@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P04",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 2,
+    "wall_use": 3,
+    "overall": 4,
+    "reasoning": "All expected objects are present with no extras (completeness 10). The desk is not placed against a wall (spatial reasonableness 3), as required. No objects overlap (no collisions 10). Walkability is moderate (7) due to central desk placement but sufficient space. The office chair faces away from the desk (functional 2), making it unusable as intended. Only the bookshelf is wall-aligned (wall utilization 3). Overall quality is low (4) due to critical functional and spatial issues."
+  }
+}

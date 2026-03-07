@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P10",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 8,
+    "no_collisions": 10,
+    "walkability": 9,
+    "functional": 9,
+    "wall_use": 6,
+    "overall": 8,
+    "reasoning": "All expected objects are present with no extras (completeness 10). TV is against the top wall but seating faces away from it (spatial 8). No overlapping furniture (no collisions 10). Clear walkways between groups (walkability 9). Seating faces tables, TV visible from main area, lamp centrally placed (functional 9). Sofas not against walls (wall utilization 6). Overall strong layout but poor wall utilization lowers quality (overall 8)."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P06",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 4,
+    "spatial": 3,
+    "no_collisions": 10,
+    "walkability": 7,
+    "functional": 5,
+    "wall_use": 8,
+    "overall": 5,
+    "reasoning": "1. Object Completeness: Only 4 chairs present (missing 2), while table, TV, and cabinet are included. 2. Spatial Reasonableness: Chairs are placed with 1 per long side (vs. required 2), and TV faces seating but chair placement is incomplete. 3. No Collisions: No overlapping objects detected. 4. Walkability: Adequate space for movement despite missing chairs. 5. Functional Layout: 4 chairs face the table correctly, TV faces seating, but missing chairs impair functionality. 6. Wall Utilization: TV and cabinet are properly placed against walls; table is centrally located (correct for conference room). 7. Overall Quality: Significant gaps in chair count and spatial arrangement reduce usability."
+  }
+}

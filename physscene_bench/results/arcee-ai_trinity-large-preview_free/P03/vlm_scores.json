@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P03",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 10,
+    "no_collisions": 10,
+    "walkability": 9,
+    "functional": 10,
+    "wall_use": 9,
+    "overall": 9,
+    "reasoning": "All expected objects are present with no extras. Dining table is centrally placed for functionality, chairs face the table, storage cabinet is against the wall, and lamp is on the table. No object overlaps or clips. Walkability is sufficient with clear paths around the table and cabinet. Wall utilization is appropriate for the storage cabinet. Overall layout is well-organized and functional."
+  }
+}

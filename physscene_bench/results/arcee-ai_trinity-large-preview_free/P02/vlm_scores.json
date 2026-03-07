@@ -1,0 +1,16 @@
+{
+  "model": "arcee-ai_trinity-large-preview_free",
+  "prompt_id": "P02",
+  "source": "real",
+  "vlm_status": "success",
+  "vlm_scores": {
+    "completeness": 10,
+    "spatial": 8,
+    "no_collisions": 5,
+    "walkability": 4,
+    "functional": 6,
+    "wall_use": 7,
+    "overall": 5,
+    "reasoning": "All expected objects are present with no extras (completeness 10). Bed is against the left wall, nightstands flank the bed, and wardrobe is against the top wall (spatial reasonableness 8). The rug overlaps the bed, causing collisions (no collisions 5). Limited clear paths due to the rug on the bed and cramped spacing (walkability 4). Nightstands are next to the bed, but the rug is non-functional (functional 6). Bed and wardrobe are wall-aligned, but the dresser is not (wall utilization 7). Overall quality is low due to collisions and walkability issues (overall 5)."
+  }
+}
