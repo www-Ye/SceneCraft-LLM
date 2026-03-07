@@ -27,3 +27,4 @@ Thumbs.db
 data/assets/
 *.stl
 MUJOCO_LOG.TXT
+scene_factory/mujoco_menagerie
