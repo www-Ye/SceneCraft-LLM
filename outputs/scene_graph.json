@@ -30,7 +30,7 @@
       "category": "coffee_table",
       "position": [
         2.5,
-        2.4,
+        2.3,
         0.0
       ],
       "rotation": 0,
@@ -49,10 +49,10 @@
       "category": "armchair",
       "position": [
         0.8,
-        2.8,
+        2.7,
         0.0
       ],
-      "rotation": 315,
+      "rotation": 270,
       "dimensions": {
         "width": 0.9,
         "depth": 0.85,
@@ -68,7 +68,7 @@
       "category": "television_set",
       "position": [
         2.5,
-        0.1,
+        0.15,
         0.0
       ],
       "rotation": 0,
@@ -86,8 +86,8 @@
       "id": "table_lamp_4",
       "category": "table_lamp",
       "position": [
-        4.2,
-        3.6,
+        4.3,
+        3.5,
         0.0
       ],
       "rotation": 0,
@@ -105,8 +105,8 @@
       "id": "cabinet_5",
       "category": "cabinet",
       "position": [
-        0.5,
-        0.3,
+        0.6,
+        0.35,
         0.0
       ],
       "rotation": 0,
@@ -125,7 +125,7 @@
       "category": "runner_(carpet)",
       "position": [
         2.5,
-        2.3,
+        2.2,
         0.0
       ],
       "rotation": 0,
@@ -146,7 +146,7 @@
       "target": "coffee_table_1",
       "relation": "behind",
       "weight": 1.0,
-      "distance": 1.1,
+      "distance": 1.2000000000000002,
       "properties": {}
     },
     {
@@ -154,15 +154,15 @@
       "target": "sofa_0",
       "relation": "in_front_of",
       "weight": 1.0,
-      "distance": 1.1,
+      "distance": 1.2000000000000002,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "coffee_table_1",
       "relation": "adjacent_to",
-      "weight": 0.42105263157894735,
-      "distance": 1.1,
+      "weight": 0.36842105263157887,
+      "distance": 1.2000000000000002,
       "properties": {}
     },
     {
@@ -170,7 +170,7 @@
       "target": "coffee_table_1",
       "relation": "facing",
       "weight": 1.0,
-      "distance": 1.1,
+      "distance": 1.2000000000000002,
       "properties": {}
     },
     {
@@ -185,40 +185,40 @@
       "source": "sofa_0",
       "target": "armchair_2",
       "relation": "right_of",
-      "weight": 0.924678098474716,
-      "distance": 1.8384776310850235,
+      "weight": 0.9048187022009941,
+      "distance": 1.8788294228055935,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "sofa_0",
       "relation": "left_of",
-      "weight": 0.924678098474716,
-      "distance": 1.8384776310850235,
+      "weight": 0.9048187022009941,
+      "distance": 1.8788294228055935,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "armchair_2",
       "relation": "behind",
-      "weight": 0.3807498052542949,
-      "distance": 1.8384776310850235,
+      "weight": 0.4257970363298795,
+      "distance": 1.8788294228055935,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "sofa_0",
       "relation": "in_front_of",
-      "weight": 0.3807498052542949,
-      "distance": 1.8384776310850235,
+      "weight": 0.4257970363298795,
+      "distance": 1.8788294228055935,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "armchair_2",
       "relation": "near",
-      "weight": 0.47472067683285046,
-      "distance": 1.8384776310850235,
+      "weight": 0.4631915934841161,
+      "distance": 1.8788294228055935,
       "properties": {}
     },
     {
@@ -226,7 +226,7 @@
       "target": "television_set_3",
       "relation": "behind",
       "weight": 1.0,
-      "distance": 3.4,
+      "distance": 3.35,
       "properties": {}
     },
     {
@@ -234,15 +234,15 @@
       "target": "sofa_0",
       "relation": "in_front_of",
       "weight": 1.0,
-      "distance": 3.4,
+      "distance": 3.35,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "television_set_3",
       "relation": "near",
-      "weight": 0.10526315789473695,
-      "distance": 3.4,
+      "weight": 0.11842105263157898,
+      "distance": 3.35,
       "properties": {}
     },
     {
@@ -250,7 +250,7 @@
       "target": "television_set_3",
       "relation": "facing",
       "weight": 1.0,
-      "distance": 3.4,
+      "distance": 3.35,
       "properties": {}
     },
     {
@@ -265,31 +265,31 @@
       "source": "sofa_0",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.9982743731749959,
-      "distance": 1.7029386365926404,
+      "weight": 1.0,
+      "distance": 1.7999999999999998,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "sofa_0",
       "relation": "right_of",
-      "weight": 0.9982743731749959,
-      "distance": 1.7029386365926404,
+      "weight": 1.0,
+      "distance": 1.7999999999999998,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "table_lamp_4",
       "relation": "near",
-      "weight": 0.4127797804852964,
-      "distance": 1.7029386365926404,
+      "weight": 0.3793103448275863,
+      "distance": 1.7999999999999998,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "table_lamp_4",
       "relation": "aligned_with",
-      "weight": 0.49999999999999956,
+      "weight": 1.0,
       "distance": 0.0,
       "properties": {}
     },
@@ -297,40 +297,40 @@
       "source": "sofa_0",
       "target": "cabinet_5",
       "relation": "right_of",
-      "weight": 0.5299989400031799,
-      "distance": 3.773592452822642,
+      "weight": 0.5164931702367068,
+      "distance": 3.678654645383282,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "sofa_0",
       "relation": "left_of",
-      "weight": 0.5299989400031799,
-      "distance": 3.773592452822642,
+      "weight": 0.5164931702367068,
+      "distance": 3.678654645383282,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "cabinet_5",
       "relation": "behind",
-      "weight": 0.8479983040050879,
-      "distance": 3.773592452822642,
+      "weight": 0.8562913085503299,
+      "distance": 3.678654645383282,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "sofa_0",
       "relation": "in_front_of",
-      "weight": 0.8479983040050879,
-      "distance": 3.773592452822642,
+      "weight": 0.8562913085503299,
+      "distance": 3.678654645383282,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "cabinet_5",
       "relation": "facing",
-      "weight": 0.28876926204258857,
-      "distance": 3.773592452822642,
+      "weight": 0.30894860253823453,
+      "distance": 3.678654645383282,
       "properties": {}
     },
     {
@@ -338,7 +338,7 @@
       "target": "runner_(carpet)_6",
       "relation": "behind",
       "weight": 1.0,
-      "distance": 1.2000000000000002,
+      "distance": 1.2999999999999998,
       "properties": {}
     },
     {
@@ -346,15 +346,15 @@
       "target": "sofa_0",
       "relation": "in_front_of",
       "weight": 1.0,
-      "distance": 1.2000000000000002,
+      "distance": 1.2999999999999998,
       "properties": {}
     },
     {
       "source": "sofa_0",
       "target": "runner_(carpet)_6",
       "relation": "adjacent_to",
-      "weight": 0.5714285714285714,
-      "distance": 1.2000000000000002,
+      "weight": 0.5357142857142858,
+      "distance": 1.2999999999999998,
       "properties": {}
     },
     {
@@ -362,7 +362,7 @@
       "target": "runner_(carpet)_6",
       "relation": "facing",
       "weight": 1.0,
-      "distance": 1.2000000000000002,
+      "distance": 1.2999999999999998,
       "properties": {}
     },
     {
@@ -393,7 +393,7 @@
       "source": "coffee_table_1",
       "target": "armchair_2",
       "relation": "in_front_of",
-      "weight": 0.22903933372554725,
+      "weight": 0.2290393337255475,
       "distance": 1.746424919657298,
       "properties": {}
     },
@@ -401,7 +401,7 @@
       "source": "armchair_2",
       "target": "coffee_table_1",
       "relation": "behind",
-      "weight": 0.22903933372554725,
+      "weight": 0.2290393337255475,
       "distance": 1.746424919657298,
       "properties": {}
     },
@@ -418,7 +418,7 @@
       "target": "television_set_3",
       "relation": "behind",
       "weight": 1.0,
-      "distance": 2.3,
+      "distance": 2.15,
       "properties": {}
     },
     {
@@ -426,15 +426,15 @@
       "target": "coffee_table_1",
       "relation": "in_front_of",
       "weight": 1.0,
-      "distance": 2.3,
+      "distance": 2.15,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "television_set_3",
       "relation": "near",
-      "weight": 0.2333333333333334,
-      "distance": 2.3,
+      "weight": 0.2833333333333333,
+      "distance": 2.15,
       "properties": {}
     },
     {
@@ -442,7 +442,7 @@
       "target": "television_set_3",
       "relation": "facing_away",
       "weight": 1.0,
-      "distance": 2.3,
+      "distance": 2.15,
       "properties": {}
     },
     {
@@ -457,96 +457,80 @@
       "source": "coffee_table_1",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.8169678632647617,
-      "distance": 2.0808652046684815,
+      "weight": 0.8320502943378437,
+      "distance": 2.1633307652783933,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "coffee_table_1",
       "relation": "right_of",
-      "weight": 0.8169678632647617,
-      "distance": 2.0808652046684815,
+      "weight": 0.8320502943378437,
+      "distance": 2.1633307652783933,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "table_lamp_4",
       "relation": "in_front_of",
-      "weight": 0.5766831975986553,
-      "distance": 2.0808652046684815,
+      "weight": 0.5547001962252293,
+      "distance": 2.1633307652783933,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "coffee_table_1",
       "relation": "behind",
-      "weight": 0.5766831975986553,
-      "distance": 2.0808652046684815,
-      "properties": {}
-    },
-    {
-      "source": "coffee_table_1",
-      "target": "table_lamp_4",
-      "relation": "near",
-      "weight": 0.00911180730072314,
-      "distance": 2.0808652046684815,
+      "weight": 0.5547001962252293,
+      "distance": 2.1633307652783933,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "cabinet_5",
       "relation": "right_of",
-      "weight": 0.6896551724137931,
-      "distance": 2.9,
+      "weight": 0.6978647269104287,
+      "distance": 2.7225906780123963,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "coffee_table_1",
       "relation": "left_of",
-      "weight": 0.6896551724137931,
-      "distance": 2.9,
+      "weight": 0.6978647269104287,
+      "distance": 2.7225906780123963,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "cabinet_5",
       "relation": "behind",
-      "weight": 0.7241379310344828,
-      "distance": 2.9,
+      "weight": 0.7162295881449137,
+      "distance": 2.7225906780123963,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "coffee_table_1",
       "relation": "in_front_of",
-      "weight": 0.7241379310344828,
-      "distance": 2.9,
+      "weight": 0.7162295881449137,
+      "distance": 2.7225906780123963,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "cabinet_5",
       "relation": "facing_away",
-      "weight": 0.031048467273252653,
-      "distance": 2.9,
+      "weight": 0.016534648953082372,
+      "distance": 2.7225906780123963,
       "properties": {}
     },
     {
       "source": "coffee_table_1",
       "target": "runner_(carpet)_6",
       "relation": "adjacent_to",
-      "weight": 0.9583333333333333,
-      "distance": 0.10000000000000009,
-      "properties": {}
-    },
-    {
-      "source": "coffee_table_1",
-      "target": "runner_(carpet)_6",
-      "relation": "facing_away",
-      "weight": 1.0,
-      "distance": 0.10000000000000009,
+      "weight": 0.9583333333333335,
+      "distance": 0.09999999999999964,
       "properties": {}
     },
     {
@@ -561,112 +545,88 @@
       "source": "armchair_2",
       "target": "television_set_3",
       "relation": "left_of",
-      "weight": 0.5328132696861393,
-      "distance": 3.190611226708763,
+      "weight": 0.554700196225229,
+      "distance": 3.064718584144391,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "armchair_2",
       "relation": "right_of",
-      "weight": 0.5328132696861393,
-      "distance": 3.190611226708763,
+      "weight": 0.554700196225229,
+      "distance": 3.064718584144391,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "television_set_3",
       "relation": "behind",
-      "weight": 0.8462328400897506,
-      "distance": 3.190611226708763,
+      "weight": 0.8320502943378437,
+      "distance": 3.064718584144391,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "armchair_2",
       "relation": "in_front_of",
-      "weight": 0.8462328400897506,
-      "distance": 3.190611226708763,
+      "weight": 0.8320502943378437,
+      "distance": 3.064718584144391,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.9734171683335759,
-      "distance": 3.4928498393145966,
+      "weight": 0.9748585065718672,
+      "distance": 3.5902646142032486,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "armchair_2",
       "relation": "right_of",
-      "weight": 0.9734171683335759,
-      "distance": 3.4928498393145966,
+      "weight": 0.9748585065718672,
+      "distance": 3.5902646142032486,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "table_lamp_4",
       "relation": "in_front_of",
-      "weight": 0.22903933372554733,
-      "distance": 3.4928498393145966,
+      "weight": 0.22282480150214104,
+      "distance": 3.5902646142032486,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "armchair_2",
       "relation": "behind",
-      "weight": 0.22903933372554733,
-      "distance": 3.4928498393145966,
+      "weight": 0.22282480150214104,
+      "distance": 3.5902646142032486,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "table_lamp_4",
       "relation": "facing",
-      "weight": 0.294233775893049,
-      "distance": 3.4928498393145966,
-      "properties": {}
-    },
-    {
-      "source": "armchair_2",
-      "target": "cabinet_5",
-      "relation": "right_of",
-      "weight": 0.11914522061843066,
-      "distance": 2.5179356624028344,
-      "properties": {}
-    },
-    {
-      "source": "cabinet_5",
-      "target": "armchair_2",
-      "relation": "left_of",
-      "weight": 0.11914522061843066,
-      "distance": 2.5179356624028344,
+      "weight": 0.7138888542308337,
+      "distance": 3.5902646142032486,
       "properties": {}
     },
     {
       "source": "armchair_2",
       "target": "cabinet_5",
       "relation": "behind",
-      "weight": 0.992876838486922,
-      "distance": 2.5179356624028344,
+      "weight": 0.9963980072059783,
+      "distance": 2.3584952830141512,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "armchair_2",
       "relation": "in_front_of",
-      "weight": 0.992876838486922,
-      "distance": 2.5179356624028344,
-      "properties": {}
-    },
-    {
-      "source": "armchair_2",
-      "target": "cabinet_5",
-      "relation": "facing_away",
-      "weight": 0.15206163139179882,
-      "distance": 2.5179356624028344,
+      "weight": 0.9963980072059783,
+      "distance": 2.3584952830141512,
       "properties": {}
     },
     {
@@ -710,67 +670,75 @@
       "properties": {}
     },
     {
+      "source": "armchair_2",
+      "target": "runner_(carpet)_6",
+      "relation": "facing",
+      "weight": 0.6357879925770047,
+      "distance": 1.772004514666935,
+      "properties": {}
+    },
+    {
       "source": "television_set_3",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.4369039627369131,
-      "distance": 3.891015291668744,
+      "weight": 0.47331560056216493,
+      "distance": 3.8029593739612837,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "television_set_3",
       "relation": "right_of",
-      "weight": 0.4369039627369131,
-      "distance": 3.891015291668744,
+      "weight": 0.47331560056216493,
+      "distance": 3.8029593739612837,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "table_lamp_4",
       "relation": "in_front_of",
-      "weight": 0.8995081585759975,
-      "distance": 3.891015291668744,
+      "weight": 0.8808929232684738,
+      "distance": 3.8029593739612837,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "television_set_3",
       "relation": "behind",
-      "weight": 0.8995081585759975,
-      "distance": 3.891015291668744,
+      "weight": 0.8808929232684738,
+      "distance": 3.8029593739612837,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "table_lamp_4",
       "relation": "facing",
-      "weight": 0.4242998222330142,
-      "distance": 3.891015291668744,
+      "weight": 0.3722281001116825,
+      "distance": 3.8029593739612837,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "cabinet_5",
       "relation": "right_of",
-      "weight": 0.9950371902099893,
-      "distance": 2.009975124224178,
+      "weight": 0.9945054529214059,
+      "distance": 1.91049731745428,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "television_set_3",
       "relation": "left_of",
-      "weight": 0.9950371902099893,
-      "distance": 2.009975124224178,
+      "weight": 0.9945054529214059,
+      "distance": 1.91049731745428,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "cabinet_5",
       "relation": "near",
-      "weight": 0.2269326445291624,
-      "distance": 2.009975124224178,
+      "weight": 0.2651933394406615,
+      "distance": 1.91049731745428,
       "properties": {}
     },
     {
@@ -786,7 +754,7 @@
       "target": "runner_(carpet)_6",
       "relation": "in_front_of",
       "weight": 1.0,
-      "distance": 2.1999999999999997,
+      "distance": 2.0500000000000003,
       "properties": {}
     },
     {
@@ -794,15 +762,15 @@
       "target": "television_set_3",
       "relation": "behind",
       "weight": 1.0,
-      "distance": 2.1999999999999997,
+      "distance": 2.0500000000000003,
       "properties": {}
     },
     {
       "source": "television_set_3",
       "target": "runner_(carpet)_6",
       "relation": "adjacent_to",
-      "weight": 0.08333333333333337,
-      "distance": 2.1999999999999997,
+      "weight": 0.14583333333333315,
+      "distance": 2.0500000000000003,
       "properties": {}
     },
     {
@@ -810,7 +778,7 @@
       "target": "runner_(carpet)_6",
       "relation": "facing",
       "weight": 1.0,
-      "distance": 2.1999999999999997,
+      "distance": 2.0500000000000003,
       "properties": {}
     },
     {
@@ -825,112 +793,112 @@
       "source": "table_lamp_4",
       "target": "cabinet_5",
       "relation": "right_of",
-      "weight": 0.746295434468511,
-      "distance": 4.957822102496216,
+      "weight": 0.7614313233231471,
+      "distance": 4.859269492423732,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.746295434468511,
-      "distance": 4.957822102496216,
+      "weight": 0.7614313233231471,
+      "distance": 4.859269492423732,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "cabinet_5",
       "relation": "behind",
-      "weight": 0.6656148469584017,
-      "distance": 4.957822102496216,
+      "weight": 0.648245586072409,
+      "distance": 4.859269492423732,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "table_lamp_4",
       "relation": "in_front_of",
-      "weight": 0.6656148469584017,
-      "distance": 4.957822102496216,
+      "weight": 0.648245586072409,
+      "distance": 4.859269492423732,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "runner_(carpet)_6",
       "relation": "right_of",
-      "weight": 0.7943578329771961,
-      "distance": 2.14009345590327,
+      "weight": 0.8106792283998809,
+      "distance": 2.2203603311174516,
       "properties": {}
     },
     {
       "source": "runner_(carpet)_6",
       "target": "table_lamp_4",
       "relation": "left_of",
-      "weight": 0.7943578329771961,
-      "distance": 2.14009345590327,
+      "weight": 0.8106792283998809,
+      "distance": 2.2203603311174516,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "runner_(carpet)_6",
       "relation": "behind",
-      "weight": 0.6074501075707971,
-      "distance": 2.14009345590327,
+      "weight": 0.5854905538443584,
+      "distance": 2.2203603311174516,
       "properties": {}
     },
     {
       "source": "runner_(carpet)_6",
       "target": "table_lamp_4",
       "relation": "in_front_of",
-      "weight": 0.6074501075707971,
-      "distance": 2.14009345590327,
+      "weight": 0.5854905538443584,
+      "distance": 2.2203603311174516,
       "properties": {}
     },
     {
       "source": "table_lamp_4",
       "target": "runner_(carpet)_6",
       "relation": "near",
-      "weight": 0.45125808822993074,
-      "distance": 2.14009345590327,
+      "weight": 0.43067683817501246,
+      "distance": 2.2203603311174516,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "runner_(carpet)_6",
       "relation": "left_of",
-      "weight": 0.7071067811865476,
-      "distance": 2.82842712474619,
+      "weight": 0.7164711881047885,
+      "distance": 2.651886121235224,
       "properties": {}
     },
     {
       "source": "runner_(carpet)_6",
       "target": "cabinet_5",
       "relation": "right_of",
-      "weight": 0.7071067811865476,
-      "distance": 2.82842712474619,
+      "weight": 0.7164711881047885,
+      "distance": 2.651886121235224,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "runner_(carpet)_6",
       "relation": "in_front_of",
-      "weight": 0.7071067811865475,
-      "distance": 2.82842712474619,
+      "weight": 0.6976166831546625,
+      "distance": 2.651886121235224,
       "properties": {}
     },
     {
       "source": "runner_(carpet)_6",
       "target": "cabinet_5",
       "relation": "behind",
-      "weight": 0.7071067811865475,
-      "distance": 2.82842712474619,
+      "weight": 0.6976166831546625,
+      "distance": 2.651886121235224,
       "properties": {}
     },
     {
       "source": "cabinet_5",
       "target": "runner_(carpet)_6",
       "relation": "near",
-      "weight": 0.35717565346677493,
-      "distance": 2.82842712474619,
+      "weight": 0.3972986088101763,
+      "distance": 2.651886121235224,
       "properties": {}
     },
     {
@@ -957,8 +925,8 @@
       "source": "television_set_3",
       "target": "wall_south",
       "relation": "against_wall",
-      "weight": 0.9,
-      "distance": 0.05,
+      "weight": 0.8,
+      "distance": 0.09999999999999999,
       "properties": {
         "wall": "south"
       }
@@ -967,8 +935,8 @@
       "source": "table_lamp_4",
       "target": "wall_north",
       "relation": "against_wall",
-      "weight": 0.5000000000000002,
-      "distance": 0.24999999999999992,
+      "weight": 0.30000000000000004,
+      "distance": 0.35,
       "properties": {
         "wall": "north"
       }
@@ -977,8 +945,8 @@
       "source": "cabinet_5",
       "target": "wall_south",
       "relation": "against_wall",
-      "weight": 0.8500000000000001,
-      "distance": 0.07499999999999998,
+      "weight": 0.75,
+      "distance": 0.12499999999999997,
       "properties": {
         "wall": "south"
       }
@@ -987,8 +955,8 @@
       "source": "runner_(carpet)_6",
       "target": "wall_north",
       "relation": "against_wall",
-      "weight": 0.5999999999999996,
-      "distance": 0.20000000000000018,
+      "weight": 0.40000000000000036,
+      "distance": 0.2999999999999998,
       "properties": {
         "wall": "north"
       }
@@ -997,42 +965,42 @@
       "source": "coffee_table_1",
       "target": "room_center",
       "relation": "center_of",
-      "weight": 0.5002439619564607,
-      "distance": 0.3999999999999999,
+      "weight": 0.6251829714673456,
+      "distance": 0.2999999999999998,
       "properties": {}
     },
     {
       "source": "runner_(carpet)_6",
       "target": "room_center",
       "relation": "center_of",
-      "weight": 0.6251829714673456,
-      "distance": 0.2999999999999998,
+      "weight": 0.75012198097823,
+      "distance": 0.20000000000000018,
       "properties": {}
     }
   ],
   "metadata": {
     "n_nodes": 7,
-    "n_edges": 107,
+    "n_edges": 103,
     "relation_types": [
-      "against_wall",
-      "center_of",
-      "facing",
-      "left_of",
       "aligned_with",
-      "in_front_of",
-      "behind",
+      "against_wall",
       "right_of",
+      "behind",
+      "facing",
+      "facing_away",
       "near",
+      "left_of",
+      "center_of",
       "adjacent_to",
-      "facing_away"
+      "in_front_of"
     ],
     "functional_zones": [
-      "seating",
-      "lighting",
       "floor_covering",
+      "surface",
+      "seating",
       "storage",
       "entertainment",
-      "surface"
+      "lighting"
     ]
   }
 }

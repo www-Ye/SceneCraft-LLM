@@ -1,0 +1,115 @@
+{
+  "name": "modern_living_room",
+  "desc": "Modern living room with L-shaped seating",
+  "room": {
+    "width": 5.0,
+    "depth": 4.0
+  },
+  "objects": [
+    {
+      "category": "sofa",
+      "position": [
+        2.5,
+        3.5,
+        0.0
+      ],
+      "rotation": 180,
+      "index": 2,
+      "dimensions": {
+        "width": 2.0,
+        "depth": 0.9,
+        "height": 0.85
+      }
+    },
+    {
+      "category": "coffee_table",
+      "position": [
+        2.5,
+        2.3,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 2,
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.6,
+        "height": 0.45
+      }
+    },
+    {
+      "category": "armchair",
+      "position": [
+        0.8,
+        2.7,
+        0.0
+      ],
+      "rotation": 270,
+      "index": 2,
+      "dimensions": {
+        "width": 0.9,
+        "depth": 0.85,
+        "height": 0.85
+      }
+    },
+    {
+      "category": "television_set",
+      "position": [
+        2.5,
+        0.15,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.1,
+        "height": 0.7
+      }
+    },
+    {
+      "category": "table_lamp",
+      "position": [
+        4.3,
+        3.5,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.5
+      }
+    },
+    {
+      "category": "cabinet",
+      "position": [
+        0.6,
+        0.35,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.45,
+        "height": 1.8
+      }
+    },
+    {
+      "category": "runner_(carpet)",
+      "position": [
+        2.5,
+        2.2,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 2.0,
+        "depth": 3.0,
+        "height": 0.01
+      }
+    }
+  ]
+}

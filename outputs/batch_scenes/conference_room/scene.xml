@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<mujoco model="scenecraft_conference_room">
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual>
+    <quality shadowsize="4096"/>
+    <global offwidth="1600" offheight="1200"/>
+  </visual>
+  <asset>
+    <texture type="2d" name="floor_tex" builtin="checker" rgb1="0.75 0.60 0.42" rgb2="0.70 0.55 0.38" width="256" height="256"/>
+    <material name="floor_mat" texture="floor_tex" texrepeat="10 8" specular="0.3" shininess="0.2"/>
+    <texture type="2d" name="tex_dining_table_0" builtin="checker" rgb1="0.55 0.38 0.22" rgb2="0.50 0.33 0.18" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_1" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_2" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_3" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_4" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_5" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_6" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_television_set_7" builtin="flat" rgb1="0.08 0.08 0.10" rgb2="0.08 0.08 0.10" width="128" height="128"/>
+    <texture type="2d" name="tex_cabinet_8" builtin="checker" rgb1="0.40 0.25 0.12" rgb2="0.35 0.20 0.08" width="128" height="128"/>
+    <material name="mat_dining_table_0" texture="tex_dining_table_0" texrepeat="6 6" specular="0.4" shininess="0.3"/>
+    <material name="mat_chair_1" texture="tex_chair_1" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_chair_2" texture="tex_chair_2" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_chair_3" texture="tex_chair_3" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_chair_4" texture="tex_chair_4" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_chair_5" texture="tex_chair_5" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_chair_6" texture="tex_chair_6" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_television_set_7" texture="tex_television_set_7" texrepeat="1 1" specular="0.8" shininess="0.9"/>
+    <material name="mat_cabinet_8" texture="tex_cabinet_8" texrepeat="8 8" specular="0.3" shininess="0.2"/>
+    <mesh name="dining_table_0_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/dining_table_0.stl"/>
+    <mesh name="chair_1_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="chair_2_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="chair_3_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="chair_4_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="chair_5_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="chair_6_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="television_set_7_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/television_set_0.stl"/>
+    <mesh name="cabinet_8_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/cabinet_0.stl"/>
+  </asset>
+  <worldbody>
+    <geom type="plane" size="3.0 2.0 0.01" material="floor_mat" pos="3.0 2.0 0"/>
+    <geom type="box" size="3.0 0.03 0.10" pos="3.0 -0.03 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="3.0 0.03 0.10" pos="3.0 4.03 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="0.03 2.0 0.10" pos="-0.03 2.0 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="0.03 2.0 0.10" pos="6.03 2.0 0.10" rgba="0.90 0.88 0.85 1"/>
+    <light pos="3.0 2.0 2.8" dir="0 0 -1" diffuse="0.85 0.80 0.72" castshadow="true"/>
+    <light pos="1 1 2.5" dir="0.3 0.3 -1" diffuse="0.2 0.2 0.2"/>
+    <body name="dining_table_0" pos="3.000 2.000 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="dining_table_0_mesh" material="mat_dining_table_0" mass="35"/>
+    </body>
+    <body name="chair_1" pos="1.500 2.000 0.000" quat="0.7071 0 0 0.7071">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_1_mesh" material="mat_chair_1" mass="8"/>
+    </body>
+    <body name="chair_2" pos="2.300 2.000 0.000" quat="0.7071 0 0 0.7071">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_2_mesh" material="mat_chair_2" mass="8"/>
+    </body>
+    <body name="chair_3" pos="3.700 2.000 0.000" quat="-0.7071 0 0 0.7071">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_3_mesh" material="mat_chair_3" mass="8"/>
+    </body>
+    <body name="chair_4" pos="4.500 2.000 0.000" quat="-0.7071 0 0 0.7071">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_4_mesh" material="mat_chair_4" mass="8"/>
+    </body>
+    <body name="chair_5" pos="3.000 1.200 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_5_mesh" material="mat_chair_5" mass="8"/>
+    </body>
+    <body name="chair_6" pos="3.000 2.800 0.000" quat="0.0000 0 0 1.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_6_mesh" material="mat_chair_6" mass="8"/>
+    </body>
+    <body name="television_set_7" pos="5.500 2.000 0.000" quat="-0.7071 0 0 0.7071">
+      <freejoint/>
+      <geom type="mesh" mesh="television_set_7_mesh" material="mat_television_set_7" mass="10"/>
+    </body>
+    <body name="cabinet_8" pos="0.500 0.300 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="cabinet_8_mesh" material="mat_cabinet_8" mass="35"/>
+    </body>
+  </worldbody>
+</mujoco>

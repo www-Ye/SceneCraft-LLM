@@ -1,0 +1,1012 @@
+{
+  "room": {
+    "width": 4.0,
+    "depth": 3.5,
+    "height": 2.8,
+    "area": 14.0
+  },
+  "nodes": [
+    {
+      "id": "dining_table_0",
+      "category": "dining_table",
+      "position": [
+        2.0,
+        2.0,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 1.6,
+        "depth": 0.9,
+        "height": 0.75
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "dining"
+    },
+    {
+      "id": "chair_1",
+      "category": "chair",
+      "position": [
+        1.3,
+        2.0,
+        0.0
+      ],
+      "rotation": 90,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "chair_2",
+      "category": "chair",
+      "position": [
+        2.7,
+        2.0,
+        0.0
+      ],
+      "rotation": 270,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "chair_3",
+      "category": "chair",
+      "position": [
+        2.0,
+        1.3,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "chair_4",
+      "category": "chair",
+      "position": [
+        2.0,
+        2.7,
+        0.0
+      ],
+      "rotation": 180,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "cabinet_5",
+      "category": "cabinet",
+      "position": [
+        3.6,
+        0.3,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.45,
+        "height": 1.8
+      },
+      "properties": {},
+      "wall_aligned": true,
+      "floor_object": true,
+      "functional_zone": "storage"
+    },
+    {
+      "id": "table_lamp_6",
+      "category": "table_lamp",
+      "position": [
+        0.3,
+        3.2,
+        0.0
+      ],
+      "rotation": 0,
+      "dimensions": {
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.5
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "lighting"
+    }
+  ],
+  "edges": [
+    {
+      "source": "dining_table_0",
+      "target": "chair_1",
+      "relation": "right_of",
+      "weight": 1.0,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "dining_table_0",
+      "relation": "left_of",
+      "weight": 1.0,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_1",
+      "relation": "adjacent_to",
+      "weight": 0.4814814814814815,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_1",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_2",
+      "relation": "left_of",
+      "weight": 1.0,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "dining_table_0",
+      "relation": "right_of",
+      "weight": 1.0,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_2",
+      "relation": "adjacent_to",
+      "weight": 0.4814814814814814,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_2",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_3",
+      "relation": "behind",
+      "weight": 1.0,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "dining_table_0",
+      "relation": "in_front_of",
+      "weight": 1.0,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_3",
+      "relation": "adjacent_to",
+      "weight": 0.4814814814814815,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_3",
+      "relation": "facing_away",
+      "weight": 1.0,
+      "distance": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_3",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_4",
+      "relation": "in_front_of",
+      "weight": 1.0,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "dining_table_0",
+      "relation": "behind",
+      "weight": 1.0,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_4",
+      "relation": "adjacent_to",
+      "weight": 0.4814814814814814,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_4",
+      "relation": "facing",
+      "weight": 1.0,
+      "distance": 0.7000000000000002,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "chair_4",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.685364699004991,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "dining_table_0",
+      "relation": "right_of",
+      "weight": 0.685364699004991,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.7281999926928028,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "dining_table_0",
+      "relation": "in_front_of",
+      "weight": 0.7281999926928028,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "cabinet_5",
+      "relation": "near",
+      "weight": 0.22182549800474993,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "cabinet_5",
+      "relation": "facing_away",
+      "weight": 0.038571213087297766,
+      "distance": 2.3345235059857505,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.8169678632647617,
+      "distance": 2.080865204668481,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "dining_table_0",
+      "relation": "left_of",
+      "weight": 0.8169678632647617,
+      "distance": 2.080865204668481,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.5766831975986554,
+      "distance": 2.080865204668481,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "dining_table_0",
+      "relation": "behind",
+      "weight": 0.5766831975986554,
+      "distance": 2.080865204668481,
+      "properties": {}
+    },
+    {
+      "source": "dining_table_0",
+      "target": "table_lamp_6",
+      "relation": "near",
+      "weight": 0.16765391813260755,
+      "distance": 2.080865204668481,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_2",
+      "relation": "left_of",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_1",
+      "relation": "right_of",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_2",
+      "relation": "near",
+      "weight": 0.125,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_2",
+      "relation": "facing_away",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_2",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_3",
+      "relation": "left_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611665,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_1",
+      "relation": "right_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611665,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_3",
+      "relation": "behind",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611665,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_1",
+      "relation": "in_front_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611665,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_3",
+      "relation": "near",
+      "weight": 0.381281566461771,
+      "distance": 0.9899494936611665,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_4",
+      "relation": "left_of",
+      "weight": 0.7071067811865474,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "chair_1",
+      "relation": "right_of",
+      "weight": 0.7071067811865474,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_4",
+      "relation": "in_front_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "chair_1",
+      "relation": "behind",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "chair_4",
+      "relation": "near",
+      "weight": 0.3812815664617708,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.8041761414663253,
+      "distance": 2.8600699292150185,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_1",
+      "relation": "right_of",
+      "weight": 0.8041761414663253,
+      "distance": 2.8600699292150185,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.5943910610838057,
+      "distance": 2.8600699292150185,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_1",
+      "relation": "in_front_of",
+      "weight": 0.5943910610838057,
+      "distance": 2.8600699292150185,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "cabinet_5",
+      "relation": "facing_away",
+      "weight": 0.18957256910995915,
+      "distance": 2.8600699292150185,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.6401843996644798,
+      "distance": 1.562049935181331,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_1",
+      "relation": "left_of",
+      "weight": 0.6401843996644798,
+      "distance": 1.562049935181331,
+      "properties": {}
+    },
+    {
+      "source": "chair_1",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.7682212795973759,
+      "distance": 1.562049935181331,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_1",
+      "relation": "behind",
+      "weight": 0.7682212795973759,
+      "distance": 1.562049935181331,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_3",
+      "relation": "right_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_2",
+      "relation": "left_of",
+      "weight": 0.7071067811865476,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_3",
+      "relation": "behind",
+      "weight": 0.7071067811865474,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_2",
+      "relation": "in_front_of",
+      "weight": 0.7071067811865474,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_3",
+      "relation": "near",
+      "weight": 0.3812815664617708,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_3",
+      "relation": "facing_away",
+      "weight": 6.315935428978669e-16,
+      "distance": 0.9899494936611667,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_4",
+      "relation": "right_of",
+      "weight": 0.7071067811865475,
+      "distance": 0.9899494936611668,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "chair_2",
+      "relation": "left_of",
+      "weight": 0.7071067811865475,
+      "distance": 0.9899494936611668,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_4",
+      "relation": "in_front_of",
+      "weight": 0.7071067811865475,
+      "distance": 0.9899494936611668,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "chair_2",
+      "relation": "behind",
+      "weight": 0.7071067811865475,
+      "distance": 0.9899494936611668,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "chair_4",
+      "relation": "near",
+      "weight": 0.3812815664617708,
+      "distance": 0.9899494936611668,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.4678877204190327,
+      "distance": 1.9235384061671343,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_2",
+      "relation": "right_of",
+      "weight": 0.4678877204190327,
+      "distance": 1.9235384061671343,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.8837879163470618,
+      "distance": 1.9235384061671343,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_2",
+      "relation": "in_front_of",
+      "weight": 0.8837879163470618,
+      "distance": 1.9235384061671343,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.8944271909999159,
+      "distance": 2.683281572999748,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_2",
+      "relation": "left_of",
+      "weight": 0.8944271909999159,
+      "distance": 2.683281572999748,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.4472135954999579,
+      "distance": 2.683281572999748,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_2",
+      "relation": "behind",
+      "weight": 0.4472135954999579,
+      "distance": 2.683281572999748,
+      "properties": {}
+    },
+    {
+      "source": "chair_2",
+      "target": "table_lamp_6",
+      "relation": "facing_away",
+      "weight": 0.4096655293982672,
+      "distance": 2.683281572999748,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_4",
+      "relation": "in_front_of",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "chair_3",
+      "relation": "behind",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_4",
+      "relation": "near",
+      "weight": 0.125,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_4",
+      "relation": "facing",
+      "weight": 1.0,
+      "distance": 1.4000000000000001,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "chair_4",
+      "relation": "aligned_with",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.8479983040050879,
+      "distance": 1.886796226411321,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_3",
+      "relation": "right_of",
+      "weight": 0.8479983040050879,
+      "distance": 1.886796226411321,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.5299989400031799,
+      "distance": 1.886796226411321,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_3",
+      "relation": "in_front_of",
+      "weight": 0.5299989400031799,
+      "distance": 1.886796226411321,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "cabinet_5",
+      "relation": "near",
+      "weight": 0.006949354520357387,
+      "distance": 1.886796226411321,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.6667948594698258,
+      "distance": 2.5495097567963922,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_3",
+      "relation": "left_of",
+      "weight": 0.6667948594698258,
+      "distance": 2.5495097567963922,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.7452413135250994,
+      "distance": 2.5495097567963922,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_3",
+      "relation": "behind",
+      "weight": 0.7452413135250994,
+      "distance": 2.5495097567963922,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "table_lamp_6",
+      "relation": "facing",
+      "weight": 0.07066289155253891,
+      "distance": 2.5495097567963922,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.5547001962252291,
+      "distance": 2.8844410203711917,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_4",
+      "relation": "right_of",
+      "weight": 0.5547001962252291,
+      "distance": 2.8844410203711917,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.8320502943378437,
+      "distance": 2.8844410203711917,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "chair_4",
+      "relation": "in_front_of",
+      "weight": 0.8320502943378437,
+      "distance": 2.8844410203711917,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "cabinet_5",
+      "relation": "facing",
+      "weight": 0.2513318327560051,
+      "distance": 2.8844410203711917,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.9593655015712705,
+      "distance": 1.772004514666935,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_4",
+      "relation": "left_of",
+      "weight": 0.9593655015712705,
+      "distance": 1.772004514666935,
+      "properties": {}
+    },
+    {
+      "source": "chair_4",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.28216632399155017,
+      "distance": 1.772004514666935,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "chair_4",
+      "relation": "behind",
+      "weight": 0.28216632399155017,
+      "distance": 1.772004514666935,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "table_lamp_6",
+      "relation": "right_of",
+      "weight": 0.751164898449876,
+      "distance": 4.39317652729776,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.751164898449876,
+      "distance": 4.39317652729776,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "table_lamp_6",
+      "relation": "in_front_of",
+      "weight": 0.6601146077286789,
+      "distance": 4.39317652729776,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.6601146077286789,
+      "distance": 4.39317652729776,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "wall_east",
+      "relation": "against_wall",
+      "weight": 1.0000000000000002,
+      "distance": -1.1102230246251565e-16,
+      "properties": {
+        "wall": "east"
+      }
+    },
+    {
+      "source": "table_lamp_6",
+      "target": "wall_north",
+      "relation": "against_wall",
+      "weight": 0.7000000000000004,
+      "distance": 0.14999999999999983,
+      "properties": {
+        "wall": "north"
+      }
+    },
+    {
+      "source": "dining_table_0",
+      "target": "room_center",
+      "relation": "center_of",
+      "weight": 0.6237116526465611,
+      "distance": 0.25,
+      "properties": {}
+    },
+    {
+      "source": "chair_3",
+      "target": "room_center",
+      "relation": "center_of",
+      "weight": 0.3226809747638101,
+      "distance": 0.44999999999999996,
+      "properties": {}
+    }
+  ],
+  "metadata": {
+    "n_nodes": 7,
+    "n_edges": 105,
+    "relation_types": [
+      "against_wall",
+      "in_front_of",
+      "right_of",
+      "facing",
+      "aligned_with",
+      "near",
+      "center_of",
+      "behind",
+      "adjacent_to",
+      "left_of",
+      "facing_away"
+    ],
+    "functional_zones": [
+      "storage",
+      "lighting",
+      "dining",
+      "seating"
+    ]
+  }
+}

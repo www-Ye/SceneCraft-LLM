@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<mujoco model="scenecraft_home_office">
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <visual>
+    <quality shadowsize="4096"/>
+    <global offwidth="1600" offheight="1200"/>
+  </visual>
+  <asset>
+    <texture type="2d" name="floor_tex" builtin="checker" rgb1="0.75 0.60 0.42" rgb2="0.70 0.55 0.38" width="256" height="256"/>
+    <material name="floor_mat" texture="floor_tex" texrepeat="10 8" specular="0.3" shininess="0.2"/>
+    <texture type="2d" name="tex_desk_0" builtin="checker" rgb1="0.48 0.35 0.22" rgb2="0.43 0.30 0.18" width="128" height="128"/>
+    <texture type="2d" name="tex_chair_1" builtin="gradient" rgb1="0.50 0.42 0.30" rgb2="0.45 0.38 0.26" width="128" height="128"/>
+    <texture type="2d" name="tex_cabinet_2" builtin="checker" rgb1="0.40 0.25 0.12" rgb2="0.35 0.20 0.08" width="128" height="128"/>
+    <texture type="2d" name="tex_table_lamp_3" builtin="gradient" rgb1="0.90 0.82 0.60" rgb2="0.80 0.72 0.50" width="128" height="128"/>
+    <texture type="2d" name="tex_runner_carpet_4" builtin="checker" rgb1="0.78 0.70 0.58" rgb2="0.72 0.64 0.52" width="128" height="128"/>
+    <material name="mat_desk_0" texture="tex_desk_0" texrepeat="6 6" specular="0.3" shininess="0.2"/>
+    <material name="mat_chair_1" texture="tex_chair_1" texrepeat="3 3" specular="0.2" shininess="0.1"/>
+    <material name="mat_cabinet_2" texture="tex_cabinet_2" texrepeat="8 8" specular="0.3" shininess="0.2"/>
+    <material name="mat_table_lamp_3" texture="tex_table_lamp_3" texrepeat="2 2" specular="0.3" shininess="0.2"/>
+    <material name="mat_runner_carpet_4" texture="tex_runner_carpet_4" texrepeat="4 4" specular="0.0" shininess="0.0"/>
+    <mesh name="desk_0_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/desk_0.stl"/>
+    <mesh name="chair_1_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/chair_0.stl"/>
+    <mesh name="cabinet_2_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/cabinet_0.stl"/>
+    <mesh name="table_lamp_3_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/table_lamp_0.stl"/>
+    <mesh name="runner_carpet_4_mesh" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/_mujoco_stl/runner_carpet_0.stl"/>
+  </asset>
+  <worldbody>
+    <geom type="plane" size="1.75 1.5 0.01" material="floor_mat" pos="1.75 1.5 0"/>
+    <geom type="box" size="1.75 0.03 0.10" pos="1.75 -0.03 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="1.75 0.03 0.10" pos="1.75 3.03 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="0.03 1.5 0.10" pos="-0.03 1.5 0.10" rgba="0.90 0.88 0.85 1"/>
+    <geom type="box" size="0.03 1.5 0.10" pos="3.53 1.5 0.10" rgba="0.90 0.88 0.85 1"/>
+    <light pos="1.75 1.5 2.8" dir="0 0 -1" diffuse="0.85 0.80 0.72" castshadow="true"/>
+    <light pos="1 1 2.5" dir="0.3 0.3 -1" diffuse="0.2 0.2 0.2"/>
+    <body name="desk_0" pos="1.750 2.500 0.000" quat="0.0000 0 0 1.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="desk_0_mesh" material="mat_desk_0" mass="25"/>
+    </body>
+    <body name="chair_1" pos="1.750 1.800 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="chair_1_mesh" material="mat_chair_1" mass="8"/>
+    </body>
+    <body name="cabinet_2" pos="3.200 0.300 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="cabinet_2_mesh" material="mat_cabinet_2" mass="35"/>
+    </body>
+    <body name="table_lamp_3" pos="0.500 2.500 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="table_lamp_3_mesh" material="mat_table_lamp_3" mass="4"/>
+    </body>
+    <body name="runner_carpet_4" pos="1.750 1.500 0.000" quat="1.0000 0 0 0.0000">
+      <freejoint/>
+      <geom type="mesh" mesh="runner_carpet_4_mesh" material="mat_runner_carpet_4" mass="3"/>
+    </body>
+  </worldbody>
+</mujoco>

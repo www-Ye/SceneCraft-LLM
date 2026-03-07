@@ -1,0 +1,85 @@
+{
+  "name": "home_office",
+  "desc": "Home office with desk, chair, and bookshelf",
+  "room": {
+    "width": 3.5,
+    "depth": 3.0
+  },
+  "objects": [
+    {
+      "category": "desk",
+      "position": [
+        1.75,
+        2.5,
+        0.0
+      ],
+      "rotation": 180,
+      "index": 0,
+      "dimensions": {
+        "width": 1.4,
+        "depth": 0.7,
+        "height": 0.75
+      }
+    },
+    {
+      "category": "chair",
+      "position": [
+        1.75,
+        1.8,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      }
+    },
+    {
+      "category": "cabinet",
+      "position": [
+        3.2,
+        0.3,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.45,
+        "height": 1.8
+      }
+    },
+    {
+      "category": "table_lamp",
+      "position": [
+        0.5,
+        2.5,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.5
+      }
+    },
+    {
+      "category": "runner_(carpet)",
+      "position": [
+        1.75,
+        1.5,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 2.0,
+        "depth": 3.0,
+        "height": 0.01
+      }
+    }
+  ]
+}

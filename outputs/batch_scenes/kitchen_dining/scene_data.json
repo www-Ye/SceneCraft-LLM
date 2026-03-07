@@ -1,0 +1,115 @@
+{
+  "name": "kitchen_dining",
+  "desc": "Kitchen dining area with table and chairs",
+  "room": {
+    "width": 4.0,
+    "depth": 3.5
+  },
+  "objects": [
+    {
+      "category": "dining_table",
+      "position": [
+        2.0,
+        2.0,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 1.6,
+        "depth": 0.9,
+        "height": 0.75
+      }
+    },
+    {
+      "category": "chair",
+      "position": [
+        1.3,
+        2.0,
+        0.0
+      ],
+      "rotation": 90,
+      "index": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      }
+    },
+    {
+      "category": "chair",
+      "position": [
+        2.7,
+        2.0,
+        0.0
+      ],
+      "rotation": 270,
+      "index": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      }
+    },
+    {
+      "category": "chair",
+      "position": [
+        2.0,
+        1.3,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      }
+    },
+    {
+      "category": "chair",
+      "position": [
+        2.0,
+        2.7,
+        0.0
+      ],
+      "rotation": 180,
+      "index": 0,
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 0.9
+      }
+    },
+    {
+      "category": "cabinet",
+      "position": [
+        3.6,
+        0.3,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.45,
+        "height": 1.8
+      }
+    },
+    {
+      "category": "table_lamp",
+      "position": [
+        0.3,
+        3.2,
+        0.0
+      ],
+      "rotation": 0,
+      "index": 0,
+      "dimensions": {
+        "width": 0.3,
+        "depth": 0.3,
+        "height": 0.5
+      }
+    }
+  ]
+}
