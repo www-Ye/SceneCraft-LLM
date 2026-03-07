@@ -17,7 +17,7 @@ try:
     from evaluator import PhysSceneEvaluator
     from tabletop_bench import TabletopBench
     from robot_eval import RobotNavigator
-    from vlm_judge import VLMJudge
+    from vlm_judge import vlm_judge
 except ImportError as e:
     print(f"Error importing modules: {e}")
     print("Make sure you're running from the correct directory")
@@ -33,7 +33,7 @@ class FullBenchmarkRunner:
         # Initialize evaluators
         self.rule_evaluator = PhysSceneEvaluator()
         self.tabletop_bench = TabletopBench()
-        self.vlm_judge = VLMJudge() if self.config.get("use_vlm", True) else None
+        # VLM judge is just a function, not a class
         
         print("Full Benchmark Runner Initialized")
         print(f"Configuration: {self.config}")
@@ -77,7 +77,11 @@ class FullBenchmarkRunner:
         if self.config["use_rule_based"]:
             print("Running rule-based evaluation...")
             try:
-                rule_results = self.rule_evaluator.evaluate_layout(layout, room_size, prompt_data)
+                expected_objects = prompt_data.get("expected_objects", [])
+                functional_checks = prompt_data.get("functional_checks", [])
+                rule_results = self.rule_evaluator.evaluate_layout(
+                    {"objects": layout}, room_size, expected_objects, functional_checks
+                )
                 results["rule_based"] = rule_results
                 
                 if self.config["verbose"]:
@@ -110,7 +114,7 @@ class FullBenchmarkRunner:
                 results["robot_nav"] = {"error": str(e)}
         
         # 3. VLM Judge evaluation  
-        if self.config["use_vlm"] and self.vlm_judge:
+        if self.config["use_vlm"]:
             print("Running VLM judge evaluation...")
             try:
                 # First render the layout for VLM
@@ -122,7 +126,7 @@ class FullBenchmarkRunner:
                 render_path = os.path.join(output_dir, f"{results['layout_id']}_layout.png")
                 render_floorplan(layout, room_size, render_path)
                 
-                vlm_results = self.vlm_judge.judge_layout(render_path, prompt_data)
+                vlm_results = vlm_judge(render_path, prompt_data)
                 results["vlm_judge"] = vlm_results
                 
                 if self.config["verbose"]:
@@ -361,6 +365,7 @@ class FullBenchmarkRunner:
             
             layout.append({
                 "name": obj_name,
+                "category": obj_name,  # Add category field for evaluator
                 "position": [x, y, dims["height"] / 2],
                 "dimensions": [dims["width"], dims["depth"], dims["height"]],
                 "rotation": 0
@@ -467,7 +472,8 @@ def main():
         "use_tabletop": not args.skip_tabletop,
         "use_vlm": not args.skip_vlm,
         "robot_nav_trials": args.robot_trials,
-        "verbose": args.verbose
+        "verbose": args.verbose,
+        "save_intermediate": True  # Default to True
     })
     
     # Run benchmark
