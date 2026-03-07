@@ -1,0 +1,1056 @@
+{
+  "room": {
+    "width": 5.0,
+    "depth": 4.0,
+    "height": 2.8,
+    "area": 20.0
+  },
+  "nodes": [
+    {
+      "id": "sofa_0",
+      "category": "sofa",
+      "position": [
+        2.742910323321898,
+        2.9,
+        0.0
+      ],
+      "rotation": 6.497323137370207,
+      "dimensions": {
+        "width": 2.0209381557218298,
+        "depth": 0.9094221700748234,
+        "height": 0.8588987161817776
+      },
+      "properties": {},
+      "wall_aligned": true,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "coffee_table_1",
+      "category": "coffee_table",
+      "position": [
+        2.9279730456067736,
+        1.3429043497864588,
+        0.0
+      ],
+      "rotation": 0.0,
+      "dimensions": {
+        "width": 1.198890442411679,
+        "depth": 0.5994452212058395,
+        "height": 0.44958391590437974
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "surface"
+    },
+    {
+      "id": "armchair_2",
+      "category": "armchair",
+      "position": [
+        0.55,
+        1.0435768476247533,
+        0.0
+      ],
+      "rotation": 89.76914096858617,
+      "dimensions": {
+        "width": 0.900316223733002,
+        "depth": 0.8502986557478351,
+        "height": 0.8502986557478351
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "seating"
+    },
+    {
+      "id": "television_set_3",
+      "category": "television_set",
+      "position": [
+        3.026035081780227,
+        0.7,
+        0.0
+      ],
+      "rotation": 5.127495255553004,
+      "dimensions": {
+        "width": 1.2084326368225626,
+        "depth": 0.10070271973521357,
+        "height": 0.7049190381464949
+      },
+      "properties": {},
+      "wall_aligned": true,
+      "floor_object": true,
+      "functional_zone": "entertainment"
+    },
+    {
+      "id": "table_lamp_4",
+      "category": "table_lamp",
+      "position": [
+        4.098776206057246,
+        3.468113477619667,
+        0.0
+      ],
+      "rotation": 0.0,
+      "dimensions": {
+        "width": 0.3003883098205759,
+        "depth": 0.3003883098205759,
+        "height": 0.5006471830342932
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "lighting"
+    },
+    {
+      "id": "cabinet_5",
+      "category": "cabinet",
+      "position": [
+        4.499975404541861,
+        0.5,
+        0.0
+      ],
+      "rotation": 0.0,
+      "dimensions": {
+        "width": 0.7999931201790345,
+        "depth": 0.4499961301007069,
+        "height": 1.7999845204028275
+      },
+      "properties": {},
+      "wall_aligned": true,
+      "floor_object": true,
+      "functional_zone": "storage"
+    },
+    {
+      "id": "runner_(carpet)_6",
+      "category": "runner_(carpet)",
+      "position": [
+        2.5,
+        2.0,
+        0.0
+      ],
+      "rotation": 0.0,
+      "dimensions": {
+        "width": 1.9999999284533347,
+        "depth": 2.9999998926800022,
+        "height": 0.009999999642266675
+      },
+      "properties": {},
+      "wall_aligned": false,
+      "floor_object": true,
+      "functional_zone": "floor_covering"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sofa_0",
+      "target": "coffee_table_1",
+      "relation": "behind",
+      "weight": 0.9930111482174048,
+      "distance": 1.5680545510579087,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "sofa_0",
+      "relation": "in_front_of",
+      "weight": 0.9930111482174048,
+      "distance": 1.5680545510579087,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "coffee_table_1",
+      "relation": "adjacent_to",
+      "weight": 0.17899219256900134,
+      "distance": 1.5680545510579087,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "coffee_table_1",
+      "relation": "facing_away",
+      "weight": 0.9937654275075134,
+      "distance": 1.5680545510579087,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "coffee_table_1",
+      "relation": "aligned_with",
+      "weight": 0.07468638857562127,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.7632346100972417,
+      "distance": 2.87317987721037,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "sofa_0",
+      "relation": "left_of",
+      "weight": 0.7632346100972417,
+      "distance": 2.87317987721037,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "armchair_2",
+      "relation": "behind",
+      "weight": 0.6461214513926243,
+      "distance": 2.87317987721037,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "sofa_0",
+      "relation": "in_front_of",
+      "weight": 0.6461214513926243,
+      "distance": 2.87317987721037,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "armchair_2",
+      "relation": "near",
+      "weight": 0.18404648809973168,
+      "distance": 2.87317987721037,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "television_set_3",
+      "relation": "behind",
+      "weight": 0.9918205085117084,
+      "distance": 2.218143284112207,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "sofa_0",
+      "relation": "in_front_of",
+      "weight": 0.9918205085117084,
+      "distance": 2.218143284112207,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "television_set_3",
+      "relation": "near",
+      "weight": 0.42075515684434905,
+      "distance": 2.218143284112207,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "television_set_3",
+      "relation": "facing_away",
+      "weight": 0.9814235614502991,
+      "distance": 2.218143284112207,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "table_lamp_4",
+      "relation": "left_of",
+      "weight": 0.9223096816818591,
+      "distance": 1.4700766018880842,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "sofa_0",
+      "relation": "right_of",
+      "weight": 0.9223096816818591,
+      "distance": 1.4700766018880842,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.3864516154396404,
+      "distance": 1.4700766018880842,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "sofa_0",
+      "relation": "behind",
+      "weight": 0.3864516154396404,
+      "distance": 1.4700766018880842,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "table_lamp_4",
+      "relation": "near",
+      "weight": 0.4967777072409011,
+      "distance": 1.4700766018880842,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.5907218271948635,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "sofa_0",
+      "relation": "right_of",
+      "weight": 0.5907218271948635,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.8068752833465417,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "sofa_0",
+      "relation": "in_front_of",
+      "weight": 0.8068752833465417,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "cabinet_5",
+      "relation": "near",
+      "weight": 0.13051823161020304,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "cabinet_5",
+      "relation": "facing_away",
+      "weight": 0.3397572254019426,
+      "distance": 2.9744373753102478,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "runner_(carpet)_6",
+      "relation": "behind",
+      "weight": 0.965453287168308,
+      "distance": 0.9322046047817769,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "sofa_0",
+      "relation": "in_front_of",
+      "weight": 0.965453287168308,
+      "distance": 0.9322046047817769,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "runner_(carpet)_6",
+      "relation": "adjacent_to",
+      "weight": 0.6683099522696838,
+      "distance": 0.9322046047817769,
+      "properties": {}
+    },
+    {
+      "source": "sofa_0",
+      "target": "runner_(carpet)_6",
+      "relation": "facing_away",
+      "weight": 0.5199649546905448,
+      "distance": 0.9322046047817769,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.9921706518879524,
+      "distance": 2.3967379412824257,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "coffee_table_1",
+      "relation": "left_of",
+      "weight": 0.9921706518879524,
+      "distance": 2.3967379412824257,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "armchair_2",
+      "relation": "near",
+      "weight": 0.11205837946980046,
+      "distance": 2.3967379412824257,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "television_set_3",
+      "relation": "behind",
+      "weight": 0.9885664599237106,
+      "distance": 0.6503400386819445,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "coffee_table_1",
+      "relation": "in_front_of",
+      "weight": 0.9885664599237106,
+      "distance": 0.6503400386819445,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "television_set_3",
+      "relation": "adjacent_to",
+      "weight": 0.5674957285616673,
+      "distance": 0.6503400386819445,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "television_set_3",
+      "relation": "facing_away",
+      "weight": 0.8072785123565583,
+      "distance": 0.6503400386819445,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "television_set_3",
+      "relation": "aligned_with",
+      "weight": 0.5096898191327339,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "table_lamp_4",
+      "relation": "left_of",
+      "weight": 0.4825318987220584,
+      "distance": 2.4263746366846157,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "coffee_table_1",
+      "relation": "right_of",
+      "weight": 0.4825318987220584,
+      "distance": 2.4263746366846157,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.8758783972194343,
+      "distance": 2.4263746366846157,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "coffee_table_1",
+      "relation": "behind",
+      "weight": 0.8758783972194343,
+      "distance": 2.4263746366846157,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "table_lamp_4",
+      "relation": "facing",
+      "weight": 0.358868993568076,
+      "distance": 2.4263746366846157,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.881302499362538,
+      "distance": 1.7837262007904726,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "coffee_table_1",
+      "relation": "right_of",
+      "weight": 0.881302499362538,
+      "distance": 1.7837262007904726,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.47255254164732174,
+      "distance": 1.7837262007904726,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "coffee_table_1",
+      "relation": "in_front_of",
+      "weight": 0.47255254164732174,
+      "distance": 1.7837262007904726,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "cabinet_5",
+      "relation": "near",
+      "weight": 0.3136567461251115,
+      "distance": 1.7837262007904726,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "runner_(carpet)_6",
+      "relation": "right_of",
+      "weight": 0.5457598614379451,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "coffee_table_1",
+      "relation": "left_of",
+      "weight": 0.5457598614379451,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "runner_(carpet)_6",
+      "relation": "in_front_of",
+      "weight": 0.8379416290191309,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "coffee_table_1",
+      "relation": "behind",
+      "weight": 0.8379416290191309,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "runner_(carpet)_6",
+      "relation": "adjacent_to",
+      "weight": 0.6731834841498345,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "runner_(carpet)_6",
+      "relation": "facing",
+      "weight": 0.26496432868482567,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "television_set_3",
+      "relation": "left_of",
+      "weight": 0.9905095401521394,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.9905095401521394,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "television_set_3",
+      "relation": "behind",
+      "weight": 0.13744399174790153,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "armchair_2",
+      "relation": "in_front_of",
+      "weight": 0.13744399174790153,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "television_set_3",
+      "relation": "near",
+      "weight": 0.07715367043967936,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "television_set_3",
+      "relation": "facing_away",
+      "weight": 0.8295753576475439,
+      "distance": 2.499758943664404,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "table_lamp_4",
+      "relation": "left_of",
+      "weight": 0.8256945424246643,
+      "distance": 4.2979286209597705,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.8256945424246643,
+      "distance": 4.2979286209597705,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.5641174723496201,
+      "distance": 4.2979286209597705,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "armchair_2",
+      "relation": "behind",
+      "weight": 0.5641174723496201,
+      "distance": 4.2979286209597705,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "table_lamp_4",
+      "relation": "facing_away",
+      "weight": 0.23173581184268213,
+      "distance": 4.2979286209597705,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.9906634260637973,
+      "distance": 3.987202212800262,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.9906634260637973,
+      "distance": 3.987202212800262,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.1363303937481998,
+      "distance": 3.987202212800262,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "armchair_2",
+      "relation": "in_front_of",
+      "weight": 0.1363303937481998,
+      "distance": 3.987202212800262,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "cabinet_5",
+      "relation": "facing_away",
+      "weight": 0.8310067085543172,
+      "distance": 3.987202212800262,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "runner_(carpet)_6",
+      "relation": "left_of",
+      "weight": 0.8978222906040101,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "armchair_2",
+      "relation": "right_of",
+      "weight": 0.8978222906040101,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "runner_(carpet)_6",
+      "relation": "in_front_of",
+      "weight": 0.4403579617703857,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "armchair_2",
+      "relation": "behind",
+      "weight": 0.4403579617703857,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "runner_(carpet)_6",
+      "relation": "adjacent_to",
+      "weight": 0.034769131560949296,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "runner_(carpet)_6",
+      "relation": "facing_away",
+      "weight": 0.41427596077805967,
+      "distance": 2.17192201664779,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "table_lamp_4",
+      "relation": "left_of",
+      "weight": 0.36134952046247476,
+      "distance": 2.9687077567006774,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "television_set_3",
+      "relation": "right_of",
+      "weight": 0.36134952046247476,
+      "distance": 2.9687077567006774,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.9324304392615782,
+      "distance": 2.9687077567006774,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "television_set_3",
+      "relation": "behind",
+      "weight": 0.9324304392615782,
+      "distance": 2.9687077567006774,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "table_lamp_4",
+      "relation": "facing",
+      "weight": 0.4153201533125058,
+      "distance": 2.9687077567006774,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.9909192220197189,
+      "distance": 1.4874475032963925,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "television_set_3",
+      "relation": "right_of",
+      "weight": 0.9909192220197189,
+      "distance": 1.4874475032963925,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "cabinet_5",
+      "relation": "near",
+      "weight": 0.42975279273188005,
+      "distance": 1.4874475032963925,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "cabinet_5",
+      "relation": "aligned_with",
+      "weight": 2.220446049250313e-16,
+      "distance": 0.0,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "runner_(carpet)_6",
+      "relation": "right_of",
+      "weight": 0.375097547513433,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "television_set_3",
+      "relation": "left_of",
+      "weight": 0.375097547513433,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "runner_(carpet)_6",
+      "relation": "in_front_of",
+      "weight": 0.9269853450025021,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "television_set_3",
+      "relation": "behind",
+      "weight": 0.9269853450025021,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "runner_(carpet)_6",
+      "relation": "adjacent_to",
+      "weight": 0.41669331576120794,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "television_set_3",
+      "target": "runner_(carpet)_6",
+      "relation": "facing",
+      "weight": 0.6243811835492921,
+      "distance": 1.4023954175850442,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.13395159733400738,
+      "distance": 2.995105743190416,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "table_lamp_4",
+      "relation": "right_of",
+      "weight": 0.13395159733400738,
+      "distance": 2.995105743190416,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.9909878755926672,
+      "distance": 2.995105743190416,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.9909878755926672,
+      "distance": 2.995105743190416,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "cabinet_5",
+      "relation": "facing_away",
+      "weight": 0.8289333284039067,
+      "distance": 2.995105743190416,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "runner_(carpet)_6",
+      "relation": "right_of",
+      "weight": 0.7365644038300371,
+      "distance": 2.170585759702508,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "table_lamp_4",
+      "relation": "left_of",
+      "weight": 0.7365644038300371,
+      "distance": 2.170585759702508,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "runner_(carpet)_6",
+      "relation": "behind",
+      "weight": 0.6763674142139775,
+      "distance": 2.170585759702508,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "table_lamp_4",
+      "relation": "in_front_of",
+      "weight": 0.6763674142139775,
+      "distance": 2.170585759702508,
+      "properties": {}
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "runner_(carpet)_6",
+      "relation": "near",
+      "weight": 0.4434949428082765,
+      "distance": 2.170585759702508,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "runner_(carpet)_6",
+      "relation": "right_of",
+      "weight": 0.7999964582122144,
+      "distance": 2.499980323677045,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "cabinet_5",
+      "relation": "left_of",
+      "weight": 0.7999964582122144,
+      "distance": 2.499980323677045,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "runner_(carpet)_6",
+      "relation": "in_front_of",
+      "weight": 0.6000047223546766,
+      "distance": 2.499980323677045,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "cabinet_5",
+      "relation": "behind",
+      "weight": 0.6000047223546766,
+      "distance": 2.499980323677045,
+      "properties": {}
+    },
+    {
+      "source": "cabinet_5",
+      "target": "runner_(carpet)_6",
+      "relation": "near",
+      "weight": 0.4318217514503273,
+      "distance": 2.499980323677045,
+      "properties": {}
+    },
+    {
+      "source": "armchair_2",
+      "target": "wall_west",
+      "relation": "against_wall",
+      "weight": 0.8003162237330019,
+      "distance": 0.09984188813349903,
+      "properties": {
+        "wall": "west"
+      }
+    },
+    {
+      "source": "table_lamp_4",
+      "target": "wall_north",
+      "relation": "against_wall",
+      "weight": 0.23661526505991026,
+      "distance": 0.38169236747004487,
+      "properties": {
+        "wall": "north"
+      }
+    },
+    {
+      "source": "cabinet_5",
+      "target": "wall_east",
+      "relation": "against_wall",
+      "weight": 0.7999439292627573,
+      "distance": 0.10002803536862137,
+      "properties": {
+        "wall": "east"
+      }
+    },
+    {
+      "source": "coffee_table_1",
+      "target": "room_center",
+      "relation": "center_of",
+      "weight": 0.020255387148018777,
+      "distance": 0.784178309630848,
+      "properties": {}
+    },
+    {
+      "source": "runner_(carpet)_6",
+      "target": "room_center",
+      "relation": "center_of",
+      "weight": 1.0,
+      "distance": 0.0,
+      "properties": {}
+    }
+  ],
+  "metadata": {
+    "n_nodes": 7,
+    "n_edges": 110,
+    "relation_types": [
+      "in_front_of",
+      "aligned_with",
+      "facing",
+      "adjacent_to",
+      "left_of",
+      "right_of",
+      "against_wall",
+      "facing_away",
+      "center_of",
+      "behind",
+      "near"
+    ],
+    "functional_zones": [
+      "entertainment",
+      "surface",
+      "floor_covering",
+      "lighting",
+      "storage",
+      "seating"
+    ]
+  }
+}

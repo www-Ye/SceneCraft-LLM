@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.assets.asset_manager import AssetManager
 from src.layout.scene_graph import SceneGraph
 from src.layout.layout_optimizer import optimize_layout
+from src.layout.scene_graph_builder import build_scene_graph
 from src.evaluation.metrics import SceneMetrics
 
 
@@ -183,6 +184,14 @@ def generate_living_room_with_assets():
     with open(xml_path, 'w') as f:
         f.write(mujoco_xml)
     print(f"\nMuJoCo XML saved to: {xml_path}")
+    
+    # Build structured scene graph
+    print("\n--- Building Scene Graph ---")
+    sg_json_path = os.path.join(output_dir, 'scene_graph.json')
+    sg_builder = build_scene_graph(
+        scene_objects, room_width, room_depth,
+        output_path=sg_json_path, verbose=True
+    )
     
     # Save scene data
     scene_data = {
