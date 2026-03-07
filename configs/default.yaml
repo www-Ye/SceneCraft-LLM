@@ -1,0 +1,46 @@
+# SceneCraft-LLM Default Configuration
+
+# LLM Settings
+llm:
+  provider: "openai"          # openai | anthropic
+  model: "gpt-4o"             # Model name
+  temperature: 0.7
+  max_tokens: 4096
+  retry_attempts: 3
+
+# Scene Generation
+scene:
+  room_types: ["living_room", "bedroom", "dining_room", "office", "bathroom"]
+  max_objects: 30              # Maximum objects per scene
+  floor_unit: 0.1             # Grid resolution in meters
+  wall_thickness: 0.1
+
+# Layout Optimization
+layout:
+  collision_margin: 0.05       # Minimum gap between objects (meters)
+  wall_margin: 0.02            # Minimum gap to walls
+  max_iterations: 1000         # Optimization iterations
+  gravity_check: true          # Ensure objects are on floor/surface
+  accessibility_check: true    # Ensure walkable paths
+
+# Asset Database
+assets:
+  database_path: "data/3d-front/assets/"
+  embedding_model: "clip"      # For semantic retrieval
+  top_k_retrieval: 5           # Number of candidates per query
+
+# Evaluation
+evaluation:
+  metrics:
+    - "fid"                    # Frechet Inception Distance (layout)
+    - "collision_rate"         # Percentage of colliding objects
+    - "coverage"               # Floor area utilization
+    - "accessibility"          # Walkability score
+    - "semantic_consistency"   # Text-scene alignment
+  num_eval_scenes: 500
+
+# Output
+output:
+  format: ["json", "glb"]     # Output formats
+  visualize: true
+  save_intermediate: false
