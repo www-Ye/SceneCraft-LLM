@@ -15,12 +15,11 @@ from evaluator import PhysSceneEvaluator
 
 # Constants
 MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free", 
     "google/gemma-3-27b-it:free",
-    "mistralai/mistral-small-3.1-24b-instruct:free",
-    "nousresearch/hermes-3-llama-3.1-405b:free",
     "z-ai/glm-4.5-air:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+    "stepfun/step-3.5-flash:free",
+    "arcee-ai/trinity-large-preview:free",
 ]
 
 SYSTEM_PROMPT = """You are a 3D indoor scene layout designer. Given a room description, generate a furniture layout as a JSON object.
@@ -80,7 +79,7 @@ class PhysSceneBenchRunner:
         
         return text
     
-    def call_llm(self, model: str, prompt: str, max_retries: int = 3) -> Optional[Dict]:
+    def call_llm(self, model: str, prompt: str, max_retries: int = 5) -> Optional[Dict]:
         """Call OpenRouter API to generate scene layout"""
         # Mock mode for testing without API key
         if not self.api_key:
@@ -89,6 +88,12 @@ class PhysSceneBenchRunner:
         
         for attempt in range(max_retries):
             try:
+                # Pre-request delay for free tier rate limits
+                if attempt > 0:
+                    wait_time = 10 + 15 * attempt  # 25s, 40s, 55s...
+                    print(f"  Retry {attempt+1}/{max_retries}, waiting {wait_time}s...")
+                    time.sleep(wait_time)
+                
                 response = requests.post(
                     "https://openrouter.ai/api/v1/chat/completions",
                     headers={
@@ -117,20 +122,20 @@ class PhysSceneBenchRunner:
                     return layout
                     
                 elif response.status_code == 429:  # Rate limit
-                    wait_time = 2 ** attempt  # Exponential backoff
-                    print(f"Rate limited, waiting {wait_time}s before retry...")
-                    time.sleep(wait_time)
+                    print(f"  Rate limited on {model}, will retry...")
+                    continue
                 else:
-                    print(f"API error {response.status_code}: {response.text}")
+                    print(f"  API error {response.status_code}: {response.text[:100]}")
                     
             except json.JSONDecodeError as e:
-                print(f"JSON parse error for {model}: {e}")
-                print(f"Raw response: {response.json()['choices'][0]['message']['content'][:200]}...")
+                print(f"  JSON parse error for {model}: {e}")
+                try:
+                    raw = response.json()['choices'][0]['message']['content'][:300]
+                    print(f"  Raw: {raw}")
+                except:
+                    pass
             except Exception as e:
-                print(f"Error calling {model}: {e}")
-            
-            if attempt < max_retries - 1:
-                time.sleep(2)  # Rate limiting
+                print(f"  Error calling {model}: {e}")
         
         return None
     
@@ -320,8 +325,8 @@ class PhysSceneBenchRunner:
                 result = self.run_single_evaluation(prompt_data, model)
                 all_results.append(result)
                 
-                # Rate limiting between API calls
-                time.sleep(2)
+                # Rate limiting between API calls (generous for free tier)
+                time.sleep(8)
         
         # Save consolidated results
         summary_file = self.results_dir / "benchmark_summary.json"

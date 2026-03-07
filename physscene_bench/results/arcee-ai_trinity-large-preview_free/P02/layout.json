@@ -1,0 +1,98 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "bed",
+        "position": [
+          2.0,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.6,
+          "depth": 2.0,
+          "height": 0.5
+        }
+      },
+      {
+        "category": "nightstand",
+        "position": [
+          0.7,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.4,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "nightstand",
+        "position": [
+          3.3,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.4,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "wardrobe",
+        "position": [
+          3.0,
+          2.0
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 2.0,
+          "height": 2.0
+        }
+      },
+      {
+        "category": "dresser",
+        "position": [
+          0.5,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.5,
+          "height": 0.8
+        }
+      },
+      {
+        "category": "mirror",
+        "position": [
+          0.5,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.02,
+          "height": 0.8
+        }
+      },
+      {
+        "category": "rug",
+        "position": [
+          2.0,
+          1.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 2.0,
+          "height": 0.01
+        }
+      }
+    ]
+  },
+  "source": "real"
+}

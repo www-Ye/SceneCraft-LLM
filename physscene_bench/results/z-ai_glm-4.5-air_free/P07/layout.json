@@ -1,0 +1,98 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "bed",
+        "position": [
+          0.8,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 2.0,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "sofa",
+        "position": [
+          2.5,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 0.9,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "coffee_table",
+        "position": [
+          4.2,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.4
+        }
+      },
+      {
+        "category": "desk",
+        "position": [
+          0.8,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.75
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          2.5,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.6,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "television",
+        "position": [
+          4.2,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.2,
+          "height": 0.7
+        }
+      },
+      {
+        "category": "wardrobe",
+        "position": [
+          0.8,
+          4.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.0,
+          "depth": 0.6,
+          "height": 2.0
+        }
+      }
+    ]
+  },
+  "source": "mock_fallback"
+}

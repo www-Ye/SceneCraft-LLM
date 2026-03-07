@@ -1,0 +1,98 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "dining_table",
+        "position": [
+          2.25,
+          1.75
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.8,
+          "height": 0.75
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          2.85,
+          1.75
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          1.65,
+          1.75
+        ],
+        "rotation": 180,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          2.25,
+          2.35
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          2.25,
+          1.15
+        ],
+        "rotation": 270,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "storage_cabinet",
+        "position": [
+          0.25,
+          1.75
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.4,
+          "height": 1.8
+        }
+      },
+      {
+        "category": "table_lamp",
+        "position": [
+          2.25,
+          1.75
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.15,
+          "depth": 0.15,
+          "height": 0.4
+        }
+      }
+    ]
+  },
+  "source": "real"
+}

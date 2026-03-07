@@ -1,0 +1,124 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "sofa",
+        "position": [
+          0.8,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 0.9,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "sofa",
+        "position": [
+          3.0,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 0.9,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "coffee_table",
+        "position": [
+          5.2,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.4
+        }
+      },
+      {
+        "category": "coffee_table",
+        "position": [
+          0.8,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.4
+        }
+      },
+      {
+        "category": "armchair",
+        "position": [
+          3.0,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.8,
+          "depth": 0.8,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "armchair",
+        "position": [
+          5.2,
+          2.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.8,
+          "depth": 0.8,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "television",
+        "position": [
+          0.8,
+          4.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.2,
+          "height": 0.7
+        }
+      },
+      {
+        "category": "lamp",
+        "position": [
+          3.0,
+          4.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.3,
+          "depth": 0.3,
+          "height": 1.5
+        }
+      },
+      {
+        "category": "rug",
+        "position": [
+          5.2,
+          4.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 1.5,
+          "height": 0.02
+        }
+      }
+    ]
+  },
+  "source": "mock"
+}

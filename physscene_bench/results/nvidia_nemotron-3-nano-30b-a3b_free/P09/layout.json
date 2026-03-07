@@ -1,0 +1,85 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "bed",
+        "position": [
+          2.0,
+          0.45
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 0.9,
+          "height": 0.5
+        }
+      },
+      {
+        "category": "desk",
+        "position": [
+          2.0,
+          3.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.8
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          1.6,
+          3.2
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "storage cabinet",
+        "position": [
+          3.6,
+          1.5
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.8,
+          "depth": 0.4,
+          "height": 1.8
+        }
+      },
+      {
+        "category": "lamp",
+        "position": [
+          2.5,
+          0.7
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.2,
+          "depth": 0.2,
+          "height": 0.5
+        }
+      },
+      {
+        "category": "rug",
+        "position": [
+          2.0,
+          1.75
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 1.5,
+          "height": 0.1
+        }
+      }
+    ]
+  },
+  "source": "real"
+}

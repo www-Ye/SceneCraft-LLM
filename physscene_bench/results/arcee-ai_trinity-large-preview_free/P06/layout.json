@@ -1,0 +1,98 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "table",
+        "position": [
+          3.0,
+          2.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 3.0,
+          "depth": 1.2,
+          "height": 0.75
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          1.5,
+          2.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          4.5,
+          2.0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          3.0,
+          0.6
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          3.0,
+          3.4
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 0.5,
+          "depth": 0.5,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "cabinet",
+        "position": [
+          0.5,
+          2.0
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.4,
+          "height": 1.2
+        }
+      },
+      {
+        "category": "tv",
+        "position": [
+          5.5,
+          2.0
+        ],
+        "rotation": 90,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 0.05,
+          "height": 0.9
+        }
+      }
+    ]
+  },
+  "source": "real"
+}

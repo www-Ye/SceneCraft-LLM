@@ -1,97 +1,93 @@
 {
-  "metadata": {
-    "total_prompts": 3,
-    "total_models": 3,
-    "total_runs": 9,
-    "success_rate": 1.0
-  },
+  "total": 60,
   "results": [
     {
       "prompt_id": "P01",
-      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "sofa",
-            "position": [
-              2.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 2.0,
-              "depth": 0.9,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "coffee_table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.6,
-              "height": 0.4
-            }
-          },
-          {
-            "category": "television",
-            "position": [
-              2.0,
-              3.5
-            ],
-            "rotation": 180,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.2,
-              "height": 0.7
-            }
-          },
-          {
-            "category": "armchair",
-            "position": [
-              3.5,
-              1.5
-            ],
-            "rotation": 270,
-            "dimensions": {
-              "width": 0.8,
-              "depth": 0.8,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "lamp",
-            "position": [
-              4.0,
-              0.5
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.3,
-              "depth": 0.3,
-              "height": 1.5
-            }
-          }
-        ]
-      },
+      "num_objects": 7,
       "evaluation": {
-        "overall_score": 0.7231095238095238,
+        "overall_score": 0.5802839285714286,
         "layer_scores": {
-          "semantic_fidelity": 0.8154761904761905,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.706
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5714285714285715,
+          "functional_affordance": 0.172375
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.7142857142857143,
-            "category_match_f1": 0.8333333333333333,
-            "count_accuracy": 0.7142857142857143
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6895,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615208333333332,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6425,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.7052291666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46187500000000004
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
@@ -99,121 +95,441 @@
             "stability_score": 0.0
           },
           "functional": {
-            "facing_score": 1.0,
+            "facing_score": 0.0,
             "proximity_score": 1.0,
-            "walkability_score": 0.824,
+            "walkability_score": 0.8475,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "living_room",
-        "room_size": [
-          5.0,
-          4.0
-        ],
-        "expected_objects": [
-          "sofa",
-          "television",
-          "coffee_table",
-          "armchair",
-          "lamp",
-          "cabinet",
-          "rug"
-        ],
-        "functional_checks": [
-          "sofa_faces_tv",
-          "coffee_table_reachable_from_sofa",
-          "walkable_path_exists"
-        ]
+      }
+    },
+    {
+      "prompt_id": "P04",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 5,
+      "evaluation": {
+        "overall_score": 0.45724166666666666,
+        "layer_scores": {
+          "semantic_fidelity": 0.55,
+          "physical_plausibility": 0.3666666666666667,
+          "functional_affordance": 0.48524999999999996
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.4,
+            "category_match_recall": 0.4,
+            "category_match_f1": 0.4000000000000001,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.5,
+            "boundary_score": 0.4,
+            "stability_score": 0.2
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.941,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 14,
+      "evaluation": {
+        "overall_score": 0.8064815476190477,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.9333333333333332,
+          "functional_affordance": 0.44382738095238095
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.023809523809523808,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7515,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.7057916666666666,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.855,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6173073412698412,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.25345833333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6805,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.6951791666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.428375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.7135,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P09",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615958333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160875
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6435,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P10",
+      "model": "z-ai/glm-4.5-air:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.6165620370370369,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5925925925925926,
+          "functional_affordance": 0.26508333333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7777777777777778,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.3333333333333333,
+            "proximity_score": 0.0,
+            "walkability_score": 0.727,
+            "wall_alignment_score": 0.0
+          }
+        }
       }
     },
     {
       "prompt_id": "P01",
-      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "sofa",
-            "position": [
-              2.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 2.0,
-              "depth": 0.9,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "coffee_table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.6,
-              "height": 0.4
-            }
-          },
-          {
-            "category": "television",
-            "position": [
-              2.0,
-              3.5
-            ],
-            "rotation": 180,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.2,
-              "height": 0.7
-            }
-          },
-          {
-            "category": "armchair",
-            "position": [
-              3.5,
-              1.5
-            ],
-            "rotation": 270,
-            "dimensions": {
-              "width": 0.8,
-              "depth": 0.8,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "lamp",
-            "position": [
-              4.0,
-              0.5
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.3,
-              "depth": 0.3,
-              "height": 1.5
-            }
-          }
-        ]
-      },
+      "num_objects": 7,
       "evaluation": {
-        "overall_score": 0.7231095238095238,
+        "overall_score": 0.5802839285714286,
         "layer_scores": {
-          "semantic_fidelity": 0.8154761904761905,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.706
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5714285714285715,
+          "functional_affordance": 0.172375
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.7142857142857143,
-            "category_match_f1": 0.8333333333333333,
-            "count_accuracy": 0.7142857142857143
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6895,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615208333333332,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6425,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6522269841269841,
+        "layer_scores": {
+          "semantic_fidelity": 0.8928571428571428,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.477
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.8571428571428571,
+            "category_match_recall": 0.8571428571428571,
+            "category_match_f1": 0.8571428571428571,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.908,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P04",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 5,
+      "evaluation": {
+        "overall_score": 0.6119458333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6333333333333333,
+          "functional_affordance": 0.195375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7815,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 14,
+      "evaluation": {
+        "overall_score": 0.8064815476190477,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.9333333333333332,
+          "functional_affordance": 0.44382738095238095
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.023809523809523808,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7515,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.7057916666666666,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
@@ -221,230 +537,1257 @@
             "stability_score": 0.0
           },
           "functional": {
-            "facing_score": 1.0,
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.855,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6173073412698412,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.25345833333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6805,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.6951791666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.428375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
             "proximity_score": 1.0,
-            "walkability_score": 0.824,
+            "walkability_score": 0.7135,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "living_room",
-        "room_size": [
-          5.0,
-          4.0
-        ],
-        "expected_objects": [
-          "sofa",
-          "television",
-          "coffee_table",
-          "armchair",
-          "lamp",
-          "cabinet",
-          "rug"
-        ],
-        "functional_checks": [
-          "sofa_faces_tv",
-          "coffee_table_reachable_from_sofa",
-          "walkable_path_exists"
-        ]
+      }
+    },
+    {
+      "prompt_id": "P09",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.7142638888888889,
+        "layer_scores": {
+          "semantic_fidelity": 0.875,
+          "physical_plausibility": 0.6222222222222222,
+          "functional_affordance": 0.67625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.8333333333333334,
+            "category_match_recall": 0.8333333333333334,
+            "category_match_f1": 0.8333333333333334,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.8666666666666667,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.705,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P10",
+      "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.6165620370370369,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5925925925925926,
+          "functional_affordance": 0.26508333333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7777777777777778,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.3333333333333333,
+            "proximity_score": 0.0,
+            "walkability_score": 0.727,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P01",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.5802839285714286,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5714285714285715,
+          "functional_affordance": 0.172375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6895,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615208333333332,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6425,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.7052291666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46187500000000004
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.8475,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P04",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 5,
+      "evaluation": {
+        "overall_score": 0.6119458333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6333333333333333,
+          "functional_affordance": 0.195375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7815,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 14,
+      "evaluation": {
+        "overall_score": 0.8064815476190477,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.9333333333333332,
+          "functional_affordance": 0.44382738095238095
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.023809523809523808,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7515,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.7057916666666666,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.855,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6173073412698412,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.25345833333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6805,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.6951791666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.428375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.7135,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P09",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615958333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160875
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6435,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P10",
+      "model": "stepfun/step-3.5-flash:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.6165620370370369,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5925925925925926,
+          "functional_affordance": 0.26508333333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7777777777777778,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.3333333333333333,
+            "proximity_score": 0.0,
+            "walkability_score": 0.727,
+            "wall_alignment_score": 0.0
+          }
+        }
       }
     },
     {
       "prompt_id": "P01",
       "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "sofa",
-            "position": [
-              2.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 2.0,
-              "depth": 0.9,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "coffee_table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.6,
-              "height": 0.4
-            }
-          },
-          {
-            "category": "television",
-            "position": [
-              2.0,
-              3.5
-            ],
-            "rotation": 180,
-            "dimensions": {
-              "width": 1.2,
-              "depth": 0.2,
-              "height": 0.7
-            }
-          },
-          {
-            "category": "armchair",
-            "position": [
-              3.5,
-              1.5
-            ],
-            "rotation": 270,
-            "dimensions": {
-              "width": 0.8,
-              "depth": 0.8,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "lamp",
-            "position": [
-              4.0,
-              0.5
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.3,
-              "depth": 0.3,
-              "height": 1.5
-            }
-          }
-        ]
-      },
+      "num_objects": 7,
       "evaluation": {
-        "overall_score": 0.7231095238095238,
+        "overall_score": 0.5802839285714286,
         "layer_scores": {
-          "semantic_fidelity": 0.8154761904761905,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.706
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5714285714285715,
+          "functional_affordance": 0.172375
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.7142857142857143,
-            "category_match_f1": 0.8333333333333333,
-            "count_accuracy": 0.7142857142857143
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6895,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615208333333332,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6425,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.7052291666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46187500000000004
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.8475,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P04",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 5,
+      "evaluation": {
+        "overall_score": 0.6119458333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6333333333333333,
+          "functional_affordance": 0.195375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7815,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 14,
+      "evaluation": {
+        "overall_score": 0.8064815476190477,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.9333333333333332,
+          "functional_affordance": 0.44382738095238095
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.023809523809523808,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7515,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.7057916666666666,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.855,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6173073412698412,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.25345833333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6805,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.6951791666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.428375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.7135,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P09",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615958333333333,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160875
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6435,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P10",
+      "model": "google/gemma-3-27b-it:free",
+      "source": "mock_fallback",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.6165620370370369,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5925925925925926,
+          "functional_affordance": 0.26508333333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7777777777777778,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.3333333333333333,
+            "proximity_score": 0.0,
+            "walkability_score": 0.727,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P01",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6083734126984126,
+        "layer_scores": {
+          "semantic_fidelity": 0.5714285714285714,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.65225
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.42857142857142855,
+            "category_match_recall": 0.42857142857142855,
+            "category_match_f1": 0.42857142857142855,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.8095238095238095,
             "boundary_score": 1.0,
             "stability_score": 0.0
           },
           "functional": {
             "facing_score": 1.0,
             "proximity_score": 1.0,
-            "walkability_score": 0.824,
+            "walkability_score": 0.609,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "living_room",
-        "room_size": [
-          5.0,
-          4.0
-        ],
-        "expected_objects": [
-          "sofa",
-          "television",
-          "coffee_table",
-          "armchair",
-          "lamp",
-          "cabinet",
-          "rug"
-        ],
-        "functional_checks": [
-          "sofa_faces_tv",
-          "coffee_table_reachable_from_sofa",
-          "walkable_path_exists"
-        ]
       }
     },
     {
       "prompt_id": "P02",
-      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "bed",
-            "position": [
-              1.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 2.0,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              0.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              2.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "wardrobe",
-            "position": [
-              3.5,
-              3.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.0,
-              "depth": 0.6,
-              "height": 2.0
-            }
-          }
-        ]
-      },
+      "num_objects": 7,
       "evaluation": {
-        "overall_score": 0.6374166666666667,
+        "overall_score": 0.5560410866910867,
         "layer_scores": {
-          "semantic_fidelity": 0.7833333333333334,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.4525
+          "semantic_fidelity": 0.9033882783882784,
+          "physical_plausibility": 0.5079365079365079,
+          "functional_affordance": 0.2728333333333333
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.8571428571428571,
+            "category_match_recall": 1.0,
+            "category_match_f1": 0.923076923076923,
+            "count_accuracy": 0.8333333333333334
+          },
+          "physical": {
+            "collision_score": 0.8095238095238095,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.758,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6132849206349207,
+        "layer_scores": {
+          "semantic_fidelity": 0.7857142857142857,
+          "physical_plausibility": 0.5873015873015873,
+          "functional_affordance": 0.47550000000000003
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.7142857142857143,
+            "category_match_recall": 0.7142857142857143,
+            "category_match_f1": 0.7142857142857143,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.7619047619047619,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.902,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P04",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 5,
+      "evaluation": {
+        "overall_score": 0.4346375,
+        "layer_scores": {
+          "semantic_fidelity": 0.55,
+          "physical_plausibility": 0.5,
+          "functional_affordance": 0.232125
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.4,
+            "category_match_recall": 0.4,
+            "category_match_f1": 0.4000000000000001,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.5,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.9285,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 15,
+      "evaluation": {
+        "overall_score": 0.8824322171397294,
+        "layer_scores": {
+          "semantic_fidelity": 0.956855500821018,
+          "physical_plausibility": 0.9111111111111111,
+          "functional_affordance": 0.7697704081632653
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.9333333333333333,
+            "category_match_recall": 1.0,
+            "category_match_f1": 0.9655172413793104,
+            "count_accuracy": 0.9285714285714286
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.20408163265306123,
+            "proximity_score": 1.0,
+            "walkability_score": 0.875,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6144623015873015,
+        "layer_scores": {
+          "semantic_fidelity": 0.7628968253968254,
+          "physical_plausibility": 0.6349206349206349,
+          "functional_affordance": 0.43875
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.8571428571428571,
+            "category_match_recall": 0.6666666666666666,
+            "category_match_f1": 0.75,
+            "count_accuracy": 0.7777777777777778
+          },
+          "physical": {
+            "collision_score": 0.9047619047619048,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.755,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6059583333333334,
+        "layer_scores": {
+          "semantic_fidelity": 0.7857142857142857,
+          "physical_plausibility": 0.6190476190476191,
+          "functional_affordance": 0.40875
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.7142857142857143,
+            "category_match_recall": 0.7142857142857143,
+            "category_match_f1": 0.7142857142857143,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.8571428571428572,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 1.0,
+            "walkability_score": 0.635,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.5344428571428572,
+        "layer_scores": {
+          "semantic_fidelity": 0.625,
+          "physical_plausibility": 0.5178571428571429,
+          "functional_affordance": 0.46599999999999997
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.5,
+            "category_match_recall": 0.5,
+            "category_match_f1": 0.5,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.6785714285714286,
+            "boundary_score": 0.875,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.864,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P09",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5737777777777778,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.4444444444444445,
+          "functional_affordance": 0.32
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.6666666666666666,
-            "category_match_f1": 0.8,
-            "count_accuracy": 0.6666666666666667
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.6666666666666667,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.78,
+            "wall_alignment_score": 0.5
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P10",
+      "model": "arcee-ai/trinity-large-preview:free",
+      "source": "real",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.5745023148148148,
+        "layer_scores": {
+          "semantic_fidelity": 0.8333333333333334,
+          "physical_plausibility": 0.5370370370370371,
+          "functional_affordance": 0.365625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 0.7777777777777778,
+            "category_match_recall": 0.7777777777777778,
+            "category_match_f1": 0.7777777777777778,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.6111111111111112,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.25,
+            "proximity_score": 1.0,
+            "walkability_score": 0.2125,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P01",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.5802839285714286,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5714285714285715,
+          "functional_affordance": 0.172375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 0.7142857142857143,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6895,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P02",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 6,
+      "evaluation": {
+        "overall_score": 0.5615208333333332,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160625
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6425,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P03",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.7052291666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46187500000000004
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
@@ -454,105 +1797,167 @@
           "functional": {
             "facing_score": 0.0,
             "proximity_score": 1.0,
-            "walkability_score": 0.81,
+            "walkability_score": 0.8475,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "bedroom",
-        "room_size": [
-          4.0,
-          4.0
-        ],
-        "expected_objects": [
-          "bed",
-          "nightstand",
-          "nightstand",
-          "wardrobe",
-          "dresser",
-          "rug"
-        ],
-        "functional_checks": [
-          "bed_accessible_both_sides",
-          "wardrobe_door_clearance",
-          "walkable_path_exists"
-        ]
       }
     },
     {
-      "prompt_id": "P02",
-      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "prompt_id": "P04",
+      "model": "mock_baseline",
+      "source": "mock",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "bed",
-            "position": [
-              1.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 2.0,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              0.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              2.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "wardrobe",
-            "position": [
-              3.5,
-              3.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.0,
-              "depth": 0.6,
-              "height": 2.0
-            }
-          }
-        ]
-      },
+      "num_objects": 5,
       "evaluation": {
-        "overall_score": 0.6374166666666667,
+        "overall_score": 0.6119458333333333,
         "layer_scores": {
-          "semantic_fidelity": 0.7833333333333334,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.4525
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6333333333333333,
+          "functional_affordance": 0.195375
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.6666666666666666,
-            "category_match_f1": 0.8,
-            "count_accuracy": 0.6666666666666667
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7815,
+            "wall_alignment_score": 0.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P05",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 14,
+      "evaluation": {
+        "overall_score": 0.8064815476190477,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.9333333333333332,
+          "functional_affordance": 0.44382738095238095
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.8
+          },
+          "functional": {
+            "facing_score": 0.023809523809523808,
+            "proximity_score": 0.0,
+            "walkability_score": 0.7515,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P06",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 9,
+      "evaluation": {
+        "overall_score": 0.7057916666666666,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.46375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 1.0,
+            "boundary_score": 1.0,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.855,
+            "wall_alignment_score": 1.0
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P07",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 7,
+      "evaluation": {
+        "overall_score": 0.6173073412698412,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6031746031746031,
+          "functional_affordance": 0.25345833333333334
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
+          },
+          "physical": {
+            "collision_score": 0.9523809523809523,
+            "boundary_score": 0.8571428571428571,
+            "stability_score": 0.0
+          },
+          "functional": {
+            "facing_score": 0.0,
+            "proximity_score": 0.0,
+            "walkability_score": 0.6805,
+            "wall_alignment_score": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "prompt_id": "P08",
+      "model": "mock_baseline",
+      "source": "mock",
+      "success": true,
+      "num_objects": 8,
+      "evaluation": {
+        "overall_score": 0.6951791666666667,
+        "layer_scores": {
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.6666666666666666,
+          "functional_affordance": 0.428375
+        },
+        "detailed_scores": {
+          "semantic": {
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
@@ -562,387 +1967,78 @@
           "functional": {
             "facing_score": 0.0,
             "proximity_score": 1.0,
-            "walkability_score": 0.81,
+            "walkability_score": 0.7135,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "bedroom",
-        "room_size": [
-          4.0,
-          4.0
-        ],
-        "expected_objects": [
-          "bed",
-          "nightstand",
-          "nightstand",
-          "wardrobe",
-          "dresser",
-          "rug"
-        ],
-        "functional_checks": [
-          "bed_accessible_both_sides",
-          "wardrobe_door_clearance",
-          "walkable_path_exists"
-        ]
       }
     },
     {
-      "prompt_id": "P02",
-      "model": "google/gemma-3-27b-it:free",
+      "prompt_id": "P09",
+      "model": "mock_baseline",
+      "source": "mock",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "bed",
-            "position": [
-              1.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 2.0,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              0.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "nightstand",
-            "position": [
-              2.5,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.5,
-              "depth": 0.4,
-              "height": 0.6
-            }
-          },
-          {
-            "category": "wardrobe",
-            "position": [
-              3.5,
-              3.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.0,
-              "depth": 0.6,
-              "height": 2.0
-            }
-          }
-        ]
-      },
+      "num_objects": 6,
       "evaluation": {
-        "overall_score": 0.6374166666666667,
+        "overall_score": 0.5615958333333333,
         "layer_scores": {
-          "semantic_fidelity": 0.7833333333333334,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.4525
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5333333333333333,
+          "functional_affordance": 0.160875
         },
         "detailed_scores": {
           "semantic": {
             "category_match_precision": 1.0,
-            "category_match_recall": 0.6666666666666666,
-            "category_match_f1": 0.8,
-            "count_accuracy": 0.6666666666666667
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
-            "collision_score": 1.0,
-            "boundary_score": 1.0,
-            "stability_score": 0.0
-          },
-          "functional": {
-            "facing_score": 0.0,
-            "proximity_score": 1.0,
-            "walkability_score": 0.81,
-            "wall_alignment_score": 0.0
-          }
-        }
-      },
-      "metadata": {
-        "room_type": "bedroom",
-        "room_size": [
-          4.0,
-          4.0
-        ],
-        "expected_objects": [
-          "bed",
-          "nightstand",
-          "nightstand",
-          "wardrobe",
-          "dresser",
-          "rug"
-        ],
-        "functional_checks": [
-          "bed_accessible_both_sides",
-          "wardrobe_door_clearance",
-          "walkable_path_exists"
-        ]
-      }
-    },
-    {
-      "prompt_id": "P03",
-      "model": "meta-llama/llama-3.3-70b-instruct:free",
-      "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "chair",
-            "position": [
-              1.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.6,
-              "depth": 0.6,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 0.8,
-              "height": 0.75
-            }
-          }
-        ]
-      },
-      "evaluation": {
-        "overall_score": 0.4222011904761904,
-        "layer_scores": {
-          "semantic_fidelity": 0.2876984126984127,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.23075
-        },
-        "detailed_scores": {
-          "semantic": {
-            "category_match_precision": 0.5,
-            "category_match_recall": 0.14285714285714285,
-            "category_match_f1": 0.22222222222222224,
-            "count_accuracy": 0.2857142857142857
-          },
-          "physical": {
-            "collision_score": 1.0,
-            "boundary_score": 1.0,
+            "collision_score": 0.9333333333333333,
+            "boundary_score": 0.6666666666666666,
             "stability_score": 0.0
           },
           "functional": {
             "facing_score": 0.0,
             "proximity_score": 0.0,
-            "walkability_score": 0.923,
+            "walkability_score": 0.6435,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "kitchen_dining",
-        "room_size": [
-          4.5,
-          3.5
-        ],
-        "expected_objects": [
-          "dining_table",
-          "chair",
-          "chair",
-          "chair",
-          "chair",
-          "cabinet",
-          "lamp"
-        ],
-        "functional_checks": [
-          "chairs_face_table",
-          "chairs_pullout_clearance",
-          "walkable_path_exists"
-        ]
       }
     },
     {
-      "prompt_id": "P03",
-      "model": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "prompt_id": "P10",
+      "model": "mock_baseline",
+      "source": "mock",
       "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "chair",
-            "position": [
-              1.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.6,
-              "depth": 0.6,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 0.8,
-              "height": 0.75
-            }
-          }
-        ]
-      },
+      "num_objects": 9,
       "evaluation": {
-        "overall_score": 0.4222011904761904,
+        "overall_score": 0.6165620370370369,
         "layer_scores": {
-          "semantic_fidelity": 0.2876984126984127,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.23075
+          "semantic_fidelity": 1.0,
+          "physical_plausibility": 0.5925925925925926,
+          "functional_affordance": 0.26508333333333334
         },
         "detailed_scores": {
           "semantic": {
-            "category_match_precision": 0.5,
-            "category_match_recall": 0.14285714285714285,
-            "category_match_f1": 0.22222222222222224,
-            "count_accuracy": 0.2857142857142857
+            "category_match_precision": 1.0,
+            "category_match_recall": 1.0,
+            "category_match_f1": 1.0,
+            "count_accuracy": 1.0
           },
           "physical": {
             "collision_score": 1.0,
-            "boundary_score": 1.0,
+            "boundary_score": 0.7777777777777778,
             "stability_score": 0.0
           },
           "functional": {
-            "facing_score": 0.0,
+            "facing_score": 0.3333333333333333,
             "proximity_score": 0.0,
-            "walkability_score": 0.923,
+            "walkability_score": 0.727,
             "wall_alignment_score": 0.0
           }
         }
-      },
-      "metadata": {
-        "room_type": "kitchen_dining",
-        "room_size": [
-          4.5,
-          3.5
-        ],
-        "expected_objects": [
-          "dining_table",
-          "chair",
-          "chair",
-          "chair",
-          "chair",
-          "cabinet",
-          "lamp"
-        ],
-        "functional_checks": [
-          "chairs_face_table",
-          "chairs_pullout_clearance",
-          "walkable_path_exists"
-        ]
-      }
-    },
-    {
-      "prompt_id": "P03",
-      "model": "google/gemma-3-27b-it:free",
-      "success": true,
-      "layout": {
-        "objects": [
-          {
-            "category": "chair",
-            "position": [
-              1.0,
-              1.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 0.6,
-              "depth": 0.6,
-              "height": 0.85
-            }
-          },
-          {
-            "category": "table",
-            "position": [
-              2.0,
-              2.0
-            ],
-            "rotation": 0,
-            "dimensions": {
-              "width": 1.5,
-              "depth": 0.8,
-              "height": 0.75
-            }
-          }
-        ]
-      },
-      "evaluation": {
-        "overall_score": 0.4222011904761904,
-        "layer_scores": {
-          "semantic_fidelity": 0.2876984126984127,
-          "physical_plausibility": 0.6666666666666666,
-          "functional_affordance": 0.23075
-        },
-        "detailed_scores": {
-          "semantic": {
-            "category_match_precision": 0.5,
-            "category_match_recall": 0.14285714285714285,
-            "category_match_f1": 0.22222222222222224,
-            "count_accuracy": 0.2857142857142857
-          },
-          "physical": {
-            "collision_score": 1.0,
-            "boundary_score": 1.0,
-            "stability_score": 0.0
-          },
-          "functional": {
-            "facing_score": 0.0,
-            "proximity_score": 0.0,
-            "walkability_score": 0.923,
-            "wall_alignment_score": 0.0
-          }
-        }
-      },
-      "metadata": {
-        "room_type": "kitchen_dining",
-        "room_size": [
-          4.5,
-          3.5
-        ],
-        "expected_objects": [
-          "dining_table",
-          "chair",
-          "chair",
-          "chair",
-          "chair",
-          "cabinet",
-          "lamp"
-        ],
-        "functional_checks": [
-          "chairs_face_table",
-          "chairs_pullout_clearance",
-          "walkable_path_exists"
-        ]
       }
     }
   ]

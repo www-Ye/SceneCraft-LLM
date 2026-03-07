@@ -1,0 +1,34 @@
+{
+  "prompt_id": "P07",
+  "model": "arcee-ai/trinity-large-preview:free",
+  "source": "real",
+  "success": true,
+  "num_objects": 7,
+  "evaluation": {
+    "overall_score": 0.6059583333333334,
+    "layer_scores": {
+      "semantic_fidelity": 0.7857142857142857,
+      "physical_plausibility": 0.6190476190476191,
+      "functional_affordance": 0.40875
+    },
+    "detailed_scores": {
+      "semantic": {
+        "category_match_precision": 0.7142857142857143,
+        "category_match_recall": 0.7142857142857143,
+        "category_match_f1": 0.7142857142857143,
+        "count_accuracy": 1.0
+      },
+      "physical": {
+        "collision_score": 0.8571428571428572,
+        "boundary_score": 1.0,
+        "stability_score": 0.0
+      },
+      "functional": {
+        "facing_score": 0.0,
+        "proximity_score": 1.0,
+        "walkability_score": 0.635,
+        "wall_alignment_score": 0.0
+      }
+    }
+  }
+}

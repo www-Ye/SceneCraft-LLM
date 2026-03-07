@@ -1,0 +1,85 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "bed",
+        "position": [
+          0.8,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 2.0,
+          "height": 0.6
+        }
+      },
+      {
+        "category": "desk",
+        "position": [
+          2.0,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.75
+        }
+      },
+      {
+        "category": "chair",
+        "position": [
+          3.2,
+          0.8
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.6,
+          "height": 0.85
+        }
+      },
+      {
+        "category": "cabinet",
+        "position": [
+          0.8,
+          2.7
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.8,
+          "depth": 0.4,
+          "height": 1.8
+        }
+      },
+      {
+        "category": "lamp",
+        "position": [
+          2.0,
+          2.7
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.3,
+          "depth": 0.3,
+          "height": 1.5
+        }
+      },
+      {
+        "category": "rug",
+        "position": [
+          3.2,
+          2.7
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 2.0,
+          "depth": 1.5,
+          "height": 0.02
+        }
+      }
+    ]
+  },
+  "source": "mock"
+}

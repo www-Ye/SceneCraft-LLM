@@ -1,0 +1,72 @@
+{
+  "layout": {
+    "objects": [
+      {
+        "category": "desk",
+        "position": [
+          1.15,
+          0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.2,
+          "depth": 0.6,
+          "height": 0.75
+        }
+      },
+      {
+        "category": "office_chair",
+        "position": [
+          1.15,
+          0.7
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.6,
+          "depth": 0.6,
+          "height": 0.9
+        }
+      },
+      {
+        "category": "bookshelf",
+        "position": [
+          0,
+          0.6
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.0,
+          "depth": 0.3,
+          "height": 1.8
+        }
+      },
+      {
+        "category": "desk_lamp",
+        "position": [
+          1.5,
+          0.3
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 0.2,
+          "depth": 0.2,
+          "height": 0.4
+        }
+      },
+      {
+        "category": "rug",
+        "position": [
+          0.4,
+          0
+        ],
+        "rotation": 0,
+        "dimensions": {
+          "width": 1.5,
+          "depth": 1.0,
+          "height": 0.05
+        }
+      }
+    ]
+  },
+  "source": "real"
+}

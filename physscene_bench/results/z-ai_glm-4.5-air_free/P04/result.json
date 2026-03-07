@@ -1,0 +1,34 @@
+{
+  "prompt_id": "P04",
+  "model": "z-ai/glm-4.5-air:free",
+  "source": "real",
+  "success": true,
+  "num_objects": 5,
+  "evaluation": {
+    "overall_score": 0.45724166666666666,
+    "layer_scores": {
+      "semantic_fidelity": 0.55,
+      "physical_plausibility": 0.3666666666666667,
+      "functional_affordance": 0.48524999999999996
+    },
+    "detailed_scores": {
+      "semantic": {
+        "category_match_precision": 0.4,
+        "category_match_recall": 0.4,
+        "category_match_f1": 0.4000000000000001,
+        "count_accuracy": 1.0
+      },
+      "physical": {
+        "collision_score": 0.5,
+        "boundary_score": 0.4,
+        "stability_score": 0.2
+      },
+      "functional": {
+        "facing_score": 0.0,
+        "proximity_score": 0.0,
+        "walkability_score": 0.941,
+        "wall_alignment_score": 1.0
+      }
+    }
+  }
+}
