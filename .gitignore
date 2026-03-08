@@ -39,3 +39,4 @@ scene_factory/llm_designed_layout.json
 # Old scene factory (will be removed)
 scene_factory/mujoco_menagerie/
 scene_factory/piper_arm/
+data/assets/ycb/
