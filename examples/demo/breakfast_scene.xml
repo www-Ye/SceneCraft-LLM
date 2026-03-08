@@ -12,15 +12,17 @@
     <mesh name="v2" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/017_orange/017_orange/google_16k/textured.obj"/>
     <mesh name="v3" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/024_bowl/024_bowl/google_16k/textured.obj"/>
     <mesh name="v4" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/014_lemon/014_lemon/google_16k/textured.obj"/>
-    <mesh name="v5" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/025_mug/025_mug/google_16k/textured.obj"/>
-    <mesh name="v6" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/065-a_cups/065-a_cups/google_16k/textured.obj"/>
+    <mesh name="v5" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/003_cracker_box/003_cracker_box/google_16k/textured.obj"/>
+    <mesh name="v6" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/010_potted_meat_can/010_potted_meat_can/google_16k/textured.obj"/>
     <mesh name="v7" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/006_mustard_bottle/006_mustard_bottle/google_16k/textured.obj"/>
     <mesh name="v8" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/005_tomato_soup_can/005_tomato_soup_can/google_16k/textured.obj"/>
     <mesh name="v9" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/004_sugar_box/004_sugar_box/google_16k/textured.obj"/>
-    <mesh name="v10" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/011_banana/011_banana/google_16k/textured.obj"/>
-    <mesh name="v11" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/003_cracker_box/003_cracker_box/google_16k/textured.obj"/>
-    <mesh name="v12" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/040_large_marker/040_large_marker/google_16k/textured.obj"/>
-    <mesh name="v13" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/077_rubiks_cube/077_rubiks_cube/google_16k/textured.obj"/>
+    <mesh name="v10" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/077_rubiks_cube/077_rubiks_cube/google_16k/textured.obj"/>
+    <mesh name="v11" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/025_mug/025_mug/google_16k/textured.obj"/>
+    <mesh name="v12" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/065-a_cups/065-a_cups/google_16k/textured.obj"/>
+    <mesh name="v13" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/011_banana/011_banana/google_16k/textured.obj"/>
+    <mesh name="v14" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/040_large_marker/040_large_marker/google_16k/textured.obj"/>
+    <mesh name="v15" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/061_foam_brick/061_foam_brick/google_16k/textured.obj"/>
     <texture name="tw" type="2d" builtin="flat" rgb1="0.35 0.22 0.10" rgb2="0.32 0.20 0.08" width="512" height="512" mark="random" markrgb="0.38 0.24 0.12" random="0.03"/>
     <texture name="tf" type="2d" builtin="checker" rgb1="0.75 0.72 0.68" rgb2="0.70 0.67 0.63" width="512" height="512"/>
     <texture name="tex0" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/029_plate/029_plate/google_16k/texture_map.png"/>
@@ -28,15 +30,17 @@
     <texture name="tex2" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/017_orange/017_orange/google_16k/texture_map.png"/>
     <texture name="tex3" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/024_bowl/024_bowl/google_16k/texture_map.png"/>
     <texture name="tex4" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/014_lemon/014_lemon/google_16k/texture_map.png"/>
-    <texture name="tex5" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/025_mug/025_mug/google_16k/texture_map.png"/>
-    <texture name="tex6" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/065-a_cups/065-a_cups/google_16k/texture_map.png"/>
+    <texture name="tex5" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/003_cracker_box/003_cracker_box/google_16k/texture_map.png"/>
+    <texture name="tex6" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/010_potted_meat_can/010_potted_meat_can/google_16k/texture_map.png"/>
     <texture name="tex7" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/006_mustard_bottle/006_mustard_bottle/google_16k/texture_map.png"/>
     <texture name="tex8" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/005_tomato_soup_can/005_tomato_soup_can/google_16k/texture_map.png"/>
     <texture name="tex9" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/004_sugar_box/004_sugar_box/google_16k/texture_map.png"/>
-    <texture name="tex10" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/011_banana/011_banana/google_16k/texture_map.png"/>
-    <texture name="tex11" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/003_cracker_box/003_cracker_box/google_16k/texture_map.png"/>
-    <texture name="tex12" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/040_large_marker/040_large_marker/google_16k/texture_map.png"/>
-    <texture name="tex13" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/077_rubiks_cube/077_rubiks_cube/google_16k/texture_map.png"/>
+    <texture name="tex10" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/077_rubiks_cube/077_rubiks_cube/google_16k/texture_map.png"/>
+    <texture name="tex11" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/025_mug/025_mug/google_16k/texture_map.png"/>
+    <texture name="tex12" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/065-a_cups/065-a_cups/google_16k/texture_map.png"/>
+    <texture name="tex13" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/011_banana/011_banana/google_16k/texture_map.png"/>
+    <texture name="tex14" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/040_large_marker/040_large_marker/google_16k/texture_map.png"/>
+    <texture name="tex15" type="2d" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/061_foam_brick/061_foam_brick/google_16k/texture_map.png"/>
     <material name="tm" texture="tw" shininess="0.4" specular="0.25" reflectance="0.05"/>
     <material name="fm" texture="tf" shininess="0.12" texrepeat="8 8"/>
     <material name="wm" rgba="0.88 0.85 0.80 1" shininess="0.05"/>
@@ -54,6 +58,8 @@
     <material name="m11" texture="tex11" shininess="0.4" specular="0.25"/>
     <material name="m12" texture="tex12" shininess="0.4" specular="0.25"/>
     <material name="m13" texture="tex13" shininess="0.4" specular="0.25"/>
+    <material name="m14" texture="tex14" shininess="0.4" specular="0.25"/>
+    <material name="m15" texture="tex15" shininess="0.4" specular="0.25"/>
   </asset>
   <worldbody>
     <light pos="0.3 -0.4 2.0" dir="-0.15 0.2 -1" diffuse="0.92 0.87 0.80" castshadow="true"/>
@@ -62,26 +68,28 @@
     <geom type="plane" size="3 3 0.01" material="fm" friction="0.8 0.005 0.001"/>
     <geom type="box" size="2 0.005 1.5" pos="0 0.9 0.75" material="wm"/>
     <body name="table" pos="0 0 0.75">
-      <geom type="box" size="0.5 0.35 0.02" material="tm" mass="50"
+      <geom type="box" size="0.55 0.375 0.02" material="tm" mass="50"
             friction="0.8 0.005 0.001" solref="0.002 1" solimp="0.98 0.99 0.001" condim="4"/>
     </body>
-    <geom type="cylinder" size="0.03 0.375" pos="0.44 0.29 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="-0.44 0.29 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="0.44 -0.29 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="-0.44 -0.29 0.375" rgba="0.32 0.20 0.10 1"/>
-    <body name="o0" pos="0.0000 0.0000 0.77511" quat="1.0000 0 0 0.0000"><freejoint name="fj0"/><geom name="vis0" type="mesh" mesh="v0" material="m0" contype="0" conaffinity="0" mass="0"/><geom name="col0" type="box" size="0.13008 0.13055 0.01336" pos="-0.01162 0.00002 0.01025" rgba="0 0 0 0" mass="0.2790" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o1" pos="-0.0300 0.0200 0.79912" quat="1.0000 0 0 0.0000"><freejoint name="fj1"/><geom name="vis1" type="mesh" mesh="v1" material="m1" contype="0" conaffinity="0" mass="0"/><geom name="col1" type="box" size="0.03772 0.03744 0.03594" pos="0.00086 -0.00378 0.03555" rgba="0 0 0 0" mass="0.0680" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o2" pos="0.0400 -0.0200 0.79897" quat="1.0000 0 0 0.0000"><freejoint name="fj2"/><geom name="vis2" type="mesh" mesh="v2" material="m2" contype="0" conaffinity="0" mass="0"/><geom name="col2" type="box" size="0.03608 0.03699 0.03568" pos="-0.00694 -0.01836 0.03543" rgba="0 0 0 0" mass="0.0470" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o3" pos="-0.2500 0.0800 0.77253" quat="1.0000 0 0 0.0000"><freejoint name="fj3"/><geom name="vis3" type="mesh" mesh="v3" material="m3" contype="0" conaffinity="0" mass="0"/><geom name="col3" type="box" size="0.08073 0.08058 0.02750" pos="-0.01484 -0.04369 0.02697" rgba="0 0 0 0" mass="0.1470" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o4" pos="-0.1200 0.1500 0.77223" quat="1.0000 0 0 0.0000"><freejoint name="fj4"/><geom name="vis4" type="mesh" mesh="v4" material="m4" contype="0" conaffinity="0" mass="0"/><geom name="col4" type="box" size="0.03029 0.02965 0.02651" pos="-0.01058 0.02165 0.02627" rgba="0 0 0 0" mass="0.0290" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o5" pos="0.2000 0.0200 0.77253" quat="0.9848 0 0 -0.1736"><freejoint name="fj5"/><geom name="vis5" type="mesh" mesh="v5" material="m5" contype="0" conaffinity="0" mass="0"/><geom name="col5" type="box" size="0.05849 0.04657 0.04065" pos="-0.00886 0.01734 0.04012" rgba="0 0 0 0" mass="0.1180" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o6" pos="-0.1500 -0.1400 0.77275" quat="0.9990 0 0 0.0436"><freejoint name="fj6"/><geom name="vis6" type="mesh" mesh="v6" material="m6" contype="0" conaffinity="0" mass="0"/><geom name="col6" type="box" size="0.02854 0.02871 0.03076" pos="-0.03189 -0.04540 0.03001" rgba="0 0 0 0" mass="0.0050" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o7" pos="0.0500 0.2000 0.77515" quat="1.0000 0 0 0.0000"><freejoint name="fj7"/><geom name="vis7" type="mesh" mesh="v7" material="m7" contype="0" conaffinity="0" mass="0"/><geom name="col7" type="box" size="0.04860 0.03331 0.09565" pos="-0.01534 -0.02350 0.09250" rgba="0 0 0 0" mass="0.6030" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o8" pos="0.1800 0.2000 0.77192" quat="1.0000 0 0 0.0000"><freejoint name="fj8"/><geom name="vis8" type="mesh" mesh="v8" material="m8" contype="0" conaffinity="0" mass="0"/><geom name="col8" type="box" size="0.03396 0.03387 0.05093" pos="-0.00917 0.08402 0.05101" rgba="0 0 0 0" mass="0.3490" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o9" pos="-0.1000 0.2000 0.77197" quat="0.9990 0 0 -0.0436"><freejoint name="fj9"/><geom name="vis9" type="mesh" mesh="v9" material="m9" contype="0" conaffinity="0" mass="0"/><geom name="col9" type="box" size="0.02475 0.04708 0.08801" pos="-0.00747 -0.01671 0.08804" rgba="0 0 0 0" mass="0.5140" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o10" pos="0.0000 -0.2000 0.77241" quat="1.0000 0 0 0.0000"><freejoint name="fj10"/><geom name="vis10" type="mesh" mesh="v10" material="m10" contype="0" conaffinity="0" mass="0"/><geom name="col10" type="box" size="0.05447 0.08922 0.01837" pos="0.01148 -0.00734 0.01796" rgba="0 0 0 0" mass="0.0660" friction="0.7 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o11" pos="0.3000 0.0800 0.77524" quat="0.9990 0 0 0.0436"><freejoint name="fj11"/><geom name="vis11" type="mesh" mesh="v11" material="m11" contype="0" conaffinity="0" mass="0"/><geom name="col11" type="box" size="0.03590 0.08202 0.10672" pos="-0.01289 -0.01414 0.10348" rgba="0 0 0 0" mass="0.4110" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o12" pos="0.2000 -0.1800 0.77227" quat="0.9239 0 0 -0.3827"><freejoint name="fj12"/><geom name="vis12" type="mesh" mesh="v12" material="m12" contype="0" conaffinity="0" mass="0"/><geom name="col12" type="box" size="0.01051 0.06048 0.00945" pos="-0.03569 -0.00508 0.00917" rgba="0 0 0 0" mass="0.0160" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o13" pos="-0.3000 -0.1000 0.77232" quat="0.9945 0 0 0.1045"><freejoint name="fj13"/><geom name="vis13" type="mesh" mesh="v13" material="m13" contype="0" conaffinity="0" mass="0"/><geom name="col13" type="box" size="0.03787 0.03806 0.02897" pos="-0.01610 -0.00050 0.02865" rgba="0 0 0 0" mass="0.0910" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <geom type="cylinder" size="0.03 0.375" pos="0.49000000000000005 0.315 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="-0.49000000000000005 0.315 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="0.49000000000000005 -0.315 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="-0.49000000000000005 -0.315 0.375" rgba="0.32 0.20 0.10 1"/>
+    <body name="o0" pos="0.0000 0.0000 0.77611" quat="1.0000 0 0 0.0000"><freejoint name="fj0"/><geom name="vis0" type="mesh" mesh="v0" material="m0" contype="0" conaffinity="0" mass="0"/><geom name="col0" type="box" size="0.13008 0.13055 0.01336" pos="-0.01162 0.00002 0.01025" rgba="0 0 0 0" mass="0.2790" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o1" pos="-0.0300 0.0300 0.80012" quat="1.0000 0 0 0.0000"><freejoint name="fj1"/><geom name="vis1" type="mesh" mesh="v1" material="m1" contype="0" conaffinity="0" mass="0"/><geom name="col1" type="sphere" size="0.03307" pos="0.00086 -0.00378 0.03555" rgba="0 0 0 0" mass="0.0680" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o2" pos="0.0400 -0.0300 0.79997" quat="1.0000 0 0 0.0000"><freejoint name="fj2"/><geom name="vis2" type="mesh" mesh="v2" material="m2" contype="0" conaffinity="0" mass="0"/><geom name="col2" type="sphere" size="0.03282" pos="-0.00694 -0.01836 0.03543" rgba="0 0 0 0" mass="0.0470" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o3" pos="-0.2600 0.0800 0.77353" quat="1.0000 0 0 0.0000"><freejoint name="fj3"/><geom name="vis3" type="mesh" mesh="v3" material="m3" contype="0" conaffinity="0" mass="0"/><geom name="col3" type="box" size="0.08073 0.08058 0.02750" pos="-0.01484 -0.04369 0.02697" rgba="0 0 0 0" mass="0.1470" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o4" pos="-0.1500 0.1300 0.77323" quat="1.0000 0 0 0.0000"><freejoint name="fj4"/><geom name="vis4" type="mesh" mesh="v4" material="m4" contype="0" conaffinity="0" mass="0"/><geom name="col4" type="sphere" size="0.02439" pos="-0.01058 0.02165 0.02627" rgba="0 0 0 0" mass="0.0290" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o5" pos="-0.1200 0.2400 0.77624" quat="1.0000 0 0 0.0000"><freejoint name="fj5"/><geom name="vis5" type="mesh" mesh="v5" material="m5" contype="0" conaffinity="0" mass="0"/><geom name="col5" type="box" size="0.03590 0.08202 0.10672" pos="-0.01289 -0.01414 0.10348" rgba="0 0 0 0" mass="0.4110" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o6" pos="-0.1200 0.2400 0.98963" quat="1.0000 0 0 0.0000"><freejoint name="fj6"/><geom name="vis6" type="mesh" mesh="v6" material="m6" contype="0" conaffinity="0" mass="0"/><geom name="col6" type="box" size="0.05104 0.03005 0.04177" pos="-0.03278 -0.02655 0.03858" rgba="0 0 0 0" mass="0.3700" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o7" pos="0.0800 0.2400 0.77615" quat="0.9976 0 0 0.0698"><freejoint name="fj7"/><geom name="vis7" type="mesh" mesh="v7" material="m7" contype="0" conaffinity="0" mass="0"/><geom name="col7" type="box" size="0.04860 0.03331 0.09565" pos="-0.01534 -0.02350 0.09250" rgba="0 0 0 0" mass="0.6030" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o8" pos="0.2000 0.2200 0.77292" quat="0.9990 0 0 -0.0436"><freejoint name="fj8"/><geom name="vis8" type="mesh" mesh="v8" material="m8" contype="0" conaffinity="0" mass="0"/><geom name="col8" type="box" size="0.03396 0.03387 0.05093" pos="-0.00917 0.08402 0.05101" rgba="0 0 0 0" mass="0.3490" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o9" pos="0.3200 0.1800 0.77297" quat="0.9962 0 0 0.0872"><freejoint name="fj9"/><geom name="vis9" type="mesh" mesh="v9" material="m9" contype="0" conaffinity="0" mass="0"/><geom name="col9" type="box" size="0.02475 0.04708 0.08801" pos="-0.00747 -0.01671 0.08804" rgba="0 0 0 0" mass="0.5140" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o10" pos="0.3200 0.1800 0.94933" quat="0.9763 0 0 0.2164"><freejoint name="fj10"/><geom name="vis10" type="mesh" mesh="v10" material="m10" contype="0" conaffinity="0" mass="0"/><geom name="col10" type="box" size="0.03787 0.03806 0.02897" pos="-0.01610 -0.00050 0.02865" rgba="0 0 0 0" mass="0.0910" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o11" pos="0.3000 -0.0200 0.77353" quat="0.9848 0 0 -0.1736"><freejoint name="fj11"/><geom name="vis11" type="mesh" mesh="v11" material="m11" contype="0" conaffinity="0" mass="0"/><geom name="col11" type="box" size="0.05849 0.04657 0.04065" pos="-0.00886 0.01734 0.04012" rgba="0 0 0 0" mass="0.1180" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o12" pos="-0.1800 -0.1600 0.77375" quat="0.9990 0 0 0.0436"><freejoint name="fj12"/><geom name="vis12" type="mesh" mesh="v12" material="m12" contype="0" conaffinity="0" mass="0"/><geom name="col12" type="box" size="0.02854 0.02871 0.03076" pos="-0.03189 -0.04540 0.03001" rgba="0 0 0 0" mass="0.0050" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o13" pos="0.1000 -0.1800 0.77341" quat="0.9659 0 0 0.2588"><freejoint name="fj13"/><geom name="vis13" type="mesh" mesh="v13" material="m13" contype="0" conaffinity="0" mass="0"/><geom name="col13" type="box" size="0.05447 0.08922 0.01837" pos="0.01148 -0.00734 0.01796" rgba="0 0 0 0" mass="0.0660" friction="0.7 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o14" pos="-0.0500 -0.2200 0.77327" quat="0.8870 0 0 -0.4617"><freejoint name="fj14"/><geom name="vis14" type="mesh" mesh="v14" material="m14" contype="0" conaffinity="0" mass="0"/><geom name="col14" type="box" size="0.01051 0.06048 0.00945" pos="-0.03569 -0.00508 0.00917" rgba="0 0 0 0" mass="0.0160" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o15" pos="0.2200 -0.1800 0.77335" quat="0.9914 0 0 0.1305"><freejoint name="fj15"/><geom name="vis15" type="mesh" mesh="v15" material="m15" contype="0" conaffinity="0" mass="0"/><geom name="col15" type="box" size="0.02628 0.03894 0.02560" pos="-0.01826 0.01720 0.02525" rgba="0 0 0 0" mass="0.0280" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
   </worldbody>
 </mujoco>
