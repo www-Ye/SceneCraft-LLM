@@ -1,57 +1,147 @@
-# SceneCraft-LLM: LLM-Agent Driven Interactive Indoor Scene Generation
+# SceneCraft-LLM
 
-> NeurIPS 2026 Submission
+AI-driven 3D scene generation with physics simulation for NeurIPS paper submission.
 
-## Overview
-
-SceneCraft-LLM is a training-free framework for generating simulation-ready 3D indoor scenes using LLM-based planning agents. Given a natural language description (e.g., "a cozy living room with a sofa facing the TV"), our system automatically:
-
-1. **Parses** the description into structured scene requirements
-2. **Plans** a spatially coherent furniture layout via LLM reasoning
-3. **Retrieves** matching 3D assets from a large-scale database
-4. **Optimizes** the layout with physical constraints (collision-free, gravity-stable)
-5. **Outputs** a simulation-ready scene (compatible with Habitat, AI2-THOR, etc.)
-
-## Key Contributions
-
-- **Training-free**: No GPU training required; leverages LLM reasoning capabilities
-- **Physically grounded**: Constraint-based optimization ensures realistic placements
-- **Simulation-ready**: Direct output to popular embodied AI simulators
-- **Scalable**: Can generate diverse scenes at scale via LLM prompting
-
-## Project Structure
-
-```
-scene-gen/
-├── src/
-│   ├── planner/        # LLM-based scene planning agent
-│   ├── layout/         # Layout optimization & constraint solving
-│   ├── assets/         # 3D asset retrieval & management
-│   ├── evaluation/     # Metrics & evaluation pipeline
-│   └── utils/          # Shared utilities
-├── configs/            # Configuration files
-├── scripts/            # Data processing & experiment scripts
-├── data/               # Dataset storage (3D-FRONT, etc.)
-├── outputs/            # Generated scenes & results
-└── docs/               # Documentation & paper drafts
-```
-
-## Setup
+## 🚀 Quick Start
 
 ```bash
-pip install -r requirements.txt
+# Generate a predefined scene
+python scripts/generate_scene.py --scene breakfast
+
+# Run a quick demo
+python scripts/render_demo.py
+
+# Generate from custom config
+python scripts/generate_scene.py --config configs/my_scene.json
 ```
 
-## Quick Start
+## 📁 Project Structure
+
+```
+SceneCraft-LLM/
+├── scenecraft/            # Main package
+│   ├── assets/            # Asset management + download
+│   ├── generation/        # Scene generation
+│   ├── simulation/        # Physics + rendering  
+│   ├── layout/            # Layout planning (future)
+│   ├── evaluation/        # Metrics (future)
+│   └── utils/             # Utilities
+├── scripts/               # Runnable scripts
+├── benchmark/             # PhysScene benchmark
+├── configs/               # Configuration files
+└── data/                  # Asset catalogs (binary assets gitignored)
+```
+
+## 🛠 Installation
+
+1. **Prerequisites:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Download Assets:**
+   ```python
+   from scenecraft.assets.download import TabletopAssetDownloader
+   downloader = TabletopAssetDownloader()
+   downloader.download_assets()
+   ```
+
+## 🎨 Scene Generation
+
+### Predefined Scenes
+
+- `breakfast`: Dense breakfast table setup  
+- `study_desk`: Academic workspace with books and stationery
+- `tea_ceremony`: Traditional tea service arrangement
+
+### Custom Scenes
+
+Create a JSON configuration:
+
+```json
+{
+  "name": "my_scene",
+  "table": {"w": 1.0, "d": 0.7, "h": 0.75},
+  "objects": [
+    {"cat": "mug", "dims": [0.08, 0.08, 0.10], "pos": [0.0, 0.0]},
+    {"cat": "plate", "dims": [0.25, 0.25, 0.02], "pos": [0.2, 0.1]}
+  ]
+}
+```
+
+## 🐛 Bug Fixes (v2)
+
+### Fixed Bug 1: Convex Hull Destroying Mesh Quality
+- **Problem:** Non-watertight meshes (bowls, mugs) converted to convex hulls, destroying concave details
+- **Solution:** 
+  - Preserve original geometry for visual rendering
+  - Use separate collision meshes (simplified)
+  - Gentle mesh repair (fill holes, fix normals) instead of convex hull
+
+### Fixed Bug 2: Objects Disappearing After Physics  
+- **Problem:** Objects placed with initial penetration get launched by physics
+- **Solution:**
+  - Compute actual mesh bottom Z coordinate after scaling
+  - Velocity clamping during physics settling
+  - Safety checks for fallen objects
+
+## 🔧 Key Improvements
+
+- **Separate Visual/Collision Meshes:** High-detail visuals + simplified physics
+- **Better Physics Stability:** Velocity clamping + object tracking
+- **Cleaner Architecture:** Modular design with clear separation of concerns
+- **Improved Asset Management:** Smart mesh loading and scaling
+
+## 📊 Evaluation
+
+Run the PhysScene benchmark:
 
 ```bash
-python -m src.planner.generate --prompt "a modern living room" --output outputs/
+python scripts/run_benchmark.py
+# Or directly:
+python benchmark/scripts/[specific_benchmark].py
 ```
 
-## Dataset
+## 🏗 Development
 
-We use [3D-FRONT](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset) as our primary dataset for evaluation.
+### Architecture
 
-## License
+- `AssetManager`: Handles 3D asset loading, scaling, materials
+- `TabletopGenerator`: Main scene generation with collision detection  
+- `PhysicsEngine`: Stable physics simulation with monitoring
+- `Renderer`: Multi-view rendering with standard camera positions
+- `XMLBuilder`: Builds MuJoCo XML with separate visual/collision geoms
 
-MIT
+### Adding New Objects
+
+1. Add assets to the download script
+2. Define material properties in `AssetManager`
+3. Objects automatically available in scene generation
+
+## 📄 License
+
+MIT License - see LICENSE file.
+
+## 📚 Citation
+
+If you use SceneCraft-LLM in your research, please cite:
+
+```bibtex
+@inproceedings{scenecraft2024,
+  title={SceneCraft-LLM: AI-Driven 3D Scene Generation with Physics Simulation},
+  author={...},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2024}
+}
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make changes with tests
+4. Submit a pull request
+
+---
+
+For questions or issues, please open a GitHub issue.
