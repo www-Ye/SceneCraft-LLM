@@ -1,11 +1,7 @@
 <mujoco>
   <compiler angle="degree"/>
   <option timestep="0.0005" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" noslip_iterations="5"/>
-  <visual>
-    <global offwidth="1920" offheight="1440"/>
-    <headlight diffuse="0.55 0.55 0.55" ambient="0.38 0.38 0.38" specular="0.25 0.25 0.25"/>
-    <quality shadowsize="4096"/>
-  </visual>
+  <visual><global offwidth="1920" offheight="1440"/><headlight diffuse="0.55 0.55 0.55" ambient="0.38 0.38 0.38" specular="0.25 0.25 0.25"/><quality shadowsize="4096"/></visual>
   <asset>
     <mesh name="v0" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/029_plate/029_plate/google_16k/textured.obj"/>
     <mesh name="v1" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/ycb/013_apple/013_apple/google_16k/textured.obj"/>
@@ -93,28 +89,19 @@
     <body name="o10" pos="0.3200 0.1800 0.94833" quat="0.9763 0 0 0.2164"><freejoint name="fj10"/><geom name="vis10" type="mesh" mesh="v10" material="m10" contype="0" conaffinity="0" mass="0"/><geom name="col10" type="box" size="0.03787 0.03806 0.02897" pos="-0.01610 -0.00050 0.02865" rgba="0 0 0 0" mass="0.0910" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
     <body name="o11" pos="0.3000 -0.0200 0.77253" quat="0.9848 0 0 -0.1736"><freejoint name="fj11"/><geom name="vis11" type="mesh" mesh="v11" material="m11" contype="0" conaffinity="0" mass="0"/><geom name="col11" type="box" size="0.05849 0.04657 0.04065" pos="-0.00886 0.01734 0.04012" rgba="0 0 0 0" mass="0.1180" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
     <body name="o12" pos="-0.1800 -0.1600 0.77275" quat="0.9990 0 0 0.0436"><freejoint name="fj12"/><geom name="vis12" type="mesh" mesh="v12" material="m12" contype="0" conaffinity="0" mass="0"/><geom name="col12" type="box" size="0.02854 0.02871 0.03076" pos="-0.03189 -0.04540 0.03001" rgba="0 0 0 0" mass="0.0050" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o13" pos="0.0800 -0.1200 0.77241" quat="0.9659 0 0 0.2588"><freejoint name="fj13"/><geom name="vis13" type="mesh" mesh="v13" material="m13" contype="0" conaffinity="0" mass="0"/><geom name="col13" type="box" size="0.04630 0.07584 0.01561" pos="0.01148 -0.00734 0.01521" rgba="0 0 0 0" mass="0.0660" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="o13" pos="0.0800 -0.1200 0.77241" quat="0.9659 0 0 0.2588"><freejoint name="fj13"/><geom name="vis13" type="mesh" mesh="v13" material="m13" contype="0" conaffinity="0" mass="0"/><geom name="col13" type="box" size="0.05447 0.08922 0.01837" pos="0.01148 -0.00734 0.01796" rgba="0 0 0 0" mass="0.0660" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
     <body name="o14" pos="-0.3500 -0.0800 0.77227" quat="0.8870 0 0 -0.4617"><freejoint name="fj14"/><geom name="vis14" type="mesh" mesh="v14" material="m14" contype="0" conaffinity="0" mass="0"/><geom name="col14" type="box" size="0.01051 0.06048 0.00945" pos="-0.03569 -0.00508 0.00917" rgba="0 0 0 0" mass="0.0160" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
     <body name="o15" pos="0.2400 -0.2000 0.77235" quat="0.9914 0 0 0.1305"><freejoint name="fj15"/><geom name="vis15" type="mesh" mesh="v15" material="m15" contype="0" conaffinity="0" mass="0"/><geom name="col15" type="box" size="0.02628 0.03894 0.02560" pos="-0.01826 0.01720 0.02525" rgba="0 0 0 0" mass="0.0280" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="o16" pos="0.16 0.00 0.77300" quat="0.9990 0 0 -0.0436">
-  <freejoint name="fj16"/>
-  <geom type="box" size="0.005 0.07 0.0015" pos="0 -0.04 0" material="steel" mass="0.04" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
+    <body name="o16" pos="0.16 0.0 0.77300" quat="0.9990 0 0 -0.0436"><freejoint name="fj16"/><geom type="box" size="0.005 0.07 0.0015" pos="0 -0.04 0" material="steel" mass="0.04" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
   <geom type="box" size="0.008 0.04 0.001" pos="0 0.05 0" material="steel" mass="0.015"/>
   <geom type="box" size="0.001 0.02 0.0008" pos="-0.005 0.085 0" material="steel" mass="0.002"/>
   <geom type="box" size="0.001 0.02 0.0008" pos="-0.0017 0.085 0" material="steel" mass="0.002"/>
   <geom type="box" size="0.001 0.02 0.0008" pos="0.0017 0.085 0" material="steel" mass="0.002"/>
-  <geom type="box" size="0.001 0.02 0.0008" pos="0.005 0.085 0" material="steel" mass="0.002"/>
-</body>
-    <body name="o17" pos="0.19 0.02 0.77300" quat="0.9976 0 0 -0.0698">
-  <freejoint name="fj17"/>
-  <geom type="box" size="0.006 0.055 0.003" pos="0 -0.045 0" material="dark_handle" mass="0.03" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
-  <geom type="box" size="0.001 0.065 0.008" pos="0 0.055 0" material="steel" mass="0.04"/>
-</body>
-    <body name="o18" pos="-0.15 -0.03 0.77300" quat="0.9962 0 0 0.0872">
-  <freejoint name="fj18"/>
-  <geom type="box" size="0.003 0.065 0.001" pos="0 -0.030 0" material="steel" mass="0.025" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
-  <geom type="ellipsoid" size="0.009 0.013 0.003" pos="0 0.045 0.001" material="steel" mass="0.015"/>
-</body>
+  <geom type="box" size="0.001 0.02 0.0008" pos="0.005 0.085 0" material="steel" mass="0.002"/></body>
+    <body name="o17" pos="0.19 0.02 0.77300" quat="0.9976 0 0 -0.0698"><freejoint name="fj17"/><geom type="box" size="0.006 0.055 0.003" pos="0 -0.045 0" material="dark_handle" mass="0.03" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
+  <geom type="box" size="0.001 0.065 0.008" pos="0 0.055 0" material="steel" mass="0.04"/></body>
+    <body name="o18" pos="-0.15 -0.03 0.77300" quat="0.9962 0 0 0.0872"><freejoint name="fj18"/><geom type="box" size="0.003 0.065 0.001" pos="0 -0.030 0" material="steel" mass="0.025" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
+  <geom type="ellipsoid" size="0.009 0.013 0.003" pos="0 0.045 0.001" material="steel" mass="0.015"/></body>
     <body name="o19" pos="-0.30 0.20 0.77500" quat="0.9659 0 0 0.2588">
   <freejoint name="fj19"/>
   <geom type="box" size="0.002 0.06 0.002" pos="-0.003 0.03 0" material="steel" mass="0.02" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/>
