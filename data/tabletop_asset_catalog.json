@@ -1,30 +1,28 @@
 {
-  "mug": [
+  "book": [
     {
-      "uid": "e5e87ddbf3f6470384bef58431351e2a",
-      "visual_file": "mug_0_visual.stl",
-      "collision_file": "mug_0_collision.stl",
+      "uid": "b8834458ea7d49b8813ffc910cfbf486",
+      "visual_file": "book_0_visual.stl",
+      "collision_file": "book_0_collision.stl",
       "dims": [
-        0.0709144413284917,
-        0.07124000997097002,
-        0.10000000000000002
+        0.15,
+        0.22,
+        0.03
       ],
-      "visual_vertices": 486,
-      "collision_vertices": 84
-    }
-  ],
-  "cup": [
+      "visual_vertices": 45677,
+      "collision_vertices": 64
+    },
     {
-      "uid": "9646813e492b47fcae126b2491554991",
-      "visual_file": "cup_0_visual.stl",
-      "collision_file": "cup_0_collision.stl",
+      "uid": "742fbdd5bf314a488494a4afdba92b25",
+      "visual_file": "book_1_visual.stl",
+      "collision_file": "book_1_collision.stl",
       "dims": [
-        0.08,
-        0.06682692115110964,
-        0.09401266577399627
+        0.15,
+        0.22,
+        0.03
       ],
-      "visual_vertices": 5996,
-      "collision_vertices": 558
+      "visual_vertices": 19010,
+      "collision_vertices": 71
     }
   ],
   "bowl": [
@@ -33,12 +31,50 @@
       "visual_file": "bowl_0_visual.stl",
       "collision_file": "bowl_0_collision.stl",
       "dims": [
-        0.13835100266355324,
-        0.13835060220948692,
+        0.15,
+        0.15,
         0.08
       ],
       "visual_vertices": 3512,
       "collision_vertices": 754
+    },
+    {
+      "uid": "826eeb384b644d278e78c802ac59fbc3",
+      "visual_file": "bowl_1_visual.stl",
+      "collision_file": "bowl_1_collision.stl",
+      "dims": [
+        0.15,
+        0.15,
+        0.08
+      ],
+      "visual_vertices": 31227,
+      "collision_vertices": 2001
+    }
+  ],
+  "remote_control": [
+    {
+      "uid": "24b0ef19fb344e8aa1cc4e79e5a81564",
+      "visual_file": "remote_control_0_visual.stl",
+      "collision_file": "remote_control_0_collision.stl",
+      "dims": [
+        0.05,
+        0.18,
+        0.02
+      ],
+      "visual_vertices": 24326,
+      "collision_vertices": 292
+    },
+    {
+      "uid": "f1bbc61a42b94ee9a2976ca744f8962e",
+      "visual_file": "remote_control_1_visual.stl",
+      "collision_file": "remote_control_1_collision.stl",
+      "dims": [
+        0.05,
+        0.18,
+        0.02
+      ],
+      "visual_vertices": 4995,
+      "collision_vertices": 82
     }
   ],
   "plate": [
@@ -47,82 +83,24 @@
       "visual_file": "plate_0_visual.stl",
       "collision_file": "plate_0_collision.stl",
       "dims": [
-        0.033023572783729895,
-        0.03219973609038922,
+        0.25,
+        0.25,
         0.02
       ],
       "visual_vertices": 43502,
       "collision_vertices": 2001
-    }
-  ],
-  "apple": [
+    },
     {
-      "uid": "4c19ae47dbe8468285ee53ff487fe51a",
-      "visual_file": "apple_0_visual.stl",
-      "collision_file": "apple_0_collision.stl",
+      "uid": "623b78f05a1045a4b733bb56a5cac310",
+      "visual_file": "plate_1_visual.stl",
+      "collision_file": "plate_1_collision.stl",
       "dims": [
-        0.05372735694189235,
-        0.05373749474049788,
-        0.08000000000000002
+        0.25,
+        0.25,
+        0.02
       ],
-      "visual_vertices": 21915,
-      "collision_vertices": 3695
-    }
-  ],
-  "banana": [
-    {
-      "uid": "5d99827c456940bf9055dfe2dbc561e8",
-      "visual_file": "banana_0_visual.stl",
-      "collision_file": "banana_0_collision.stl",
-      "dims": [
-        0.04,
-        0.07264376130267398,
-        0.016183065045175665
-      ],
-      "visual_vertices": 752,
-      "collision_vertices": 248
-    }
-  ],
-  "book": [
-    {
-      "uid": "b8834458ea7d49b8813ffc910cfbf486",
-      "visual_file": "book_0_visual.stl",
-      "collision_file": "book_0_collision.stl",
-      "dims": [
-        0.06616460174041806,
-        0.13250451213428394,
-        0.03
-      ],
-      "visual_vertices": 45677,
-      "collision_vertices": 64
-    }
-  ],
-  "pen": [
-    {
-      "uid": "f9939905b39e4c0a91da9e165a191f89",
-      "visual_file": "pen_0_visual.stl",
-      "collision_file": "pen_0_collision.stl",
-      "dims": [
-        0.01,
-        0.14128180057527087,
-        0.007072887152087036
-      ],
-      "visual_vertices": 2196,
-      "collision_vertices": 140
-    }
-  ],
-  "can": [
-    {
-      "uid": "38baa418ff3e4f42b5b71c82388560e6",
-      "visual_file": "can_0_visual.stl",
-      "collision_file": "can_0_collision.stl",
-      "dims": [
-        0.06,
-        0.05954256235505423,
-        0.08752372478407582
-      ],
-      "visual_vertices": 1588,
-      "collision_vertices": 53
+      "visual_vertices": 20741,
+      "collision_vertices": 682
     }
   ]
 }

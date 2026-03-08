@@ -69,30 +69,31 @@ LVIS_CATEGORY_MAPPING = {
 
 def normalize_mesh_axis_agnostic(mesh, target_dims, preserve_geometry=True):
     """
-    Axis-agnostic mesh normalization with optional geometry preservation.
+    Per-axis scaling normalization with improved axis permutation scoring.
     
-    BUGFIX: No longer destroys mesh quality with convex hull.
-    Instead uses gentler repair methods and preserves original geometry.
+    BUGFIX: Uses independent per-axis scaling instead of uniform scaling.
+    This ensures each dimension matches the target exactly.
     """
     logger.info(f"Original mesh: {len(mesh.vertices)} vertices, watertight: {mesh.is_watertight}")
     
     # Simplify very high-poly meshes for MuJoCo compatibility
-    if len(mesh.vertices) > 50000 and preserve_geometry:
-        logger.warning(f"Mesh too high-poly ({len(mesh.vertices)} vertices), simplifying...")
+    if len(mesh.vertices) > 50000 or len(mesh.faces) > 100000:
+        logger.warning(f"Mesh too high-poly ({len(mesh.vertices)} vertices, {len(mesh.faces)} faces), simplifying...")
         try:
-            # Calculate target reduction ratio (aim for ~20k vertices)
-            target_count = 20000
-            reduction_ratio = max(0.1, 1.0 - (target_count / len(mesh.vertices)))
-            mesh = mesh.simplify_quadric_decimation(reduction_ratio)
-            logger.info(f"Simplified to {len(mesh.vertices)} vertices")
+            # Calculate reduction ratio to get ~20k vertices and <100k faces
+            vertex_ratio = 20000 / len(mesh.vertices) if len(mesh.vertices) > 20000 else 1.0
+            face_ratio = 80000 / len(mesh.faces) if len(mesh.faces) > 80000 else 1.0
+            reduction_ratio = min(vertex_ratio, face_ratio, 0.9)  # Cap at 90% reduction
+            
+            mesh = mesh.simplify_quadric_decimation(1.0 - reduction_ratio)
+            logger.info(f"Simplified to {len(mesh.vertices)} vertices, {len(mesh.faces)} faces")
         except Exception as e:
-            logger.warning(f"Simplification failed: {e}, trying alternative...")
+            logger.warning(f"Simplification failed: {e}, trying vertex clustering...")
             try:
-                # Fallback: use vertex clustering 
                 mesh = mesh.simplify_vertex_clustering(0.01)  # 1cm clusters
-                logger.info(f"Vertex clustering reduced to {len(mesh.vertices)} vertices")
+                logger.info(f"Vertex clustering reduced to {len(mesh.vertices)} vertices, {len(mesh.faces)} faces")
             except Exception as e2:
-                logger.warning(f"All simplification failed, using original mesh: {e2}")
+                logger.warning(f"All simplification failed: {e2}")
     
     # Only try gentle repairs if mesh has issues
     if not mesh.is_volume and preserve_geometry:
@@ -114,57 +115,53 @@ def normalize_mesh_axis_agnostic(mesh, target_dims, preserve_geometry=True):
             logger.warning(f"Gentle repair failed: {e}")
     
     # If preserve_geometry is False or we still have issues, fallback to convex hull
-    # This should only happen for severely broken meshes
     if not mesh.is_volume and not preserve_geometry:
         logger.warning("Using convex hull as fallback (geometry will be simplified)")
         mesh = mesh.convex_hull
     
-    # 居中到原点
+    # Center mesh
     mesh.vertices -= mesh.bounds.mean(axis=0)
-    
-    # 当前边界框
     current_dims = mesh.bounds[1] - mesh.bounds[0]
     target_arr = np.array([target_dims['width'], target_dims['depth'], target_dims['height']])
     
-    # 测试所有6种轴排列 (x,y,z), (x,z,y), (y,x,z), (y,z,x), (z,x,y), (z,y,x)
-    permutations = [
-        [0, 1, 2],  # x,y,z
-        [0, 2, 1],  # x,z,y  
-        [1, 0, 2],  # y,x,z
-        [1, 2, 0],  # y,z,x
-        [2, 0, 1],  # z,x,y
-        [2, 1, 0]   # z,y,x
-    ]
+    # Find best axis permutation
+    # Score: minimize the variance of scale ratios (most uniform scaling = least distortion)
+    perms = [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]]
+    best_score = float('inf')
+    best_perm = [0,1,2]
     
-    best_error = float('inf')
-    best_perm = None
-    
-    for perm in permutations:
+    for perm in perms:
         perm_dims = current_dims[perm]
-        # 计算缩放因子和误差
-        scale_factors = target_arr / perm_dims
-        min_scale = scale_factors.min()
-        scaled_dims = perm_dims * min_scale
-        error = np.sum((scaled_dims - target_arr) ** 2)
-        
-        if error < best_error:
-            best_error = error
+        ratios = target_arr / np.maximum(perm_dims, 1e-6)
+        # Score: variance of log-ratios (penalize non-uniform scaling)
+        log_ratios = np.log(ratios)
+        score = np.var(log_ratios)
+        if score < best_score:
+            best_score = score
             best_perm = perm
     
-    # 应用最佳轴排列
+    # Apply permutation
     if best_perm != [0, 1, 2]:
-        vertices = mesh.vertices.copy()
-        mesh.vertices = vertices[:, best_perm]
+        mesh.vertices = mesh.vertices[:, best_perm]
         logger.info(f"Applied axis permutation: {best_perm}")
     
-    # 重新计算边界框并缩放
+    # PER-AXIS scaling (not uniform!)
     current_dims = mesh.bounds[1] - mesh.bounds[0]
-    scale_factors = target_arr / current_dims
-    min_scale = scale_factors.min()
-    mesh.apply_scale(min_scale)
+    for axis in range(3):
+        scale = target_arr[axis] / max(current_dims[axis], 1e-6)
+        mesh.vertices[:, axis] *= scale
+        logger.info(f"Axis {axis}: scaled by {scale:.4f} (from {current_dims[axis]:.4f} to {target_arr[axis]:.4f})")
     
-    # 平移使bottom_z = 0
+    # Bottom at z=0
     mesh.vertices[:, 2] -= mesh.bounds[0, 2]
+    # Center XY
+    mesh.vertices[:, 0] -= (mesh.bounds[0][0] + mesh.bounds[1][0]) / 2
+    mesh.vertices[:, 1] -= (mesh.bounds[0][1] + mesh.bounds[1][1]) / 2
+    
+    # Log final dimensions for verification
+    final_dims = mesh.bounds[1] - mesh.bounds[0]
+    logger.info(f"Final mesh dimensions: [{final_dims[0]:.4f}, {final_dims[1]:.4f}, {final_dims[2]:.4f}]")
+    logger.info(f"Target dimensions: [{target_arr[0]:.4f}, {target_arr[1]:.4f}, {target_arr[2]:.4f}]")
     
     return mesh
 
@@ -176,15 +173,18 @@ def create_collision_mesh(visual_mesh):
     collision_mesh = visual_mesh.convex_hull
     
     # Ensure collision mesh is not too complex for physics
-    if len(collision_mesh.vertices) > 5000:
+    if len(collision_mesh.vertices) > 5000 or len(collision_mesh.faces) > 10000:
         try:
-            reduction_ratio = max(0.1, 1.0 - (2000 / len(collision_mesh.vertices)))
-            collision_mesh = collision_mesh.simplify_quadric_decimation(reduction_ratio)
-            logger.info(f"Simplified collision mesh to {len(collision_mesh.vertices)} vertices")
+            vertex_ratio = 2000 / len(collision_mesh.vertices) if len(collision_mesh.vertices) > 2000 else 1.0
+            face_ratio = 8000 / len(collision_mesh.faces) if len(collision_mesh.faces) > 8000 else 1.0
+            reduction_ratio = min(vertex_ratio, face_ratio, 0.9)
+            
+            collision_mesh = collision_mesh.simplify_quadric_decimation(1.0 - reduction_ratio)
+            logger.info(f"Simplified collision mesh to {len(collision_mesh.vertices)} vertices, {len(collision_mesh.faces)} faces")
         except:
             try:
                 collision_mesh = collision_mesh.simplify_vertex_clustering(0.02)  # 2cm clusters for collision
-                logger.info(f"Vertex clustering reduced collision to {len(collision_mesh.vertices)} vertices")
+                logger.info(f"Vertex clustering reduced collision to {len(collision_mesh.vertices)} vertices, {len(collision_mesh.faces)} faces")
             except:
                 logger.warning("Could not simplify collision mesh, using convex hull")
     

@@ -1,407 +1,317 @@
 {
-  "plate": {
-    "visual_file": "plate_1_visual.stl",
-    "collision_file": "plate_1_collision.stl",
-    "idx": 1,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.17674419283866882,
-      0.17674419283866882,
-      0.019999999552965164
-    ],
-    "reordered": [
-      0.17674419283866882,
-      0.17674419283866882,
-      0.019999999552965164
-    ],
-    "scales": [
-      1.41447362985328,
-      1.41447362985328,
-      1.0000000223517422
-    ],
-    "max_ratio": 1.4144735982373309,
-    "n_verts": 1250
-  },
-  "mug": {
-    "visual_file": "mug_0_visual.stl",
-    "collision_file": "mug_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.07091443985700607,
-      0.07124000787734985,
-      0.10000000149011612
-    ],
-    "reordered": [
-      0.07091443985700607,
-      0.07124000787734985,
-      0.10000000149011612
-    ],
-    "scales": [
-      1.1281200297332152,
-      1.122964502442669,
-      0.999999985098839
-    ],
-    "max_ratio": 1.1281200465435137,
-    "n_verts": 84
-  },
-  "bowl": {
-    "visual_file": "bowl_0_visual.stl",
-    "collision_file": "bowl_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.13835100829601288,
-      0.13835060596466064,
-      0.07999999821186066
-    ],
-    "reordered": [
-      0.13835100829601288,
-      0.13835060596466064,
-      0.07999999821186066
-    ],
-    "scales": [
-      1.0841988204311688,
-      1.0842019733423862,
-      1.0000000223517422
-    ],
-    "max_ratio": 1.0842019491085837,
-    "n_verts": 754
-  },
   "apple": {
-    "visual_file": "apple_1_visual.stl",
-    "collision_file": "apple_1_collision.stl",
-    "idx": 1,
+    "file": "apple_0_visual.stl",
+    "collision_file": "apple_0_collision.stl",
     "perm": [
       0,
       1,
       2
     ],
-    "actual": [
-      0.07014977186918259,
+    "target_dims": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "actual_dims": [
       0.07999999821186066,
-      0.07815944403409958
-    ],
-    "reordered": [
-      0.07014977186918259,
       0.07999999821186066,
-      0.07815944403409958
+      0.07999999821186066
     ],
-    "scales": [
-      1.1404171085429389,
-      1.0000000223517422,
-      1.0235487341119958
-    ],
-    "max_ratio": 1.1404170830526301,
-    "n_verts": 11566
+    "visual_vertices": 21908,
+    "collision_vertices": "unknown"
   },
   "banana": {
-    "visual_file": "banana_1_visual.stl",
-    "collision_file": "banana_1_collision.stl",
-    "idx": 1,
+    "file": "banana_0_visual.stl",
+    "collision_file": "banana_0_collision.stl",
     "perm": [
-      2,
+      0,
       1,
-      0
+      2
     ],
-    "actual": [
+    "target_dims": [
+      0.04,
+      0.18,
+      0.04
+    ],
+    "actual_dims": [
       0.03999999910593033,
-      0.0905337855219841,
-      0.017069753259420395
-    ],
-    "reordered": [
-      0.017069753259420395,
-      0.0905337855219841,
+      0.18000000715255737,
       0.03999999910593033
     ],
-    "scales": [
-      2.3433261976370363,
-      1.9882080370569617,
-      1.0000000223517422
-    ],
-    "max_ratio": 2.3433261452596144,
-    "n_verts": 688
+    "visual_vertices": 670,
+    "collision_vertices": "unknown"
   },
   "book": {
-    "visual_file": "book_0_visual.stl",
-    "collision_file": "book_0_collision.stl",
-    "idx": 0,
+    "file": "book_1_visual.stl",
+    "collision_file": "book_1_collision.stl",
     "perm": [
       0,
       1,
       2
     ],
-    "actual": [
-      0.06709814816713333,
-      0.13442035019397736,
+    "target_dims": [
+      0.15,
+      0.22,
+      0.03
+    ],
+    "actual_dims": [
+      0.15000000596046448,
+      0.2199999988079071,
       0.029999999329447746
     ],
-    "reordered": [
-      0.06709814816713333,
-      0.13442035019397736,
-      0.029999999329447746
-    ],
-    "scales": [
-      2.2355311450081787,
-      1.636656947274171,
-      1.0000000223517422
-    ],
-    "max_ratio": 2.235531095040164,
-    "n_verts": 62
-  },
-  "pen": {
-    "visual_file": "pen_0_visual.stl",
-    "collision_file": "pen_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.009999999776482582,
-      0.14128179848194122,
-      0.007072887383401394
-    ],
-    "reordered": [
-      0.009999999776482582,
-      0.14128179848194122,
-      0.007072887383401394
-    ],
-    "scales": [
-      1.0000000223517422,
-      1.0617078888557123,
-      1.4138497416865332
-    ],
-    "max_ratio": 1.4138497100845289,
-    "n_verts": 140
+    "visual_vertices": 6139,
+    "collision_vertices": "unknown"
   },
   "bottle": {
-    "visual_file": "bottle_1_visual.stl",
-    "collision_file": "bottle_1_collision.stl",
-    "idx": 1,
+    "file": "bottle_0_visual.stl",
+    "collision_file": "bottle_0_collision.stl",
     "perm": [
       0,
       1,
       2
     ],
-    "actual": [
-      0.05198657140135765,
+    "target_dims": [
+      0.07,
+      0.07,
+      0.25
+    ],
+    "actual_dims": [
       0.07000000029802322,
-      0.07419267296791077
-    ],
-    "reordered": [
-      0.05198657140135765,
       0.07000000029802322,
-      0.07419267296791077
+      0.25
     ],
-    "scales": [
-      1.3465015697913851,
-      0.9999999957425255,
-      3.3696049757922597
-    ],
-    "max_ratio": 3.3696049901382668,
-    "n_verts": 121
+    "visual_vertices": 181,
+    "collision_vertices": "unknown"
   },
-  "can": {
-    "visual_file": "can_1_visual.stl",
-    "collision_file": "can_1_collision.stl",
-    "idx": 1,
+  "bowl": {
+    "file": "bowl_0_visual.stl",
+    "collision_file": "bowl_0_collision.stl",
     "perm": [
       0,
       1,
       2
     ],
-    "actual": [
-      0.05999999865889549,
-      0.059999871999025345,
-      0.08875474333763123
+    "target_dims": [
+      0.15,
+      0.15,
+      0.08
     ],
-    "reordered": [
-      0.05999999865889549,
-      0.059999871999025345,
-      0.08875474333763123
+    "actual_dims": [
+      0.15000000596046448,
+      0.15000000596046448,
+      0.07999999821186066
     ],
-    "scales": [
-      1.0000000223517422,
-      1.0000021333541287,
-      1.3520404148261567
-    ],
-    "max_ratio": 1.3520403846056985,
-    "n_verts": 427
-  },
-  "cup": {
-    "visual_file": "cup_0_visual.stl",
-    "collision_file": "cup_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.07999999821186066,
-      0.06682692468166351,
-      0.09401266276836395
-    ],
-    "reordered": [
-      0.07999999821186066,
-      0.06682692468166351,
-      0.09401266276836395
-    ],
-    "scales": [
-      1.0000000223517422,
-      1.197122273411319,
-      1.0636864977049756
-    ],
-    "max_ratio": 1.1971222466535512,
-    "n_verts": 558
-  },
-  "dish": {
-    "visual_file": "dish_1_visual.stl",
-    "collision_file": "dish_1_collision.stl",
-    "idx": 1,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.08520333468914032,
-      0.08520334213972092,
-      0.019999999552965164
-    ],
-    "reordered": [
-      0.08520333468914032,
-      0.08520334213972092,
-      0.019999999552965164
-    ],
-    "scales": [
-      2.9341574588848105,
-      2.9341572023082954,
-      1.0000000223517422
-    ],
-    "max_ratio": 2.934157393301281,
-    "n_verts": 168
-  },
-  "scissors": {
-    "visual_file": "scissors_0_visual.stl",
-    "collision_file": "scissors_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.01915191113948822,
-      0.04773936793208122,
-      0.009999999776482582
-    ],
-    "reordered": [
-      0.01915191113948822,
-      0.04773936793208122,
-      0.009999999776482582
-    ],
-    "scales": [
-      1.5664233079144112,
-      3.7704730455603417,
-      1.0000000223517422
-    ],
-    "max_ratio": 3.770472961283702,
-    "n_verts": 3238
-  },
-  "remote_control": {
-    "visual_file": "remote_control_1_visual.stl",
-    "collision_file": "remote_control_1_collision.stl",
-    "idx": 1,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.0406915545463562,
-      0.18000000715255737,
-      0.018630919978022575
-    ],
-    "reordered": [
-      0.0406915545463562,
-      0.18000000715255737,
-      0.018630919978022575
-    ],
-    "scales": [
-      1.2287562015611748,
-      0.9999999602635717,
-      1.0734842951176014
-    ],
-    "max_ratio": 1.2287562503875593,
-    "n_verts": 82
-  },
-  "pencil": {
-    "visual_file": "pencil_0_visual.stl",
-    "collision_file": "pencil_0_collision.stl",
-    "idx": 0,
-    "perm": [
-      0,
-      1,
-      2
-    ],
-    "actual": [
-      0.009999990463256836,
-      0.1754191666841507,
-      0.009999999776482582
-    ],
-    "reordered": [
-      0.009999990463256836,
-      0.1754191666841507,
-      0.009999999776482582
-    ],
-    "scales": [
-      1.000000953675226,
-      1.0261136419835881,
-      1.0000000223517422
-    ],
-    "max_ratio": 1.026113619048161,
-    "n_verts": 33
+    "visual_vertices": 3236,
+    "collision_vertices": "unknown"
   },
   "box": {
-    "visual_file": "box_0_visual.stl",
-    "collision_file": "box_0_collision.stl",
-    "idx": 0,
+    "file": "box_1_visual.stl",
+    "collision_file": "box_1_collision.stl",
     "perm": [
       0,
       1,
       2
     ],
-    "actual": [
+    "target_dims": [
+      0.15,
+      0.1,
+      0.1
+    ],
+    "actual_dims": [
+      0.15000000596046448,
       0.10000000149011612,
-      0.09999989718198776,
       0.10000000149011612
     ],
-    "reordered": [
-      0.10000000149011612,
-      0.09999989718198776,
+    "visual_vertices": 80,
+    "collision_vertices": "unknown"
+  },
+  "can": {
+    "file": "can_0_visual.stl",
+    "collision_file": "can_0_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.06,
+      0.06,
+      0.12
+    ],
+    "actual_dims": [
+      0.05999999865889549,
+      0.05999999865889549,
+      0.11999999731779099
+    ],
+    "visual_vertices": 484,
+    "collision_vertices": "unknown"
+  },
+  "cup": {
+    "file": "cup_1_visual.stl",
+    "collision_file": "cup_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.08,
+      0.08,
+      0.1
+    ],
+    "actual_dims": [
+      0.07999999821186066,
+      0.07999999821186066,
       0.10000000149011612
     ],
-    "scales": [
-      1.4999999776482584,
-      1.0000010281811795,
-      0.999999985098839
+    "visual_vertices": 4821,
+    "collision_vertices": "unknown"
+  },
+  "dish": {
+    "file": "dish_1_visual.stl",
+    "collision_file": "dish_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
     ],
-    "max_ratio": 1.4999999999999998,
-    "n_verts": 24
+    "target_dims": [
+      0.25,
+      0.25,
+      0.02
+    ],
+    "actual_dims": [
+      0.25,
+      0.25,
+      0.019999999552965164
+    ],
+    "visual_vertices": 284,
+    "collision_vertices": "unknown"
+  },
+  "mug": {
+    "file": "mug_0_visual.stl",
+    "collision_file": "mug_0_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.08,
+      0.08,
+      0.1
+    ],
+    "actual_dims": [
+      0.07999999821186066,
+      0.07999999821186066,
+      0.10000000149011612
+    ],
+    "visual_vertices": 226,
+    "collision_vertices": "unknown"
+  },
+  "pen": {
+    "file": "pen_1_visual.stl",
+    "collision_file": "pen_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.01,
+      0.15,
+      0.01
+    ],
+    "actual_dims": [
+      0.009999999776482582,
+      0.15000000596046448,
+      0.009999999776482582
+    ],
+    "visual_vertices": 163,
+    "collision_vertices": "unknown"
+  },
+  "pencil": {
+    "file": "pencil_0_visual.stl",
+    "collision_file": "pencil_0_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.01,
+      0.18,
+      0.01
+    ],
+    "actual_dims": [
+      0.009999999776482582,
+      0.18000000715255737,
+      0.009999999776482582
+    ],
+    "visual_vertices": 49,
+    "collision_vertices": "unknown"
+  },
+  "plate": {
+    "file": "plate_1_visual.stl",
+    "collision_file": "plate_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.25,
+      0.25,
+      0.02
+    ],
+    "actual_dims": [
+      0.25,
+      0.25,
+      0.019999999552965164
+    ],
+    "visual_vertices": 20741,
+    "collision_vertices": "unknown"
+  },
+  "remote_control": {
+    "file": "remote_control_1_visual.stl",
+    "collision_file": "remote_control_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.05,
+      0.18,
+      0.02
+    ],
+    "actual_dims": [
+      0.05000000074505806,
+      0.18000000715255737,
+      0.019999999552965164
+    ],
+    "visual_vertices": 1812,
+    "collision_vertices": "unknown"
+  },
+  "scissors": {
+    "file": "scissors_1_visual.stl",
+    "collision_file": "scissors_1_collision.stl",
+    "perm": [
+      0,
+      1,
+      2
+    ],
+    "target_dims": [
+      0.03,
+      0.18,
+      0.01
+    ],
+    "actual_dims": [
+      0.029999999329447746,
+      0.18000000715255737,
+      0.009999999776482582
+    ],
+    "visual_vertices": 1458,
+    "collision_vertices": "unknown"
   }
 }
