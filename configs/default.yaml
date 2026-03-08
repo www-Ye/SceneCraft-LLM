@@ -1,46 +1,48 @@
-# SceneCraft-LLM Default Configuration
+# SceneCraft Default Configuration
 
-# LLM Settings
-llm:
-  provider: "openai"          # openai | anthropic
-  model: "gpt-4o"             # Model name
-  temperature: 0.7
-  max_tokens: 4096
-  retry_attempts: 3
-
-# Scene Generation
+# Scene generation settings
 scene:
-  room_types: ["living_room", "bedroom", "dining_room", "office", "bathroom"]
-  max_objects: 30              # Maximum objects per scene
-  floor_unit: 0.1             # Grid resolution in meters
-  wall_thickness: 0.1
+  table:
+    width: 1.0      # meters
+    depth: 0.7      # meters  
+    height: 0.75    # meters
+  
+  physics:
+    timestep: 0.002
+    gravity: [0, 0, -9.81]
+    settle_steps: 2000
+    velocity_clamp: 2.0
 
-# Layout Optimization
-layout:
-  collision_margin: 0.05       # Minimum gap between objects (meters)
-  wall_margin: 0.02            # Minimum gap to walls
-  max_iterations: 1000         # Optimization iterations
-  gravity_check: true          # Ensure objects are on floor/surface
-  accessibility_check: true    # Ensure walkable paths
+# Rendering settings
+render:
+  width: 1920
+  height: 1440
+  quality: "high"
+  
+  # Camera views to render
+  views:
+    - "perspective"
+    - "front" 
+    - "topdown"
+    - "closeup"
 
-# Asset Database
+# Asset settings
 assets:
-  database_path: "data/3d-front/assets/"
-  embedding_model: "clip"      # For semantic retrieval
-  top_k_retrieval: 5           # Number of candidates per query
+  stl_directory: "data/assets/_mujoco_stl"
+  catalog_file: "data/tabletop_asset_catalog.json"
+  
+  # Mesh processing
+  preserve_geometry: true  # Don't use convex hull for visual meshes
+  separate_collision: true # Use separate collision meshes
 
-# Evaluation
-evaluation:
-  metrics:
-    - "fid"                    # Frechet Inception Distance (layout)
-    - "collision_rate"         # Percentage of colliding objects
-    - "coverage"               # Floor area utilization
-    - "accessibility"          # Walkability score
-    - "semantic_consistency"   # Text-scene alignment
-  num_eval_scenes: 500
-
-# Output
+# Output settings
 output:
-  format: ["json", "glb"]     # Output formats
-  visualize: true
-  save_intermediate: false
+  base_directory: "outputs"
+  save_xml: true
+  save_config: true
+  save_images: true
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
