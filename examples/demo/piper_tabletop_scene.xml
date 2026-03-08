@@ -1,7 +1,6 @@
 <mujoco model="scenecraft_piper">
   <compiler angle="radian"/>
-  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" impratio="10"/>
-  
+  <option timestep="0.0005" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" impratio="10" noslip_iterations="5"/>
   <default>
     <default class="piper">
       <joint armature="0.005" frictionloss="0.3" />
@@ -20,13 +19,7 @@
   </default>
 
   
-  
-  <visual>
-    <global offwidth="1920" offheight="1440"/>
-    <headlight diffuse="0.55 0.55 0.55" ambient="0.38 0.38 0.38" specular="0.25 0.25 0.25"/>
-    <quality shadowsize="4096"/>
-  </visual>
-  
+  <visual><global offwidth="1920" offheight="1440"/><headlight diffuse="0.55 0.55 0.55" ambient="0.38 0.38 0.38" specular="0.25 0.25 0.25"/><quality shadowsize="4096"/></visual>
   <asset>
     <mesh name="link2_0" content_type="model/obj" file="/root/.openclaw/workspace-lab/scene-gen/data/assets/mujoco_menagerie/agilex_piper/assets/link2_0.obj" />
     
@@ -251,22 +244,18 @@
     <material name="fm" texture="tf" shininess="0.12" texrepeat="8 8"/>
     <material name="wm" rgba="0.88 0.85 0.80 1" shininess="0.05"/>
   </asset>
-  
   <worldbody>
     <light pos="0.3 -0.4 2.0" dir="-0.15 0.2 -1" diffuse="0.92 0.87 0.80" castshadow="true"/>
     <light pos="-0.4 0.5 1.8" dir="0.2 -0.25 -1" diffuse="0.35 0.35 0.38"/>
     <light pos="0 -0.3 1.6" dir="0 0.15 -1" diffuse="0.25 0.23 0.22"/>
     <geom name="floor" type="plane" size="3 3 0.01" material="fm" friction="0.8 0.005 0.001"/>
     <geom type="box" size="2 0.005 1.5" pos="0 0.9 0.75" material="wm"/>
-    <body name="table" pos="0 0 0.75">
-      <geom type="box" size="0.55 0.375 0.02" material="tm" mass="50" friction="0.8 0.005 0.001" solref="0.002 1" solimp="0.98 0.99 0.001" condim="4"/>
-    </body>
-    <geom type="cylinder" size="0.03 0.375" pos="0.49000000000000005 0.315 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="-0.49000000000000005 0.315 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="0.49000000000000005 -0.315 0.375" rgba="0.32 0.20 0.10 1"/>
-    <geom type="cylinder" size="0.03 0.375" pos="-0.49000000000000005 -0.315 0.375" rgba="0.32 0.20 0.10 1"/>
-    
-    <body name="base_link" childclass="piper" gravcomp="1" pos="-0.35 -0.25 0.77" quat="0.8870 0 0 0.4617">
+    <body name="table" pos="0 0 0.75"><geom type="box" size="0.6 0.4 0.02" material="tm" mass="50" friction="0.8 0.005 0.001" solref="0.002 1" solimp="0.98 0.99 0.001" condim="4"/></body>
+    <geom type="cylinder" size="0.03 0.375" pos="0.54 0.34 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="-0.54 0.34 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="0.54 -0.34 0.375" rgba="0.32 0.20 0.10 1"/>
+    <geom type="cylinder" size="0.03 0.375" pos="-0.54 -0.34 0.375" rgba="0.32 0.20 0.10 1"/>
+    <body name="base_link" childclass="piper" gravcomp="1" pos="-0.42 -0.28 0.77" quat="0.9063 0 0 0.4226">
       <inertial pos="-0.00979275 1.82906e-06 0.04101" quat="0.692988 -0.137524 -0.137826 0.69416" mass="0.162549" diaginertia="0.000269445 0.000227478 0.000221437" />
       <geom class="visual" material="gray_mat" mesh="base_link" />
       <geom class="collision" size="0.0357691 0.024065" pos="-0.0107422 1.86147e-06 0.0395259" quat="0.536726 0.460902 0.460261 0.536334" />
@@ -390,20 +379,18 @@
       </body>
     </body>
   
-    
-    <body name="obj_029_plate" pos="0.1000 0.1000 0.77511" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj0"/><geom name="ycb_vis0" type="mesh" mesh="ycb_v0" material="ycb_m0" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col0" type="cylinder" size="0.13008 0.004" pos="-0.01162 0.00002 0.00089" rgba="0 0 0 0" mass="0.279" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_013_apple" pos="0.0800 0.1200 0.77629" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj1"/><geom name="ycb_vis1" type="mesh" mesh="ycb_v1" material="ycb_m1" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col1" type="box" size="0.03018 0.02995 0.02876" pos="0.00086 -0.00378 0.02836" rgba="0 0 0 0" mass="0.068" friction="1.0 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_017_orange" pos="0.1300 0.0700 0.77615" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj2"/><geom name="ycb_vis2" type="mesh" mesh="ycb_v2" material="ycb_m2" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col2" type="box" size="0.02886 0.02959 0.02854" pos="-0.00694 -0.01836 0.02829" rgba="0 0 0 0" mass="0.047" friction="1.0 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_024_bowl" pos="0.3000 0.1500 0.77253" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj3"/><geom name="ycb_vis3" type="mesh" mesh="ycb_v3" material="ycb_m3" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col3" type="cylinder" size="0.08073 0.004" pos="-0.01484 -0.04369 0.00347" rgba="0 0 0 0" mass="0.147" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_025_mug" pos="0.2500 -0.0500 0.77253" quat="0.9848 0 0 -0.1736"><freejoint name="ycb_fj4"/><geom name="ycb_vis4" type="mesh" mesh="ycb_v4" material="ycb_m4" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col4" type="box" size="0.05849 0.04657 0.04065" pos="-0.00886 0.01734 0.04012" rgba="0 0 0 0" mass="0.118" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_006_mustard_bottle" pos="0.0000 0.2500 0.77515" quat="0.9976 0 0 0.0698"><freejoint name="ycb_fj5"/><geom name="ycb_vis5" type="mesh" mesh="ycb_v5" material="ycb_m5" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col5" type="box" size="0.04860 0.03331 0.09565" pos="-0.01534 -0.02350 0.09250" rgba="0 0 0 0" mass="0.603" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_005_tomato_soup_can" pos="0.1000 0.2800 0.77192" quat="0.9990 0 0 -0.0436"><freejoint name="ycb_fj6"/><geom name="ycb_vis6" type="mesh" mesh="ycb_v6" material="ycb_m6" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col6" type="box" size="0.03396 0.03387 0.05093" pos="-0.00917 0.08402 0.05101" rgba="0 0 0 0" mass="0.349" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_011_banana" pos="0.2000 -0.1800 0.77241" quat="0.9659 0 0 0.2588"><freejoint name="ycb_fj7"/><geom name="ycb_vis7" type="mesh" mesh="ycb_v7" material="ycb_m7" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col7" type="box" size="0.05447 0.08922 0.01837" pos="0.01148 -0.00734 0.01796" rgba="0 0 0 0" mass="0.066" friction="0.7 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_003_cracker_box" pos="-0.1000 0.1800 0.77524" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj8"/><geom name="ycb_vis8" type="mesh" mesh="ycb_v8" material="ycb_m8" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col8" type="box" size="0.03590 0.08202 0.10672" pos="-0.01289 -0.01414 0.10348" rgba="0 0 0 0" mass="0.411" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_077_rubiks_cube" pos="0.0000 -0.1500 0.77232" quat="0.9945 0 0 0.1045"><freejoint name="ycb_fj9"/><geom name="ycb_vis9" type="mesh" mesh="ycb_v9" material="ycb_m9" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col9" type="box" size="0.03787 0.03806 0.02897" pos="-0.01610 -0.00050 0.02865" rgba="0 0 0 0" mass="0.091" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
-    <body name="obj_004_sugar_box" pos="0.3800 0.2200 0.77197" quat="0.9962 0 0 0.0872"><freejoint name="ycb_fj10"/><geom name="ycb_vis10" type="mesh" mesh="ycb_v10" material="ycb_m10" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col10" type="box" size="0.02475 0.04708 0.08801" pos="-0.00747 -0.01671 0.08804" rgba="0 0 0 0" mass="0.514" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_029_plate" pos="0.1500 0.1000 0.77611" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj0"/><geom name="ycb_vis0" type="mesh" mesh="ycb_v0" material="ycb_m0" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col0" type="cylinder" size="0.13008 0.0019" pos="-0.01162 0.00002 -0.00121" rgba="0 0 0 0" mass="0.1953" friction="0.8 0.005 0.001" solref="0.002 1" solimp="0.98 0.99 0.001" condim="4"/><geom name="ycb_col0b" type="cylinder" size="0.1000 0.0010" pos="-0.01162 0.00002 0.00081" rgba="0 0 0 0" mass="0.08370000000000001" friction="0.8 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_013_apple" pos="0.1300 0.1200 0.78131" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj1"/><geom name="ycb_vis1" type="mesh" mesh="ycb_v1" material="ycb_m1" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col1" type="box" size="0.03018 0.02995 0.02876" pos="0.00086 -0.00378 0.02836" rgba="0 0 0 0" mass="0.068" friction="1.0 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_017_orange" pos="0.1800 0.0800 0.78117" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj2"/><geom name="ycb_vis2" type="mesh" mesh="ycb_v2" material="ycb_m2" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col2" type="box" size="0.02886 0.02959 0.02854" pos="-0.00694 -0.01836 0.02829" rgba="0 0 0 0" mass="0.047" friction="1.0 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_024_bowl" pos="-0.0500 0.2000 0.77353" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj3"/><geom name="ycb_vis3" type="mesh" mesh="ycb_v3" material="ycb_m3" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col3" type="cylinder" size="0.08073 0.0080" pos="-0.01484 -0.04369 0.00747" rgba="0 0 0 0" mass="0.147" friction="0.8 0.005 0.001" solref="0.002 1" solimp="0.98 0.99 0.001" condim="4"/></body>
+    <body name="obj_025_mug" pos="0.3500 0.0000 0.77353" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj4"/><geom name="ycb_vis4" type="mesh" mesh="ycb_v4" material="ycb_m4" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col4" type="box" size="0.05849 0.04657 0.04065" pos="-0.00886 0.01734 0.04012" rgba="0 0 0 0" mass="0.118" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_006_mustard_bottle" pos="0.0500 0.3000 0.77615" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj5"/><geom name="ycb_vis5" type="mesh" mesh="ycb_v5" material="ycb_m5" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col5" type="box" size="0.04860 0.03331 0.09565" pos="-0.01534 -0.02350 0.09250" rgba="0 0 0 0" mass="0.603" friction="0.4 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_005_tomato_soup_can" pos="-0.1500 0.0500 0.77292" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj6"/><geom name="ycb_vis6" type="mesh" mesh="ycb_v6" material="ycb_m6" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col6" type="box" size="0.03396 0.03387 0.05093" pos="-0.00917 0.08402 0.05101" rgba="0 0 0 0" mass="0.349" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_011_banana" pos="0.3000 -0.1500 0.77341" quat="0.9763 0 0 0.2164"><freejoint name="ycb_fj7"/><geom name="ycb_vis7" type="mesh" mesh="ycb_v7" material="ycb_m7" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col7" type="box" size="0.05447 0.08922 0.01837" pos="0.01148 -0.00734 0.01796" rgba="0 0 0 0" mass="0.066" friction="0.7 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_003_cracker_box" pos="-0.3000 0.1000 0.77624" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj8"/><geom name="ycb_vis8" type="mesh" mesh="ycb_v8" material="ycb_m8" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col8" type="box" size="0.03590 0.08202 0.10672" pos="-0.01289 -0.01414 0.10348" rgba="0 0 0 0" mass="0.411" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_077_rubiks_cube" pos="0.1000 -0.2000 0.77332" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj9"/><geom name="ycb_vis9" type="mesh" mesh="ycb_v9" material="ycb_m9" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col9" type="box" size="0.03787 0.03806 0.02897" pos="-0.01610 -0.00050 0.02865" rgba="0 0 0 0" mass="0.091" friction="0.5 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
+    <body name="obj_004_sugar_box" pos="-0.2000 0.2800 0.77297" quat="1.0000 0 0 0.0000"><freejoint name="ycb_fj10"/><geom name="ycb_vis10" type="mesh" mesh="ycb_v10" material="ycb_m10" contype="0" conaffinity="0" mass="0"/><geom name="ycb_col10" type="box" size="0.02475 0.04708 0.08801" pos="-0.00747 -0.01671 0.08804" rgba="0 0 0 0" mass="0.514" friction="0.6 0.005 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="4"/></body>
   </worldbody>
-  
   <equality>
     <joint joint1="joint8" joint2="joint7" polycoef="0 -1 0 0 0" />
   </equality>
