@@ -1,4 +1,214 @@
 {
+  "mug": [
+    {
+      "uid": "e5e87ddbf3f6470384bef58431351e2a",
+      "visual_file": "mug_0_visual.stl",
+      "collision_file": "mug_0_collision.stl",
+      "dims": [
+        0.08,
+        0.08,
+        0.10000000000000002
+      ],
+      "visual_vertices": 486,
+      "collision_vertices": 84
+    },
+    {
+      "uid": "922cd7d18c6748d49fe651ded8a04cf4",
+      "visual_file": "mug_1_visual.stl",
+      "collision_file": "mug_1_collision.stl",
+      "dims": [
+        0.08,
+        0.07999999999999999,
+        0.1
+      ],
+      "visual_vertices": 741,
+      "collision_vertices": 214
+    }
+  ],
+  "cup": [
+    {
+      "uid": "9646813e492b47fcae126b2491554991",
+      "visual_file": "cup_0_visual.stl",
+      "collision_file": "cup_0_collision.stl",
+      "dims": [
+        0.08,
+        0.08,
+        0.1
+      ],
+      "visual_vertices": 5996,
+      "collision_vertices": 558
+    },
+    {
+      "uid": "68e4c9f55c5745f99cbec22e816026d9",
+      "visual_file": "cup_1_visual.stl",
+      "collision_file": "cup_1_collision.stl",
+      "dims": [
+        0.08,
+        0.08,
+        0.1
+      ],
+      "visual_vertices": 10069,
+      "collision_vertices": 654
+    }
+  ],
+  "bowl": [
+    {
+      "uid": "8487824860ab4ff7b9c54665eaf2f050",
+      "visual_file": "bowl_0_visual.stl",
+      "collision_file": "bowl_0_collision.stl",
+      "dims": [
+        0.15,
+        0.15,
+        0.08
+      ],
+      "visual_vertices": 3512,
+      "collision_vertices": 754
+    }
+  ],
+  "plate": [
+    {
+      "uid": "0705ea8dbfdc44aea5b2ab8fc1654ef5",
+      "visual_file": "plate_0_visual.stl",
+      "collision_file": "plate_0_collision.stl",
+      "dims": [
+        0.25,
+        0.25,
+        0.02
+      ],
+      "visual_vertices": 43502,
+      "collision_vertices": 2001
+    }
+  ],
+  "dish": [
+    {
+      "uid": "a3b6180f2d8d4655a7b1963c4eba00ab",
+      "visual_file": "dish_0_visual.stl",
+      "collision_file": "dish_0_collision.stl",
+      "dims": [
+        0.25,
+        0.25,
+        0.02
+      ],
+      "visual_vertices": 3696,
+      "collision_vertices": 40
+    },
+    {
+      "uid": "0bdcc7e8ba444beb971a8f514ed9b994",
+      "visual_file": "dish_1_visual.stl",
+      "collision_file": "dish_1_collision.stl",
+      "dims": [
+        0.25,
+        0.25,
+        0.02
+      ],
+      "visual_vertices": 380,
+      "collision_vertices": 168
+    }
+  ],
+  "bottle": [
+    {
+      "uid": "39b092718d1b4068abba42ea00cee691",
+      "visual_file": "bottle_0_visual.stl",
+      "collision_file": "bottle_0_collision.stl",
+      "dims": [
+        0.07,
+        0.07,
+        0.25
+      ],
+      "visual_vertices": 444,
+      "collision_vertices": 100
+    },
+    {
+      "uid": "0db165441e2f4994aebb90ceb4fbfab9",
+      "visual_file": "bottle_1_visual.stl",
+      "collision_file": "bottle_1_collision.stl",
+      "dims": [
+        0.07,
+        0.07,
+        0.25
+      ],
+      "visual_vertices": 6687,
+      "collision_vertices": 121
+    }
+  ],
+  "can": [
+    {
+      "uid": "38baa418ff3e4f42b5b71c82388560e6",
+      "visual_file": "can_0_visual.stl",
+      "collision_file": "can_0_collision.stl",
+      "dims": [
+        0.06,
+        0.06,
+        0.12
+      ],
+      "visual_vertices": 1588,
+      "collision_vertices": 53
+    },
+    {
+      "uid": "b521c9a1162d45d2b4f138206e114fd2",
+      "visual_file": "can_1_visual.stl",
+      "collision_file": "can_1_collision.stl",
+      "dims": [
+        0.05999999999999999,
+        0.06,
+        0.12
+      ],
+      "visual_vertices": 1795,
+      "collision_vertices": 427
+    }
+  ],
+  "apple": [
+    {
+      "uid": "4c19ae47dbe8468285ee53ff487fe51a",
+      "visual_file": "apple_0_visual.stl",
+      "collision_file": "apple_0_collision.stl",
+      "dims": [
+        0.08,
+        0.08,
+        0.08000000000000002
+      ],
+      "visual_vertices": 21915,
+      "collision_vertices": 3695
+    },
+    {
+      "uid": "25baea74f1914aafb9ddef58d0106969",
+      "visual_file": "apple_1_visual.stl",
+      "collision_file": "apple_1_collision.stl",
+      "dims": [
+        0.08,
+        0.07999999999999999,
+        0.08
+      ],
+      "visual_vertices": 42490,
+      "collision_vertices": 2001
+    }
+  ],
+  "banana": [
+    {
+      "uid": "5d99827c456940bf9055dfe2dbc561e8",
+      "visual_file": "banana_0_visual.stl",
+      "collision_file": "banana_0_collision.stl",
+      "dims": [
+        0.04,
+        0.18,
+        0.04
+      ],
+      "visual_vertices": 752,
+      "collision_vertices": 248
+    },
+    {
+      "uid": "ada7c35a1a5742f1b4c528eb3daee35b",
+      "visual_file": "banana_1_visual.stl",
+      "collision_file": "banana_1_collision.stl",
+      "dims": [
+        0.04,
+        0.18000000000000002,
+        0.04
+      ],
+      "visual_vertices": 1710,
+      "collision_vertices": 688
+    }
+  ],
   "book": [
     {
       "uid": "b8834458ea7d49b8813ffc910cfbf486",
@@ -25,30 +235,82 @@
       "collision_vertices": 71
     }
   ],
-  "bowl": [
+  "pen": [
     {
-      "uid": "8487824860ab4ff7b9c54665eaf2f050",
-      "visual_file": "bowl_0_visual.stl",
-      "collision_file": "bowl_0_collision.stl",
+      "uid": "f9939905b39e4c0a91da9e165a191f89",
+      "visual_file": "pen_0_visual.stl",
+      "collision_file": "pen_0_collision.stl",
       "dims": [
+        0.01,
         0.15,
-        0.15,
-        0.08
+        0.01
       ],
-      "visual_vertices": 3512,
-      "collision_vertices": 754
+      "visual_vertices": 2196,
+      "collision_vertices": 140
     },
     {
-      "uid": "826eeb384b644d278e78c802ac59fbc3",
-      "visual_file": "bowl_1_visual.stl",
-      "collision_file": "bowl_1_collision.stl",
+      "uid": "e642950d58964c7f88c9c25fd8c18072",
+      "visual_file": "pen_1_visual.stl",
+      "collision_file": "pen_1_collision.stl",
+      "dims": [
+        0.01,
+        0.15,
+        0.01
+      ],
+      "visual_vertices": 1220,
+      "collision_vertices": 64
+    }
+  ],
+  "pencil": [
+    {
+      "uid": "8b0f41f8b2dc475ca0083f381abc54bd",
+      "visual_file": "pencil_0_visual.stl",
+      "collision_file": "pencil_0_collision.stl",
+      "dims": [
+        0.01,
+        0.18000000000000002,
+        0.01
+      ],
+      "visual_vertices": 149,
+      "collision_vertices": 33
+    },
+    {
+      "uid": "104f1d77d5434110803626b14358f513",
+      "visual_file": "pencil_1_visual.stl",
+      "collision_file": "pencil_1_collision.stl",
+      "dims": [
+        0.009999999999999998,
+        0.18,
+        0.01
+      ],
+      "visual_vertices": 16526,
+      "collision_vertices": 2087
+    }
+  ],
+  "box": [
+    {
+      "uid": "259e5c2c3ff14da186a84d386a00edb6",
+      "visual_file": "box_0_visual.stl",
+      "collision_file": "box_0_collision.stl",
       "dims": [
         0.15,
-        0.15,
-        0.08
+        0.1,
+        0.1
       ],
-      "visual_vertices": 31227,
-      "collision_vertices": 2001
+      "visual_vertices": 546,
+      "collision_vertices": 24
+    },
+    {
+      "uid": "f2d4f12e33aa4b15898a20e75d588ec3",
+      "visual_file": "box_1_visual.stl",
+      "collision_file": "box_1_collision.stl",
+      "dims": [
+        0.15,
+        0.1,
+        0.1
+      ],
+      "visual_vertices": 216,
+      "collision_vertices": 8
     }
   ],
   "remote_control": [
@@ -77,30 +339,30 @@
       "collision_vertices": 82
     }
   ],
-  "plate": [
+  "scissors": [
     {
-      "uid": "0705ea8dbfdc44aea5b2ab8fc1654ef5",
-      "visual_file": "plate_0_visual.stl",
-      "collision_file": "plate_0_collision.stl",
+      "uid": "f598dfee0d22404983dc9d9c3f307202",
+      "visual_file": "scissors_0_visual.stl",
+      "collision_file": "scissors_0_collision.stl",
       "dims": [
-        0.25,
-        0.25,
-        0.02
+        0.030000000000000002,
+        0.18,
+        0.010000000000000002
       ],
-      "visual_vertices": 43502,
-      "collision_vertices": 2001
+      "visual_vertices": 21151,
+      "collision_vertices": 1372
     },
     {
-      "uid": "623b78f05a1045a4b733bb56a5cac310",
-      "visual_file": "plate_1_visual.stl",
-      "collision_file": "plate_1_collision.stl",
+      "uid": "001d8f96a18a49f2922d371afcca315e",
+      "visual_file": "scissors_1_visual.stl",
+      "collision_file": "scissors_1_collision.stl",
       "dims": [
-        0.25,
-        0.25,
-        0.02
+        0.030000000000000002,
+        0.18,
+        0.01
       ],
-      "visual_vertices": 20741,
-      "collision_vertices": 682
+      "visual_vertices": 5200,
+      "collision_vertices": 178
     }
   ]
 }

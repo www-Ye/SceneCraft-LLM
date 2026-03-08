@@ -165,6 +165,67 @@ def normalize_mesh_axis_agnostic(mesh, target_dims, preserve_geometry=True):
     
     return mesh
 
+
+# Categories where the opening/wide part should face UP (z+)
+CONTAINER_CATEGORIES = {"mug", "cup", "bowl", "plate", "dish"}
+
+def fix_container_orientation(mesh, category):
+    """
+    For container objects (mug, cup, bowl, plate, dish), ensure the
+    opening / wider part faces z+ (up).
+    
+    Heuristic: compare the XY spread of vertices in the bottom 20% vs top 20%.
+    If the bottom is wider than the top, flip the mesh 180° around X.
+    """
+    if category not in CONTAINER_CATEGORIES:
+        return mesh
+    
+    ext = mesh.bounds[1] - mesh.bounds[0]
+    h = ext[2]
+    if h < 1e-6:
+        return mesh
+    
+    z_min, z_max = mesh.bounds[0][2], mesh.bounds[1][2]
+    
+    # Get vertices in bottom 20% and top 20%
+    bottom_mask = mesh.vertices[:, 2] < z_min + h * 0.2
+    top_mask = mesh.vertices[:, 2] > z_max - h * 0.2
+    
+    bottom_verts = mesh.vertices[bottom_mask]
+    top_verts = mesh.vertices[top_mask]
+    
+    if len(bottom_verts) < 3 or len(top_verts) < 3:
+        logger.warning(f"Not enough vertices to check orientation for {category}")
+        return mesh
+    
+    # Compute XY spread (max - min) for each group
+    bottom_spread = (bottom_verts[:, :2].max(axis=0) - bottom_verts[:, :2].min(axis=0)).mean()
+    top_spread = (top_verts[:, :2].max(axis=0) - top_verts[:, :2].min(axis=0)).mean()
+    
+    logger.info(f"Orientation check ({category}): bottom_spread={bottom_spread:.4f}, top_spread={top_spread:.4f}")
+    
+    if top_spread < bottom_spread * 0.85:  # Top is significantly narrower → upside down
+        logger.warning(f"  → {category} is UPSIDE DOWN! Flipping 180° around X axis.")
+        # Flip: negate Z, then shift so bottom is at z=0 again
+        mesh.vertices[:, 2] = -mesh.vertices[:, 2]
+        mesh.vertices[:, 2] -= mesh.bounds[0, 2]
+        
+        # Verify
+        bottom_verts2 = mesh.vertices[mesh.vertices[:, 2] < mesh.bounds[0][2] + h * 0.2]
+        top_verts2 = mesh.vertices[mesh.vertices[:, 2] > mesh.bounds[1][2] - h * 0.2]
+        if len(bottom_verts2) > 0 and len(top_verts2) > 0:
+            bs2 = (bottom_verts2[:, :2].max(axis=0) - bottom_verts2[:, :2].min(axis=0)).mean()
+            ts2 = (top_verts2[:, :2].max(axis=0) - top_verts2[:, :2].min(axis=0)).mean()
+            logger.info(f"  → After flip: bottom_spread={bs2:.4f}, top_spread={ts2:.4f} ✓")
+        
+        # Also fix face winding (flipping Z inverts normals)
+        mesh.faces = mesh.faces[:, ::-1]
+        mesh.fix_normals()
+    else:
+        logger.info(f"  → {category} orientation is correct ✓")
+    
+    return mesh
+
 def create_collision_mesh(visual_mesh):
     """
     Create a collision mesh (convex hull) from the visual mesh.
@@ -243,6 +304,9 @@ def process_model(uid, glb_path, category, output_dir, catalog_data, model_index
         # 归一化尺寸 - PRESERVE original geometry for visual mesh
         target_dims = TABLETOP_STANDARD_DIMS[category]
         visual_mesh = normalize_mesh_axis_agnostic(mesh, target_dims, preserve_geometry=True)
+        
+        # Fix orientation for containers (opening should face UP)
+        visual_mesh = fix_container_orientation(visual_mesh, category)
         
         # Create separate collision mesh (simplified)
         collision_mesh = create_collision_mesh(visual_mesh)
