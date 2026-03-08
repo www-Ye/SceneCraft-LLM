@@ -2,301 +2,127 @@
   "mug": [
     {
       "uid": "e5e87ddbf3f6470384bef58431351e2a",
-      "file": "mug_0.stl",
+      "visual_file": "mug_0_visual.stl",
+      "collision_file": "mug_0_collision.stl",
       "dims": [
         0.0709144413284917,
         0.07124000997097002,
         0.10000000000000002
-      ]
-    },
-    {
-      "uid": "922cd7d18c6748d49fe651ded8a04cf4",
-      "file": "mug_1.stl",
-      "dims": [
-        0.04783293395666436,
-        0.07999999999999999,
-        0.09607113506748229
-      ]
+      ],
+      "visual_vertices": 486,
+      "collision_vertices": 84
     }
   ],
   "cup": [
     {
       "uid": "9646813e492b47fcae126b2491554991",
-      "file": "cup_0.stl",
+      "visual_file": "cup_0_visual.stl",
+      "collision_file": "cup_0_collision.stl",
       "dims": [
         0.08,
         0.06682692115110964,
         0.09401266577399627
-      ]
-    },
-    {
-      "uid": "68e4c9f55c5745f99cbec22e816026d9",
-      "file": "cup_1.stl",
-      "dims": [
-        0.05940678394710985,
-        0.05555231432566935,
-        0.1
-      ]
+      ],
+      "visual_vertices": 5996,
+      "collision_vertices": 558
     }
   ],
   "bowl": [
     {
       "uid": "8487824860ab4ff7b9c54665eaf2f050",
-      "file": "bowl_0.stl",
+      "visual_file": "bowl_0_visual.stl",
+      "collision_file": "bowl_0_collision.stl",
       "dims": [
         0.13835100266355324,
         0.13835060220948692,
         0.08
-      ]
-    },
-    {
-      "uid": "826eeb384b644d278e78c802ac59fbc3",
-      "file": "bowl_1.stl",
-      "dims": [
-        0.1485630037031095,
-        0.14999999999999997,
-        0.054351873283072484
-      ]
+      ],
+      "visual_vertices": 3512,
+      "collision_vertices": 754
     }
   ],
   "plate": [
     {
       "uid": "0705ea8dbfdc44aea5b2ab8fc1654ef5",
-      "file": "plate_0.stl",
+      "visual_file": "plate_0_visual.stl",
+      "collision_file": "plate_0_collision.stl",
       "dims": [
         0.033023572783729895,
         0.03219973609038922,
         0.02
-      ]
-    },
-    {
-      "uid": "623b78f05a1045a4b733bb56a5cac310",
-      "file": "plate_1.stl",
-      "dims": [
-        0.17674418604651163,
-        0.17674418604651163,
-        0.02
-      ]
-    }
-  ],
-  "dish": [
-    {
-      "uid": "a3b6180f2d8d4655a7b1963c4eba00ab",
-      "file": "dish_0.stl",
-      "dims": [
-        0.0649418170112673,
-        0.06594366089957963,
-        0.02
-      ]
-    },
-    {
-      "uid": "0bdcc7e8ba444beb971a8f514ed9b994",
-      "file": "dish_1.stl",
-      "dims": [
-        0.08520333833948335,
-        0.08520334281808911,
-        0.02
-      ]
-    }
-  ],
-  "bottle": [
-    {
-      "uid": "39b092718d1b4068abba42ea00cee691",
-      "file": "bottle_0.stl",
-      "dims": [
-        8.233829643825837e-14,
-        8.233831109160132e-14,
-        0.25
-      ]
-    },
-    {
-      "uid": "0db165441e2f4994aebb90ceb4fbfab9",
-      "file": "bottle_1.stl",
-      "dims": [
-        0.05198657290983664,
-        0.07,
-        0.07419267322647212
-      ]
-    }
-  ],
-  "can": [
-    {
-      "uid": "38baa418ff3e4f42b5b71c82388560e6",
-      "file": "can_0.stl",
-      "dims": [
-        0.06,
-        0.05954256235505423,
-        0.08752372478407582
-      ]
-    },
-    {
-      "uid": "b521c9a1162d45d2b4f138206e114fd2",
-      "file": "can_1.stl",
-      "dims": [
-        0.05999999999999999,
-        0.05999987207245815,
-        0.08875474531225513
-      ]
+      ],
+      "visual_vertices": 43502,
+      "collision_vertices": 2001
     }
   ],
   "apple": [
     {
       "uid": "4c19ae47dbe8468285ee53ff487fe51a",
-      "file": "apple_0.stl",
+      "visual_file": "apple_0_visual.stl",
+      "collision_file": "apple_0_collision.stl",
       "dims": [
-        0.05370980796106043,
-        0.05373969650293404,
-        0.08
-      ]
-    },
-    {
-      "uid": "25baea74f1914aafb9ddef58d0106969",
-      "file": "apple_1.stl",
-      "dims": [
-        0.07014977001513223,
-        0.07999999999999999,
-        0.07815944373715575
-      ]
+        0.05372735694189235,
+        0.05373749474049788,
+        0.08000000000000002
+      ],
+      "visual_vertices": 21915,
+      "collision_vertices": 3695
     }
   ],
   "banana": [
     {
       "uid": "5d99827c456940bf9055dfe2dbc561e8",
-      "file": "banana_0.stl",
+      "visual_file": "banana_0_visual.stl",
+      "collision_file": "banana_0_collision.stl",
       "dims": [
         0.04,
         0.07264376130267398,
         0.016183065045175665
-      ]
-    },
-    {
-      "uid": "ada7c35a1a5742f1b4c528eb3daee35b",
-      "file": "banana_1.stl",
-      "dims": [
-        0.04,
-        0.0905337853102045,
-        0.0170697528236829
-      ]
+      ],
+      "visual_vertices": 752,
+      "collision_vertices": 248
     }
   ],
   "book": [
     {
       "uid": "b8834458ea7d49b8813ffc910cfbf486",
-      "file": "book_0.stl",
+      "visual_file": "book_0_visual.stl",
+      "collision_file": "book_0_collision.stl",
       "dims": [
-        0.06709814644864887,
-        0.1344203458767987,
-        0.030000000000000002
-      ]
-    },
-    {
-      "uid": "742fbdd5bf314a488494a4afdba92b25",
-      "file": "book_1.stl",
-      "dims": [
-        0.0791494297413489,
-        0.22,
-        0.009571630604242666
-      ]
+        0.06616460174041806,
+        0.13250451213428394,
+        0.03
+      ],
+      "visual_vertices": 45677,
+      "collision_vertices": 64
     }
   ],
   "pen": [
     {
       "uid": "f9939905b39e4c0a91da9e165a191f89",
-      "file": "pen_0.stl",
+      "visual_file": "pen_0_visual.stl",
+      "collision_file": "pen_0_collision.stl",
       "dims": [
         0.01,
         0.14128180057527087,
         0.007072887152087036
-      ]
-    },
-    {
-      "uid": "e642950d58964c7f88c9c25fd8c18072",
-      "file": "pen_1.stl",
-      "dims": [
-        0.01,
-        0.01,
-        0.01
-      ]
+      ],
+      "visual_vertices": 2196,
+      "collision_vertices": 140
     }
   ],
-  "pencil": [
+  "can": [
     {
-      "uid": "8b0f41f8b2dc475ca0083f381abc54bd",
-      "file": "pencil_0.stl",
+      "uid": "38baa418ff3e4f42b5b71c82388560e6",
+      "visual_file": "can_0_visual.stl",
+      "collision_file": "can_0_collision.stl",
       "dims": [
-        0.009999990101305381,
-        0.17541916557428774,
-        0.01
-      ]
-    },
-    {
-      "uid": "104f1d77d5434110803626b14358f513",
-      "file": "pencil_1.stl",
-      "dims": [
-        0.009999999999999998,
-        0.05392604140804709,
-        0.009580719406114739
-      ]
-    }
-  ],
-  "box": [
-    {
-      "uid": "259e5c2c3ff14da186a84d386a00edb6",
-      "file": "box_0.stl",
-      "dims": [
-        0.1,
-        0.09999989867210389,
-        0.1
-      ]
-    },
-    {
-      "uid": "f2d4f12e33aa4b15898a20e75d588ec3",
-      "file": "box_1.stl",
-      "dims": [
-        0.10000000338508314,
-        0.1,
-        0.1
-      ]
-    }
-  ],
-  "remote_control": [
-    {
-      "uid": "24b0ef19fb344e8aa1cc4e79e5a81564",
-      "file": "remote_control_0.stl",
-      "dims": [
-        0.03159971859357774,
-        0.115553622229475,
-        0.02
-      ]
-    },
-    {
-      "uid": "f1bbc61a42b94ee9a2976ca744f8962e",
-      "file": "remote_control_1.stl",
-      "dims": [
-        0.04069155462811214,
-        0.18,
-        0.018630920767225428
-      ]
-    }
-  ],
-  "scissors": [
-    {
-      "uid": "f598dfee0d22404983dc9d9c3f307202",
-      "file": "scissors_0.stl",
-      "dims": [
-        0.019151910843360452,
-        0.04773936712051937,
-        0.01
-      ]
-    },
-    {
-      "uid": "001d8f96a18a49f2922d371afcca315e",
-      "file": "scissors_1.stl",
-      "dims": [
-        0.016401272102069035,
-        0.020494911317121358,
-        0.01
-      ]
+        0.06,
+        0.05954256235505423,
+        0.08752372478407582
+      ],
+      "visual_vertices": 1588,
+      "collision_vertices": 53
     }
   ]
 }

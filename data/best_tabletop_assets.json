@@ -1,6 +1,7 @@
 {
   "plate": {
-    "file": "plate_1.stl",
+    "visual_file": "plate_1_visual.stl",
+    "collision_file": "plate_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -26,7 +27,8 @@
     "n_verts": 1250
   },
   "mug": {
-    "file": "mug_0.stl",
+    "visual_file": "mug_0_visual.stl",
+    "collision_file": "mug_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -52,7 +54,8 @@
     "n_verts": 84
   },
   "bowl": {
-    "file": "bowl_0.stl",
+    "visual_file": "bowl_0_visual.stl",
+    "collision_file": "bowl_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -78,7 +81,8 @@
     "n_verts": 754
   },
   "apple": {
-    "file": "apple_1.stl",
+    "visual_file": "apple_1_visual.stl",
+    "collision_file": "apple_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -104,7 +108,8 @@
     "n_verts": 11566
   },
   "banana": {
-    "file": "banana_1.stl",
+    "visual_file": "banana_1_visual.stl",
+    "collision_file": "banana_1_collision.stl",
     "idx": 1,
     "perm": [
       2,
@@ -130,7 +135,8 @@
     "n_verts": 688
   },
   "book": {
-    "file": "book_0.stl",
+    "visual_file": "book_0_visual.stl",
+    "collision_file": "book_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -156,7 +162,8 @@
     "n_verts": 62
   },
   "pen": {
-    "file": "pen_0.stl",
+    "visual_file": "pen_0_visual.stl",
+    "collision_file": "pen_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -182,7 +189,8 @@
     "n_verts": 140
   },
   "bottle": {
-    "file": "bottle_1.stl",
+    "visual_file": "bottle_1_visual.stl",
+    "collision_file": "bottle_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -208,7 +216,8 @@
     "n_verts": 121
   },
   "can": {
-    "file": "can_1.stl",
+    "visual_file": "can_1_visual.stl",
+    "collision_file": "can_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -234,7 +243,8 @@
     "n_verts": 427
   },
   "cup": {
-    "file": "cup_0.stl",
+    "visual_file": "cup_0_visual.stl",
+    "collision_file": "cup_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -260,7 +270,8 @@
     "n_verts": 558
   },
   "dish": {
-    "file": "dish_1.stl",
+    "visual_file": "dish_1_visual.stl",
+    "collision_file": "dish_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -286,7 +297,8 @@
     "n_verts": 168
   },
   "scissors": {
-    "file": "scissors_0.stl",
+    "visual_file": "scissors_0_visual.stl",
+    "collision_file": "scissors_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -312,7 +324,8 @@
     "n_verts": 3238
   },
   "remote_control": {
-    "file": "remote_control_1.stl",
+    "visual_file": "remote_control_1_visual.stl",
+    "collision_file": "remote_control_1_collision.stl",
     "idx": 1,
     "perm": [
       0,
@@ -338,7 +351,8 @@
     "n_verts": 82
   },
   "pencil": {
-    "file": "pencil_0.stl",
+    "visual_file": "pencil_0_visual.stl",
+    "collision_file": "pencil_0_collision.stl",
     "idx": 0,
     "perm": [
       0,
@@ -364,7 +378,8 @@
     "n_verts": 33
   },
   "box": {
-    "file": "box_0.stl",
+    "visual_file": "box_0_visual.stl",
+    "collision_file": "box_0_collision.stl",
     "idx": 0,
     "perm": [
       0,

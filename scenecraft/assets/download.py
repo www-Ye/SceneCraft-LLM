@@ -76,6 +76,24 @@ def normalize_mesh_axis_agnostic(mesh, target_dims, preserve_geometry=True):
     """
     logger.info(f"Original mesh: {len(mesh.vertices)} vertices, watertight: {mesh.is_watertight}")
     
+    # Simplify very high-poly meshes for MuJoCo compatibility
+    if len(mesh.vertices) > 50000 and preserve_geometry:
+        logger.warning(f"Mesh too high-poly ({len(mesh.vertices)} vertices), simplifying...")
+        try:
+            # Calculate target reduction ratio (aim for ~20k vertices)
+            target_count = 20000
+            reduction_ratio = max(0.1, 1.0 - (target_count / len(mesh.vertices)))
+            mesh = mesh.simplify_quadric_decimation(reduction_ratio)
+            logger.info(f"Simplified to {len(mesh.vertices)} vertices")
+        except Exception as e:
+            logger.warning(f"Simplification failed: {e}, trying alternative...")
+            try:
+                # Fallback: use vertex clustering 
+                mesh = mesh.simplify_vertex_clustering(0.01)  # 1cm clusters
+                logger.info(f"Vertex clustering reduced to {len(mesh.vertices)} vertices")
+            except Exception as e2:
+                logger.warning(f"All simplification failed, using original mesh: {e2}")
+    
     # Only try gentle repairs if mesh has issues
     if not mesh.is_volume and preserve_geometry:
         logger.warning("Mesh is not a volume, attempting gentle repair...")
@@ -156,6 +174,20 @@ def create_collision_mesh(visual_mesh):
     This preserves the original visual geometry while providing a simpler collision shape.
     """
     collision_mesh = visual_mesh.convex_hull
+    
+    # Ensure collision mesh is not too complex for physics
+    if len(collision_mesh.vertices) > 5000:
+        try:
+            reduction_ratio = max(0.1, 1.0 - (2000 / len(collision_mesh.vertices)))
+            collision_mesh = collision_mesh.simplify_quadric_decimation(reduction_ratio)
+            logger.info(f"Simplified collision mesh to {len(collision_mesh.vertices)} vertices")
+        except:
+            try:
+                collision_mesh = collision_mesh.simplify_vertex_clustering(0.02)  # 2cm clusters for collision
+                logger.info(f"Vertex clustering reduced collision to {len(collision_mesh.vertices)} vertices")
+            except:
+                logger.warning("Could not simplify collision mesh, using convex hull")
+    
     logger.info(f"Collision mesh: {len(collision_mesh.vertices)} vertices (simplified from {len(visual_mesh.vertices)})")
     return collision_mesh
 
